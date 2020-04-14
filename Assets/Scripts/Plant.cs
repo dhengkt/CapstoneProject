@@ -18,14 +18,15 @@ public class Plant : MonoBehaviour
 
     private void ShowMeun()
     {
-
+        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Plant")
+        if (collision.gameObject.tag == "Player")
         {
             ShowMeun();
+            Debug.Log("Touch");
         }
     }
 }

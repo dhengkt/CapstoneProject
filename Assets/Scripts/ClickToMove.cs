@@ -40,4 +40,9 @@ public class ClickToMove : MonoBehaviour
             isMoving = false;
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+       
+    }
 }
