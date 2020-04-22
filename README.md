@@ -1,3 +1,3 @@
 # NEIRUS
 
-# Description will add later.
+Description will be added later.
