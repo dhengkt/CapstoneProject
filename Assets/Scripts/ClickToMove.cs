@@ -33,16 +33,17 @@ public class ClickToMove : MonoBehaviour
 
     void Move()
     {
-        transform.rotation= Quaternion.LookRotation(Vector3.forward, targetPosition);
+        //transform.rotation= Quaternion.LookRotation(Vector3.forward, targetPosition);
         transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
+
         if (transform.position == targetPosition)
         {
             isMoving = false;
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-       
+        Debug.Log("Wall");
     }
 }

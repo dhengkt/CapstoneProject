@@ -23,7 +23,7 @@ public class Plant : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(flowchart.);
+        Debug.Log(flowchart);
         // When player is touching plant and presses X, start
         if (plantTrigger && Input.GetKeyDown(KeyCode.X))
         {
