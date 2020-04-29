@@ -1825,7 +1825,7 @@ GameObject:
   - component: {fileID: 800265210}
   m_Layer: 0
   m_Name: GreenhouseWall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1905,7 +1905,6 @@ GameObject:
   - component: {fileID: 1076695372}
   - component: {fileID: 1076695373}
   - component: {fileID: 1076695374}
-  - component: {fileID: 1076695375}
   m_Layer: 0
   m_Name: PlantTable
   m_TagString: Wall
@@ -1990,7 +1989,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 3.4995165, y: -2.2464743}
+  m_Offset: {x: 3.4995155, y: -2.7223616}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2001,20 +2000,8 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18.359737, y: 7.6014757}
+  m_Size: {x: 18.359737, y: 6.649701}
   m_EdgeRadius: 0
---- !u!114 &1076695375
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1076695371}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5eeebcc17a85364089617452839f915, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1326069336
 GameObject:
   m_ObjectHideFlags: 0
@@ -2027,8 +2014,8 @@ GameObject:
   - component: {fileID: 1326069338}
   - component: {fileID: 1326069337}
   - component: {fileID: 1326069341}
-  - component: {fileID: 1326069342}
   - component: {fileID: 1326069340}
+  - component: {fileID: 1326069342}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -2123,7 +2110,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.45173025, y: -1.8334925}
@@ -2147,7 +2134,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1326069336}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -2175,7 +2162,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0.5, y: 0.5}
   serializedVersion: 2
-  m_Radius: 1.6971506
+  m_Radius: 1.266186
 --- !u!1 &1865024353
 GameObject:
   m_ObjectHideFlags: 0
@@ -2311,7 +2298,7 @@ GameObject:
   - component: {fileID: 2032188169}
   m_Layer: 0
   m_Name: BackTable
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2393,7 +2380,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 2.8182704, y: 6.668042}
+  m_Offset: {x: 2.8182707, y: 8.125107}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2404,5 +2391,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 15.175766, y: 5.070772}
+  m_Size: {x: 15.175766, y: 2.1566439}
   m_EdgeRadius: 0

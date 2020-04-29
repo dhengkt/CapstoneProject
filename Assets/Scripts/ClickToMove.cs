@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class ClickToMove : MonoBehaviour
 {
-    [SerializeField]
-    [Range(2, 12)] private float speed = 5;
+    [SerializeField] private float speed = 5;
     private Vector3 targetPosition;
     private bool isMoving = false;
+    private bool trigger = false;
 
     // Update is called once per frame
-    void Update()
+   void Update()
     {
         if (Input.GetMouseButton(0))
         {
@@ -23,15 +23,14 @@ public class ClickToMove : MonoBehaviour
         }
     }
 
-    void SetTargetPosition()
+    private void SetTargetPosition()
     {
         targetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         targetPosition.z = transform.position.z;
-
         isMoving = true;
     }
 
-    void Move()
+    private void Move()
     {
         //transform.rotation= Quaternion.LookRotation(Vector3.forward, targetPosition);
         transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
@@ -42,8 +41,12 @@ public class ClickToMove : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Wall");
+        if (collision.gameObject.tag == "Wall")
+        {
+            trigger = true;
+            Debug.Log("Wall");
+        }
     }
 }

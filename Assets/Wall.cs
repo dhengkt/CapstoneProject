@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Wall : MonoBehaviour
 {
-
-    private bool wallTrigger;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,11 +16,5 @@ public class Wall : MonoBehaviour
         
     }
 
-    private void OnTriggerStay(Collider collision)
-    {
-        if (collision.gameObject.tag == "Player")
-        {
-            Debug.Log("Player is Here!");
-        }
-    }
+
 }
