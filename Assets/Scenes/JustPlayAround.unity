@@ -207,8 +207,7 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 339727989}
+  selectedBlocks: [{fileID: 339727989}]
   selectedCommands: []
   variables:
   - {fileID: 339727993}
@@ -344,8 +343,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 14
   indentLevel: 0
-  storyText: I should be fine as long as the tap water supply stays okay like it
-    is now.
+  storyText: I should be fine as long as the tap water supply stays okay like it is
+    now.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -1527,8 +1526,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 35
   indentLevel: 0
-  storyText: "I\u2019ve filled all my containers and pitchers with water just in
-    case, but maybe I\u2019m overreacting.\r"
+  storyText: "I\u2019ve filled all my containers and pitchers with water just in case,
+    but maybe I\u2019m overreacting.\r"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -2141,7 +2140,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!1 &1865024353
 GameObject:
   m_ObjectHideFlags: 0
