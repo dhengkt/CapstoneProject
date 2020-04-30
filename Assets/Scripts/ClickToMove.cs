@@ -7,7 +7,6 @@ public class ClickToMove : MonoBehaviour
     [SerializeField] private float speed = 5;
     private Vector3 targetPosition;
     private bool isMoving = false;
-    private bool trigger = false;
 
     // Update is called once per frame
    void Update()
@@ -45,7 +44,6 @@ public class ClickToMove : MonoBehaviour
     {
         if (collision.gameObject.tag == "Wall")
         {
-            trigger = true;
             Debug.Log("Wall");
         }
     }
