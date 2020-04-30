@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ClickToMove : MonoBehaviour
+public class Player : MonoBehaviour
 {
     [SerializeField] private float speed = 5;
     private Vector3 targetPosition;
@@ -42,9 +42,10 @@ public class ClickToMove : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        // find a way to stop player shaking while hitting the walls
         if (collision.gameObject.tag == "Wall")
         {
-            Debug.Log("Wall");
+            //Debug.Log("Wall");
         }
     }
 }
