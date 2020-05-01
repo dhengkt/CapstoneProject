@@ -22,8 +22,30 @@ public class PlayerActions : MonoBehaviour
         actionMenu.gameObject.SetActive(trigger);
     }
 
+    public void ChooseGather()
+    {
+        // random give player certain amount of water/fertilizer
+    }
+
+    public void ChooseExplore()
+    {
+
+    }
+
+    public void GoToRiver()
+    {
+        //
+    }
+
+    public void GoToForest()
+    {
+        //
+    }
+
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log("At door");
         atDoor = true;
         if (collision.gameObject.tag == "Player")
         {
@@ -34,9 +56,6 @@ public class PlayerActions : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         atDoor = false;
-        if (collision.gameObject.tag == "Player")
-        {
-            SetMenu(atDoor);
-        }
+        SetMenu(atDoor);
     }
 }
