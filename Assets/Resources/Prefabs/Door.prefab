@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6618056598357041192}
   - component: {fileID: 6618056598357041193}
   m_Layer: 0
-  m_Name: Gather
+  m_Name: River
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1130,7 +1130,7 @@ GameObject:
   - component: {fileID: 6618056600171809715}
   - component: {fileID: 6618056600171809716}
   m_Layer: 0
-  m_Name: Explore
+  m_Name: Forest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

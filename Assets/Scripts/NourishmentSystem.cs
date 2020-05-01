@@ -59,19 +59,21 @@ public class NourishmentSystem : MonoBehaviour
             case State.Stage4:
                 rend.sprite = stage4;
                 // if water/fertilizer > 10, go to stage 2 and give another story to player
-
+                // put the plant to the back table
                 break;
         }
     }
 
     public void AddWater()
     {
+        // check if player has enough water
         water++;
         Debug.Log(water);
     }
 
     public void AddFertilizer()
     {
+        // check if player has enough fertilizer
         fertilizer++;
         Debug.Log(fertilizer);
     }
