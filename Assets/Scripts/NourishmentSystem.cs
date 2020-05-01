@@ -19,14 +19,9 @@ public class NourishmentSystem : MonoBehaviour
     private State currState;
     private int water, fertilizer;
 
-    private void Awake()
-    {
-        currState = State.Stage1;
-    }
-
     private void Start()
     {
-        
+        currState = State.Stage1;
     }
 
     private void Update()
@@ -40,7 +35,7 @@ public class NourishmentSystem : MonoBehaviour
             case State.Stage1:
                 rend.sprite = stage1;
                 // if water/fertilizer > 2, go to stage 2 and give another story to player
-                if (water > 2 && fertilizer >2)
+                if (water > 2 && fertilizer > 2)
                 {
                     currState = State.Stage2;
                 }

@@ -1815,12 +1815,12 @@ PrefabInstance:
     - target: {fileID: 2557259207095973896, guid: 548fc92959a7d8c4b899597dad5ca288,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2557259207095973897, guid: 548fc92959a7d8c4b899597dad5ca288,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.81
+      value: 5.87
       objectReference: {fileID: 0}
     - target: {fileID: 2557259207095973897, guid: 548fc92959a7d8c4b899597dad5ca288,
         type: 3}

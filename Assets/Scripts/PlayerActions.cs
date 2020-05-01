@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class PlayerActions : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public Canvas actionMenu;
+    private bool atDoor = false;
+
     void Start()
     {
         
@@ -14,5 +16,27 @@ public class PlayerActions : MonoBehaviour
     void Update()
     {
         
+    }
+    public void SetMenu(bool trigger)
+    {
+        actionMenu.gameObject.SetActive(trigger);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        atDoor = true;
+        if (collision.gameObject.tag == "Player")
+        {
+            SetMenu(atDoor);
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        atDoor = false;
+        if (collision.gameObject.tag == "Player")
+        {
+            SetMenu(atDoor);
+        }
     }
 }
