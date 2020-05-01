@@ -7,7 +7,7 @@ public class Plant : MonoBehaviour
 {
     // Set associated flowchart to plant
     public Flowchart flowchart;
-    private int water, fertilizer;
+   // private int water, fertilizer;
     private string story;
     private int stage;
     // plantTrigger is true if the player is touching the plant

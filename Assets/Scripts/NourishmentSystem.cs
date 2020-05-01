@@ -17,6 +17,7 @@ public class NourishmentSystem : MonoBehaviour
     [SerializeField] Sprite stage3;
     [SerializeField] Sprite stage4;
     private State currState;
+    private int water, fertilizer;
 
     private void Awake()
     {
@@ -39,6 +40,10 @@ public class NourishmentSystem : MonoBehaviour
             case State.Stage1:
                 rend.sprite = stage1;
                 // if water/fertilizer > 2, go to stage 2 and give another story to player
+                if (water > 2 && fertilizer >2)
+                {
+                    currState = State.Stage2;
+                }
                 break;
             case State.Stage2:
                 rend.sprite = stage2;
@@ -55,9 +60,16 @@ public class NourishmentSystem : MonoBehaviour
         }
     }
 
-    private void AddWater()
+    public void AddWater()
     {
+        water++;
+        Debug.Log(water);
+    }
 
+    public void AddFertilizer()
+    {
+        fertilizer++;
+        Debug.Log(fertilizer);
     }
 
 }
