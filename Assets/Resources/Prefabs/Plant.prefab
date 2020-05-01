@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2557259207095973897}
   - component: {fileID: 2557259207095973896}
-  - component: {fileID: 2557259207095973902}
   - component: {fileID: 2557259207095973903}
+  - component: {fileID: 2557259207095973902}
+  - component: {fileID: 129277222842824214}
   m_Layer: 0
   m_Name: Plant
   m_TagString: Plant
@@ -83,19 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2557259207095973902
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2557259207095973901}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0a552d3de59c9445b1c65d191e2eff7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  flowchart: {fileID: 0}
 --- !u!61 &2557259207095973903
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -122,3 +110,32 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.5327978, y: 3.6489813}
   m_EdgeRadius: 0
+--- !u!114 &2557259207095973902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2557259207095973901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0a552d3de59c9445b1c65d191e2eff7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flowchart: {fileID: 0}
+--- !u!114 &129277222842824214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2557259207095973901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86574a28d49c4b542a32c0681d4d565f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stage1: {fileID: 21300000, guid: 51e9cd3fca1fd714995bcf26d74760a4, type: 3}
+  stage2: {fileID: 21300000, guid: da3aea3d78cd4e047b5142a2612def8b, type: 3}
+  stage3: {fileID: 21300000, guid: ea245fe07b41e87478a3c1289427863b, type: 3}
+  stage4: {fileID: 21300000, guid: 84551a368bbcd194ea0bcd6676d0687d, type: 3}
