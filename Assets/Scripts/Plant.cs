@@ -2,16 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Fungus;
+using UnityEngine.UI;
 
 public class Plant : MonoBehaviour
 {
     // Set associated flowchart to plant
     public Flowchart flowchart;
-   // private int water, fertilizer;
     private string story;
     private int stage;
     // plantTrigger is true if the player is touching the plant
     private bool plantTrigger;
+    public Canvas actionMenu;
 
     // Start is called before the first frame update
     void Start()
@@ -29,11 +30,13 @@ public class Plant : MonoBehaviour
         {
             flowchart.ExecuteBlock(story);
         }
+
     }
 
-    private void ShowMenu()
+    private void SetActionMenu(bool isTrigger)
     {
-        
+        Debug.Log("Show Menu");
+        actionMenu.gameObject.SetActive(isTrigger);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -41,13 +44,15 @@ public class Plant : MonoBehaviour
         plantTrigger = true;
         if (collision.gameObject.tag == "Player")
         {
-            ShowMenu();
+            SetActionMenu(plantTrigger);
             Debug.Log("Touch");
         }
     }
+
     private void OnTriggerExit2D(Collider2D collision)
     {
         plantTrigger = false;
+        SetActionMenu(plantTrigger);
     }
  
 }
