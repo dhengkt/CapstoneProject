@@ -1819,7 +1819,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 588523252}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.3907557, y: -7.5308046, z: -3.3080726}
+  m_LocalPosition: {x: -1.22, y: -7.5308046, z: -3.3080726}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 800265209}
@@ -1895,8 +1895,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1149886007
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 9b7c54c92858cbc44b590d79a667e916, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2034,8 +2034,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1855273979
+  m_SortingLayer: 1
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: a317eb00a8f16424e9f96ca88eb20b27, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2061,7 +2061,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 3.4995155, y: -2.7223616}
+  m_Offset: {x: 3.4995155, y: -1.3933461}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2072,7 +2072,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18.359737, y: 6.649701}
+  m_Size: {x: 18.359737, y: 3.9916697}
   m_EdgeRadius: 0
 --- !u!1 &2032188166
 GameObject:
@@ -2142,8 +2142,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1855273979
+  m_SortingLayer: 1
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 7bb30456246a6744c94e2e6d02f6f561, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2189,10 +2189,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2557259207095973896, guid: 548fc92959a7d8c4b899597dad5ca288,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1855273979
+      objectReference: {fileID: 0}
+    - target: {fileID: 2557259207095973896, guid: 548fc92959a7d8c4b899597dad5ca288,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2557259207095973896, guid: 548fc92959a7d8c4b899597dad5ca288,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2557259207095973897, guid: 548fc92959a7d8c4b899597dad5ca288,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.7
+      value: 5.81
       objectReference: {fileID: 0}
     - target: {fileID: 2557259207095973897, guid: 548fc92959a7d8c4b899597dad5ca288,
         type: 3}
@@ -2271,7 +2286,7 @@ PrefabInstance:
     - target: {fileID: 4252060258267150950, guid: ffe139d2f0a013b4bb24c5bf9220c5a6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.27
+      value: 0.14
       objectReference: {fileID: 0}
     - target: {fileID: 4252060258267150950, guid: ffe139d2f0a013b4bb24c5bf9220c5a6,
         type: 3}
@@ -2321,6 +2336,21 @@ PrefabInstance:
     - target: {fileID: 4252060258267150950, guid: ffe139d2f0a013b4bb24c5bf9220c5a6,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252060258267150951, guid: ffe139d2f0a013b4bb24c5bf9220c5a6,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1855273979
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252060258267150951, guid: ffe139d2f0a013b4bb24c5bf9220c5a6,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252060258267150951, guid: ffe139d2f0a013b4bb24c5bf9220c5a6,
+        type: 3}
+      propertyPath: m_SortingOrder
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

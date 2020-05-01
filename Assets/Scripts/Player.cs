@@ -45,7 +45,7 @@ public class Player : MonoBehaviour
         // find a way to stop player shaking while hitting the walls
         if (collision.gameObject.tag == "Wall")
         {
-            //Debug.Log("Wall");
+
         }
     }
 }
