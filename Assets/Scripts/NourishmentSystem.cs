@@ -48,14 +48,23 @@ public class NourishmentSystem : MonoBehaviour
             case State.Stage2:
                 rend.sprite = stage2;
                 // if water/fertilizer > 4, go to stage 2 and give another story to player
+                if (water > 4 && fertilizer > 4)
+                {
+                    currState = State.Stage3;
+                }
                 break;
             case State.Stage3:
                 rend.sprite = stage3;
                 // if water/fertilizer > 6, go to stage 2 and give another story to player
+                if (water > 6 && fertilizer > 6)
+                {
+                    currState = State.Stage4;
+                }
                 break;
             case State.Stage4:
                 rend.sprite = stage4;
                 // if water/fertilizer > 10, go to stage 2 and give another story to player
+
                 break;
         }
     }
