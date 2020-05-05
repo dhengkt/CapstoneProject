@@ -9,7 +9,7 @@ public class GameManager: MonoBehaviour
     List<int> unusedStories = new List<int>() { 0, 1, 2 }; // Full list of unused story IDs
     List<int> usedStories = new List<int>(); // List of currently assigned story IDs
     int[] plantLocations = new int[6] { 0, 0, 0, 0, 0, 0 }; // 0: Vacant; 1: Occupied
-    Plant[] currentPlants = new Plant[6]; // Keeps track of all plants currently in the game
+    GameObject[] currentPlants = new GameObject[6]; // Keeps track of all plants currently in the game
     int numberOfPlants = 0;
     private GameObject firstPlant = null; // First plant in the game
     private Flowchart temFlowchart = null; // for assign flowchat to first plant
@@ -19,7 +19,7 @@ public class GameManager: MonoBehaviour
     void Start()
     {
        firstPlant = Resources.Load<GameObject>("Prefabs/Plant");
-       CreateFirstPlant();
+       //CreateFirstPlant();
     }
 
     // Update is called once per frame
@@ -39,22 +39,27 @@ public class GameManager: MonoBehaviour
      **/
     private void CreateFirstPlant()
     {
-        GameObject p = Instantiate(firstPlant);
+        /*GameObject p = Instantiate(firstPlant);
         float x = 5.81f;
         float y = -1.38f;
         p.transform.position = new Vector3(x, y, -5f);
         numberOfPlants++;
-        assignStory(p);
+        assignStory(p);*/
+
     }
 
     // Create a plant object before placing it in the game
     public void createPlant()
     {
         // Create and add plant to currentPlants[]
+        GameObject p = Instantiate(firstPlant);
         Debug.Log("Creating Plant...");
-        //currentPlants[numberOfPlants] = new Plant(assignStory(), assignOpenLocation());
+        currentPlants[numberOfPlants] = p;
+        float x = 5.81f;
+        float y = -1.38f;
+        p.transform.position = new Vector3(x, y, -5f);
         Debug.Log(currentPlants[numberOfPlants]);
-        numberOfPlants += 1;
+        numberOfPlants++;
         Debug.Log("Unused Stories (after assign): " + unusedStories);
     }
 
@@ -69,10 +74,17 @@ public class GameManager: MonoBehaviour
         unusedStories.RemoveAt(storyIndex);
         return tempStory;
     }
+    
+    // Get an open location for the plant and spawn it in that location
     private int assignOpenLocation()
     {
+        float x = 5.81f;
+        float y = -1.38f;
+        //p.transform.position = new Vector3(x, y, -5f);
+
         return 0;
     }
+
     private void addToUsedStories()
     {
 
