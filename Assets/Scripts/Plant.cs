@@ -15,13 +15,6 @@ public class Plant : MonoBehaviour
     private bool plantTrigger;
     public Canvas actionMenu;
 
-    // Start is called before the first frame update
-
-    public Plant(int story, int location)
-    {
-        this.story = story;
-        this.location = location;
-    }
 
     // Update is called once per frame
     void Update()
