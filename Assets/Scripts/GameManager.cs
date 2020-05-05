@@ -18,7 +18,7 @@ public class GameManager: MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        firstPlant = Resources.Load<GameObject>("Prefabs/Plant");
+       firstPlant = Resources.Load<GameObject>("Prefabs/Plant");
        CreateFirstPlant();
     }
 
@@ -57,14 +57,17 @@ public class GameManager: MonoBehaviour
         numberOfPlants += 1;
         Debug.Log("Unused Stories (after assign): " + unusedStories);
     }
+
+    // Return a random story from the unusedStories list and transfer it to the usedStories when creating a plant
     private int assignStory(GameObject plant)
     {
-        Debug.Log("Unused Stories: " + unusedStories);
+        //Debug.Log("Unused Stories: " + unusedStories);
         UnityEngine.Random rnd = new UnityEngine.Random();
         int storyIndex = UnityEngine.Random.Range(0,unusedStories.Count);
         int tempStory = unusedStories[storyIndex];
-        unusedStories.Remove(storyIndex);
-        return 0;
+        usedStories.Add(tempStory);
+        unusedStories.RemoveAt(storyIndex);
+        return tempStory;
     }
     private int assignOpenLocation()
     {
