@@ -8,17 +8,19 @@ public class Plant : MonoBehaviour
 {
     // Set associated flowchart to plant
     public Flowchart flowchart;
-    private string story;
-    private int stage;
+    private int story;
+    private int stage = 1;
+    private int location; 
     // plantTrigger is true if the player is touching the plant
     private bool plantTrigger;
     public Canvas actionMenu;
 
     // Start is called before the first frame update
-    void Start()
+
+    public Plant(int story, int location)
     {
-        story = "Start";
-        stage = 1;
+        this.story = story;
+        this.location = location;
     }
 
     // Update is called once per frame
@@ -28,7 +30,7 @@ public class Plant : MonoBehaviour
         // When player is touching plant and presses X, start
         if (plantTrigger && Input.GetKeyDown(KeyCode.X))
         {
-            flowchart.ExecuteBlock(story);
+            flowchart.ExecuteBlock("Assign a Story");
         }
 
     }
@@ -54,5 +56,9 @@ public class Plant : MonoBehaviour
         plantTrigger = false;
         SetActionMenu(plantTrigger);
     }
- 
+
+    public override string ToString()
+    {
+        return "Made Plant. Story: " + story + " Loc: " + location;
+    }
 }
