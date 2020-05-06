@@ -6,13 +6,13 @@ public class PlayerActions : MonoBehaviour
 {
     public Canvas actionMenu;
     private bool atDoor = false;
+    private bool changeTime = false;
 
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         
@@ -29,7 +29,7 @@ public class PlayerActions : MonoBehaviour
 
     public void ChooseExplore()
     {
-
+        changeTime = true;
     }
 
     public void GoToRiver()

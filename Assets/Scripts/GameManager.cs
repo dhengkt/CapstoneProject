@@ -14,15 +14,15 @@ public class GameManager: MonoBehaviour
     private GameObject firstPlant = null; // First plant in the game
     private Flowchart temFlowchart = null; // for assign flowchat to first plant
 
-
-    // Start is called before the first frame update
     void Start()
     {
        firstPlant = Resources.Load<GameObject>("Prefabs/Plant");
-       //CreateFirstPlant();
+        GameObject temDoor = Resources.Load<GameObject>("Prefabs/Door");
+        GameObject door = Instantiate(temDoor);
+        door.transform.position = new Vector3(-.23f, -7.99f, 0f);
+        //CreateFirstPlant();
     }
 
-    // Update is called once per frame
     /*****Create plant should be called when the player reaches a certain time segment and goes outside*****/
     void Update()
     {
@@ -33,9 +33,7 @@ public class GameManager: MonoBehaviour
     }
 
     /**
-     * 
      * Need to find a way to create the flowchart object and add it to the plant create in this function
-     * 
      **/
     private void CreateFirstPlant()
     {
@@ -89,5 +87,4 @@ public class GameManager: MonoBehaviour
     {
 
     }
-
 }

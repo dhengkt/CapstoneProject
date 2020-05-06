@@ -15,8 +15,6 @@ public class Plant : MonoBehaviour
     private bool plantTrigger;
     public Canvas actionMenu;
 
-
-    // Update is called once per frame
     void Update()
     {
         Debug.Log(flowchart);
