@@ -14,6 +14,7 @@ public class TimeSystem : MonoBehaviour
 
     void Start()
     {
+        // assign the background object here.
         numOfDay = 1;
     }
 
