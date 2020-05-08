@@ -14,9 +14,6 @@ public class TimeSystem : MonoBehaviour
 
     void Start()
     {
-        GameObject tempBG = Resources.Load<GameObject>("Prefabs/Background");
-        GameObject background = Instantiate(tempBG);
-        backgroundPic = background;
         numOfDay = 1;
     }
 
