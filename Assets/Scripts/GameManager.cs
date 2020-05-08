@@ -16,7 +16,7 @@ public class GameManager: MonoBehaviour
 
     void Start()
     {
-       firstPlant = Resources.Load<GameObject>("Prefabs/Plant");
+        firstPlant = Resources.Load<GameObject>("Prefabs/Plant");
         GameObject temDoor = Resources.Load<GameObject>("Prefabs/Door");
         GameObject door = Instantiate(temDoor);
         door.transform.position = new Vector3(-.23f, -7.99f, 0f);
@@ -53,28 +53,29 @@ public class GameManager: MonoBehaviour
         GameObject p = Instantiate(firstPlant);
         Debug.Log("Creating Plant...");
         currentPlants[numberOfPlants] = p;
-        float x = 5.81f;
-        float y = -1.38f;
-        p.transform.position = new Vector3(x, y, -5f);
-        Debug.Log(currentPlants[numberOfPlants]);
+        assignStory(p);
+        assignOpenLocation(p);
+
+        Debug.Log("currentPlants: " + currentPlants[numberOfPlants]);
         numberOfPlants++;
-        Debug.Log("Unused Stories (after assign): " + unusedStories);
+        //Debug.Log("Unused Stories (after assign): " + unusedStories);
     }
 
     // Return a random story from the unusedStories list and transfer it to the usedStories when creating a plant
-    private int assignStory(GameObject plant)
+    private void assignStory(GameObject plant)
     {
         //Debug.Log("Unused Stories: " + unusedStories);
         UnityEngine.Random rnd = new UnityEngine.Random();
         int storyIndex = UnityEngine.Random.Range(0,unusedStories.Count);
         int tempStory = unusedStories[storyIndex];
+        plant.setStory(tempStory);//***** GAME OBJECT ISN'T CONNECTED TO THE PLANT OBJECT
         usedStories.Add(tempStory);
         unusedStories.RemoveAt(storyIndex);
-        return tempStory;
+        
     }
     
     // Get an open location for the plant and spawn it in that location
-    private int assignOpenLocation()
+    private int assignOpenLocation(GameObject plant)
     {
         float x = 5.81f;
         float y = -1.38f;
