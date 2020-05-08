@@ -68,7 +68,7 @@ public class GameManager: MonoBehaviour
         UnityEngine.Random rnd = new UnityEngine.Random();
         int storyIndex = UnityEngine.Random.Range(0,unusedStories.Count);
         int tempStory = unusedStories[storyIndex];
-        plant.setStory(tempStory);//***** GAME OBJECT ISN'T CONNECTED TO THE PLANT OBJECT
+       // plant.setStory(tempStory);//***** GAME OBJECT ISN'T CONNECTED TO THE PLANT OBJECT
         usedStories.Add(tempStory);
         unusedStories.RemoveAt(storyIndex);
         
