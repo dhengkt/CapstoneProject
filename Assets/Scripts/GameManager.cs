@@ -79,7 +79,7 @@ public class GameManager: MonoBehaviour
     {
         float x = 5.81f;
         float y = -1.38f;
-        //p.transform.position = new Vector3(x, y, -5f);
+        plant.transform.position = new Vector3(x, y, -5f);
 
         return 0;
     }
