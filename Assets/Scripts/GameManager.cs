@@ -3,6 +3,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Fungus;
 
 public class GameManager: MonoBehaviour
 {
@@ -12,11 +13,9 @@ public class GameManager: MonoBehaviour
     GameObject[] currentPlants = new GameObject[6]; // Keeps track of all plants currently in the game
     int numberOfPlants = 0;
     private GameObject firstPlant = null; // First plant in the game
-    private Flowchart temFlowchart = null; // for assign flowchat to first plant
 
     void Start()
     {
-        firstPlant = Resources.Load<GameObject>("Prefabs/Plant");
         GameObject temDoor = Resources.Load<GameObject>("Prefabs/Door");
         GameObject door = Instantiate(temDoor);
         door.transform.position = new Vector3(-.23f, -7.99f, 0f);
@@ -50,6 +49,7 @@ public class GameManager: MonoBehaviour
     public void createPlant()
     {
         // Create and add plant to currentPlants[]
+        firstPlant = Resources.Load<GameObject>("Prefabs/Plant");
         GameObject p = Instantiate(firstPlant);
         Debug.Log("Creating Plant...");
         currentPlants[numberOfPlants] = p;
