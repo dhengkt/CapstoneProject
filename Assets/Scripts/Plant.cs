@@ -8,16 +8,23 @@ public class Plant : MonoBehaviour
 {
     // Set associated flowchart to plant
     public Flowchart flowchart;
-    private int story;
+    private int story = 0;
     private int stage = 1;
-    private int location; 
-    // plantTrigger is true if the player is touching the plant
-    private bool plantTrigger;
+    private int location;
+    private bool plantTrigger; // plantTrigger is true if the player is touching the plant
     public Canvas actionMenu;
+
+    void Start()
+    {
+        //Debug.Log("Found flowchart: " + GameObject.FindObjectOfType<Flowchart>());
+        this.flowchart = GameObject.FindObjectOfType<Flowchart>(); // Finds the root
+    }
 
     void Update()
     {
-        Debug.Log(flowchart);
+        //Debug.Log("flowchart name: " + flowchart.GetName());
+        //flowchart.SetIntegerVariable("story", this.story);
+        //Debug.Log("Story for plant: " + flowchart.GetIntegerVariable("story"));
         // When player is touching plant and presses X, start
         if (plantTrigger && Input.GetKeyDown(KeyCode.X))
         {
