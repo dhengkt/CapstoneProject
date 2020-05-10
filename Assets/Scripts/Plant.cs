@@ -9,7 +9,6 @@ public class Plant : MonoBehaviour
     // Set associated flowchart to plant
     public Flowchart flowchart;
     private int story = 0;
-    private int stage = 1;
     private int location;
     private bool plantTrigger; // plantTrigger is true if the player is touching the plant
     public Canvas actionMenu;

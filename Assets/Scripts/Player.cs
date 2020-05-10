@@ -6,7 +6,7 @@ public class Player : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 5;
     public Rigidbody2D rb;
-    Vector2 targetPoint;
+    private Vector2 targetPoint;
 
    void Update()
     {
