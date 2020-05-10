@@ -15,6 +15,9 @@ public class TimeSystem : MonoBehaviour
     private int timeSegement;
     private string timeOfDay = "Morning";
 
+    /*
+     * TODO: find a way to let Game Manager has the access to the variables here. 
+     */
     void Start()
     {
         backgroundPic = GameObject.FindGameObjectWithTag("Background");
@@ -27,7 +30,7 @@ public class TimeSystem : MonoBehaviour
     void Update()
     {
         Debug.Log(numOfDay);
-        timeText.text = "Day: " + numOfDay.ToString() + ", Time: " + timeOfDay.ToString();
+        timeText.text = "Day: " + numOfDay.ToString() + "\nTime: " + timeOfDay.ToString();
         if (numOfDay == 10)
         {
             Debug.Log("Game Over!");

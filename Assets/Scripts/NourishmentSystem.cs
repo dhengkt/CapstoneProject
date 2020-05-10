@@ -24,6 +24,10 @@ public class NourishmentSystem : MonoBehaviour
         currState = State.Stage1;
     }
 
+    /*
+     *  Need to do: change the condition of changing stage to time segement and find a way to
+     *  let Game Manager has the access to values in this script.
+     */
     private void Update()
     {
         // get SpriteRenderer to change sprite in different stage

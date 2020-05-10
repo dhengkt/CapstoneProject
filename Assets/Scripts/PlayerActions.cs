@@ -7,15 +7,6 @@ public class PlayerActions : MonoBehaviour
     public Canvas actionMenu;
     private bool atDoor = false;
 
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
-    }
     public void SetMenu(bool trigger)
     {
         actionMenu.gameObject.SetActive(trigger);
