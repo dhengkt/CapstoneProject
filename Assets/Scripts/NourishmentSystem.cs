@@ -36,7 +36,7 @@ public class NourishmentSystem : MonoBehaviour
                 rend.sprite = stage1;
                 // if water/fertilizer > 2, go to stage 2 and give another story to player
                 if (water > 2 && fertilizer > 2)
-                {
+                { 
                     currState = State.Stage2;
                 }
                 break;

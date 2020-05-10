@@ -1386,10 +1386,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adb5490f8c97ce444b40ebebae8f20f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  afternoonBG: {fileID: 21300000, guid: 004f32848b83c92449bd10107925ca81, type: 3}
+  afternoonBG: {fileID: 21300000, guid: 76a1572c73453431aacb9f1f816e1fed, type: 3}
   morningBG: {fileID: 21300000, guid: d3b6d7e5887554602baab879da8171d7, type: 3}
-  backgroundPic: {fileID: 1907331059764228955, guid: 2b9d7f17b901a784e98f2b34bee372c6,
-    type: 3}
+  backgroundPic: {fileID: 0}
 --- !u!1 &6618056600291812968
 GameObject:
   m_ObjectHideFlags: 0

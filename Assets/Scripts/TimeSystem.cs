@@ -6,16 +6,20 @@ using UnityEngine;
 public class TimeSystem : MonoBehaviour
 {
     private int numOfDay = 0;
-    private string time = "Morning";
-    public Sprite afternoonBG = null;
-    public Sprite morningBG = null;
-    private Sprite currSprite = null;
+    private int timeSegement;
+    private string timeOfDay = "Morning";
+    [SerializeField] Sprite afternoonBG = null;
+    [SerializeField] Sprite morningBG = null;
     public GameObject backgroundPic = null;
+    public List<int> timeSegementList = new List<int>(); // will be used by game manager and plant object to keep track of time
 
     void Start()
     {
         // assign the background object here.
+        backgroundPic = GameObject.FindGameObjectWithTag("Background");
         numOfDay = 1;
+        timeSegement = 1;
+        timeSegementList.Add(timeSegement);
     }
 
     void Update()
@@ -28,45 +32,31 @@ public class TimeSystem : MonoBehaviour
     }
 
     /*
-     * Need to do: fix the error descirbe below
-     * Error: time value won't change to morning after chaning it to afternoon
+     * This function will link with button to change background when player click on explore button.
      */
     public void ChangeTime()
     {
-        if (time == "Afternoon" && numOfDay < 10)
+        if (numOfDay < 10 && timeOfDay == "Morning")
         {
-            time = "Morning";
-            Debug.Log("Change to morning");
             ChangeBackground();
-            UpdateDay();
+            timeOfDay = "Afternoon";
         }
-        if (time == "Morning" && numOfDay < 10)
+        else
         {
-            time = "Afternoon";
-            Debug.Log("Change to afternoon");
             ChangeBackground();
+            timeOfDay = "Morning";
+            numOfDay++;
         }
     }
 
-    private void UpdateDay()
-    {
-        numOfDay++;
-    }
-
-    /*
- * Need to do: fix the error descirbe below
- * Error: find a way to asign the background gameobject to door so that
- * the background can be changed after time change.
- */
     private void ChangeBackground()
     {
         SpriteRenderer rend = backgroundPic.GetComponent<SpriteRenderer>();
-        currSprite = rend.GetComponent<Sprite>();
-        if (time == "Morning")
+        if (timeOfDay == "Morning")
         {
             rend.sprite = morningBG;
         }
-        if (time == "Afternoon")
+        if (timeOfDay == "Afternoon")
         {
             rend.sprite = afternoonBG;
         }
