@@ -6,7 +6,6 @@ public class PlayerActions : MonoBehaviour
 {
     public Canvas actionMenu;
     private bool atDoor = false;
-    private bool changeTime = false;
 
     void Start()
     {
@@ -27,11 +26,6 @@ public class PlayerActions : MonoBehaviour
         // random give player certain amount of water/fertilizer
     }
 
-    public void ChooseExplore()
-    {
-        changeTime = true;
-    }
-
     public void GoToRiver()
     {
         //
@@ -41,7 +35,6 @@ public class PlayerActions : MonoBehaviour
     {
         //
     }
-
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

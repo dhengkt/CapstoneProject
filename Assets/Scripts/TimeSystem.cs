@@ -2,29 +2,32 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TimeSystem : MonoBehaviour
 {
-    private int numOfDay = 0;
-    private int timeSegement;
-    private string timeOfDay = "Morning";
     [SerializeField] Sprite afternoonBG = null;
     [SerializeField] Sprite morningBG = null;
     public GameObject backgroundPic = null;
     public List<int> timeSegementList = new List<int>(); // will be used by game manager and plant object to keep track of time
+    public Text timeText;
+    private int numOfDay = 0;
+    private int timeSegement;
+    private string timeOfDay = "Morning";
 
     void Start()
     {
-        // assign the background object here.
         backgroundPic = GameObject.FindGameObjectWithTag("Background");
         numOfDay = 1;
-        timeSegement = 1;
-        timeSegementList.Add(timeSegement);
+        timeText = FindObjectOfType<Text>();
+        //timeSegement = 1;
+        //timeSegementList.Add(timeSegement);
     }
 
     void Update()
     {
         Debug.Log(numOfDay);
+        timeText.text = "Day: " + numOfDay.ToString() + ", Time: " + timeOfDay.ToString();
         if (numOfDay == 10)
         {
             Debug.Log("Game Over!");
@@ -54,11 +57,13 @@ public class TimeSystem : MonoBehaviour
         SpriteRenderer rend = backgroundPic.GetComponent<SpriteRenderer>();
         if (timeOfDay == "Morning")
         {
-            rend.sprite = morningBG;
+            //rend.sprite = morningBG;
+            rend.color = new Color(219f, 157f, 61f, 255f);
         }
         if (timeOfDay == "Afternoon")
         {
-            rend.sprite = afternoonBG;
+            //rend.sprite = afternoonBG;
+            rend.color = Color.green;
         }
     }
 }
