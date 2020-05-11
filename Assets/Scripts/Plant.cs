@@ -34,7 +34,6 @@ public class Plant : MonoBehaviour
 
     private void SetActionMenu(bool isTrigger)
     {
-        Debug.Log("Show Menu");
         actionMenu.gameObject.SetActive(isTrigger);
     }
 
@@ -58,4 +57,5 @@ public class Plant : MonoBehaviour
     {
         return "Made Plant. Story: " + story + " Loc: " + location;
     }
+
 }

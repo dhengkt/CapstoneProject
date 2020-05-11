@@ -19,8 +19,10 @@ public class NourishmentSystem : MonoBehaviour
     [SerializeField] Sprite stage4;
     private State currState;
     private int water, fertilizer;
-    TimeSystem timeSystem;
     private int timeSegment;
+    TimeSystem timeSystem;
+    Plant plantS;
+    Canvas actionMenu;
 
     private void Awake()
     {
@@ -30,6 +32,10 @@ public class NourishmentSystem : MonoBehaviour
         GameObject door = GameObject.FindGameObjectWithTag("Door");
         timeSystem = door.GetComponent<TimeSystem>();
         timeSegment = timeSystem.GetTimeSegement();
+
+        //get access to Plant script
+        plantS = gameObject.GetComponent<Plant>();
+        actionMenu = plantS.actionMenu;
     }
 
     private void Update()
@@ -66,10 +72,11 @@ public class NourishmentSystem : MonoBehaviour
                 break;
             case State.Stage4:
                 rend.sprite = stage4;
-                if (water > 8 || fertilizer > 8)
+                if (water > 8 && fertilizer > 8)
                 {
                     gameObject.transform.position = new Vector3(5.18f, 7.45f, -5f);
-                    //disable the ActionMenu of plant here
+                    //disable the Action Menu of plant here
+                    actionMenu.gameObject.SetActive(false);
                 }
                 break;
         }
