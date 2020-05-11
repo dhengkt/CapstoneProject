@@ -1,3 +1,5 @@
 # NEIRUS
 
-Description will be added later.
+Created by Arienne Co and HsinYu "Katie" Chi
+
+Nerius is an interactive story-telling game where you play as  a member of a group of alien historians who came to Earth after human races disappeared. Your character will interact with plants in a greenhouse to collect the messages humans left.
