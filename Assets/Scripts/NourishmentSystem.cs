@@ -18,10 +18,16 @@ public class NourishmentSystem : MonoBehaviour
     [SerializeField] Sprite stage4;
     private State currState;
     private int water, fertilizer;
+    TimeSystem timeSystem;
+    private int timeSegment;
 
     private void Start()
     {
         currState = State.Stage1;
+        GameObject door = GameObject.FindGameObjectWithTag("Door");
+        timeSystem = door.GetComponent<TimeSystem>();
+        timeSegment = timeSystem.GetTimeSegement();
+        Debug.Log(timeSegment);
     }
 
     /*
@@ -81,5 +87,4 @@ public class NourishmentSystem : MonoBehaviour
         fertilizer++;
         Debug.Log(fertilizer);
     }
-
 }

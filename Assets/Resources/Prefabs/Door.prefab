@@ -1315,7 +1315,7 @@ GameObject:
   - component: {fileID: -7718275789351061602}
   m_Layer: 0
   m_Name: Door
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1389,7 +1389,7 @@ MonoBehaviour:
   afternoonBG: {fileID: 0}
   morningBG: {fileID: 0}
   backgroundPic: {fileID: 0}
-  timeSegementList: 
+  timeSegmentList: 00000000010000000200000003000000040000000500000006000000070000000800000009000000
   timeText: {fileID: 0}
 --- !u!1 &6618056600291812968
 GameObject:

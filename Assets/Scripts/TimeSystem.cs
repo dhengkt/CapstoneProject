@@ -9,10 +9,10 @@ public class TimeSystem : MonoBehaviour
     [SerializeField] Sprite afternoonBG = null;
     [SerializeField] Sprite morningBG = null;
     public GameObject backgroundPic = null;
-    public List<int> timeSegementList = new List<int>(); // will be used by game manager and plant object to keep track of time
+    private int[] timeSegmentList = new int[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9}; // will be used by game manager and plant object to keep track of time
     public Text timeText;
     private int numOfDay = 0;
-    private int timeSegement;
+    private int timeSegment;
     private string timeOfDay = "Morning";
 
     /*
@@ -23,13 +23,12 @@ public class TimeSystem : MonoBehaviour
         backgroundPic = GameObject.FindGameObjectWithTag("Background");
         numOfDay = 1;
         timeText = FindObjectOfType<Text>();
-        //timeSegement = 1;
-        //timeSegementList.Add(timeSegement);
+        timeSegment = 0;
+        Debug.Log(timeSegmentList.ToString());
     }
 
     void Update()
     {
-        Debug.Log(numOfDay);
         timeText.text = "Day: " + numOfDay.ToString() + "\nTime: " + timeOfDay.ToString();
         if (numOfDay == 10)
         {
@@ -52,6 +51,7 @@ public class TimeSystem : MonoBehaviour
             ChangeBackground();
             timeOfDay = "Morning";
             numOfDay++;
+            UpdateTimeSegment();
         }
     }
 
@@ -68,5 +68,25 @@ public class TimeSystem : MonoBehaviour
             //rend.sprite = afternoonBG;
             rend.color = Color.green;
         }
+    }
+
+    private void UpdateTimeSegment()
+    {
+
+    }
+
+    public int GetDay()
+    {
+        return numOfDay;
+    }
+
+    public string GetTime()
+    {
+        return timeOfDay;
+    }
+
+    public int GetTimeSegement()
+    {
+        return timeSegment;
     }
 }
