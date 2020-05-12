@@ -9,8 +9,8 @@ public class GameManager : MonoBehaviour
     private List<int> unusedStories = new List<int>() { 0, 1, 2 }; // Full list of unused story IDs
     private List<int> usedStories = new List<int>(); // List of currently assigned story IDs
     private int[] plantLocations = new int[6] { 0, 0, 0, 0, 0, 0 }; // 0: Vacant; 1: Occupied
-    private GameObject[] currentPlants = new GameObject[6]; // Keeps track of all plants currently in the game
-    private GameObject firstPlant = null; // First plant in the game
+    private Plant[] currentPlants = new Plant[6]; // Keeps track of all plants currently in the game
+    //private GameObject firstPlant = null; // First plant in the game
     private int numberOfPlants = 0;
     private TimeSystem tSystem;
     private PlayerActions pActions;
@@ -43,61 +43,73 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    /**
-     * Need to find a way to create the flowchart object and add it to the plant create in this function
-     **/
-    private void CreateFirstPlant()
-    {
-        /*GameObject p = Instantiate(firstPlant);
-        float x = 5.81f;
-        float y = -1.38f;
-        p.transform.position = new Vector3(x, y, -5f);
-        numberOfPlants++;
-        assignStory(p);*/
-
-    }
-
     // Create a plant object before placing it in the game
     public void createPlant()
     {
         // Create and add plant to currentPlants[]
-        firstPlant = Resources.Load<GameObject>("Prefabs/Plant");
-        GameObject p = Instantiate(firstPlant);
         Debug.Log("Creating Plant...");
-        currentPlants[numberOfPlants] = p;
-        assignStory(p);
-        assignOpenLocation(p);
+        Plant plant;
+        GameObject plantObject = GameObject.Find("Plant");
+        plant = plantObject.GetComponent<Plant>();
 
+        plant.setStory(assignStory());
+        // Seeting Spawn Location Coordinates
+        var (tempX, tempY) = assignOpenLocation();
+        plant.setLocation(tempX, tempY);
+
+        currentPlants[numberOfPlants] = plant;
         Debug.Log("currentPlants: " + currentPlants[numberOfPlants]);
+        Debug.Log("Current # of plants: "+ numberOfPlants);
         numberOfPlants++;
         //Debug.Log("Unused Stories (after assign): " + unusedStories);
     }
 
     // Return a random story from the unusedStories list and transfer it to the usedStories when creating a plant
-    private void assignStory(GameObject plant)
+    private int assignStory()
     {
-        //Debug.Log("Unused Stories: " + unusedStories);
-        UnityEngine.Random rnd = new UnityEngine.Random();
+        //UnityEngine.Random rnd = new UnityEngine.Random();
         int storyIndex = UnityEngine.Random.Range(0, unusedStories.Count);
-        int tempStory = unusedStories[storyIndex];
+        Debug.Log("Assign Random story: " + storyIndex);
+        int tempStory = unusedStories[storyIndex]; 
         // plant.setStory(tempStory);//***** GAME OBJECT ISN'T CONNECTED TO THE PLANT OBJECT
         usedStories.Add(tempStory);
         unusedStories.RemoveAt(storyIndex);
-
+        return tempStory;
     }
 
     // Get an open location for the plant and spawn it in that location
-    private int assignOpenLocation(GameObject plant)
+    private (float, float) assignOpenLocation()
     {
-        float x = 5.81f;
-        float y = -1.38f;
-        plant.transform.position = new Vector3(x, y, -5f);
+        int locationIndex = -1;
+        for (int i = 0; i < plantLocations.Length; i++)
+        {
+            if (plantLocations[i] == 0)
+            {
+                plantLocations[i] = 1;
+                locationIndex = i;
+                goto Coordinates;
+            }
+        }
 
-        return 0;
+    Coordinates:
+        Debug.Log("Location index: " + locationIndex);
+        switch (locationIndex)
+        {
+            case 0:
+                return (5.81f, -1.38f);
+            case 1:
+                return (5.81f, -1.38f);
+            case 2:
+                return (5.81f, -1.38f);
+            case 3:
+                return (5.81f, -1.38f);
+            case 4:
+                return (5.81f, -1.38f);
+            case 5:
+                return (5.81f, -1.38f);
+            default:
+                return (0f, 0f);
+        }
     }
 
-    private void addToUsedStories()
-    {
-
-    }
 }

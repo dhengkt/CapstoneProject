@@ -8,8 +8,8 @@ public class Plant : MonoBehaviour
 {
     // Set associated flowchart to plant
     public Flowchart flowchart;
-    private int story = 0;
-    private int location;
+    private int story;
+    private Vector3 location;
     private bool plantTrigger; // plantTrigger is true if the player is touching the plant
     public Canvas actionMenu;
 
@@ -30,6 +30,28 @@ public class Plant : MonoBehaviour
             flowchart.ExecuteBlock("Assign a Story");
         }
 
+    }
+
+    public void setStory(int assignedStory)
+    {
+        Debug.Log("Setting Story to: "+ assignedStory);
+        this.story = assignedStory;
+    }
+    public int getStory()
+    {
+        return this.story;
+    }
+
+    public void setLocation(float x, float y)
+    {
+        Debug.Log("Setting Location to: " + x +", " + y);
+        this.location = new Vector3 (x, y, -5);
+        transform.position = this.location;
+    }
+
+    public Vector3 getLocation()
+    {
+        return this.location;
     }
 
     private void SetActionMenu(bool isTrigger)
