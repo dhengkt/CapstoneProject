@@ -15,6 +15,12 @@ public class GameManager : MonoBehaviour
     private TimeSystem tSystem;
     private PlayerActions pActions;
 
+    // Tutorial Scene:
+    // When game starts up, tutorial plant will spawn and tutorial dialogue will appear
+    // Player talks to the tutorial plant and gives it water
+    // Player finishes the reading the rest of the tutorial plant
+    // Player leaves greenhouse and finds a new plant that replaces the tutorial plant
+
     void Awake()
     {
         GameObject temDoor = Resources.Load<GameObject>("Prefabs/Door");
@@ -30,6 +36,7 @@ public class GameManager : MonoBehaviour
     /*****Create plant should be called when the player reaches a certain time segment and goes outside*****/
     void Update()
     {
+        Debug.Log("rnd: " + UnityEngine.Random.Range(0, unusedStories.Count));
         if (Input.GetKeyDown(KeyCode.C))
         {
             CreatePlant();
@@ -49,7 +56,9 @@ public class GameManager : MonoBehaviour
         // Create and add plant to currentPlants[]
         Debug.Log("Creating Plant...");
         Plant plant;
-        GameObject plantObject = GameObject.Find("Plant");
+        GameObject p = Resources.Load<GameObject>("Prefabs/Plant");
+        //GameObject.Find("Plant");
+        GameObject plantObject = Instantiate(p);
         plant = plantObject.GetComponent<Plant>();
 
         plant.SetStory(AssignStory());
