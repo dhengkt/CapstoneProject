@@ -266,6 +266,11 @@ PrefabInstance:
       propertyPath: interactMenu
       value: 
       objectReference: {fileID: 1270179129}
+    - target: {fileID: 4252060258267150948, guid: ffe139d2f0a013b4bb24c5bf9220c5a6,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 2018973929}
     - target: {fileID: 4252060258267150949, guid: ffe139d2f0a013b4bb24c5bf9220c5a6,
         type: 3}
       propertyPath: m_Name
@@ -450,6 +455,7 @@ GameObject:
   - component: {fileID: 1066737888}
   - component: {fileID: 1066737887}
   - component: {fileID: 1066737898}
+  - component: {fileID: 1066737893}
   m_Layer: 0
   m_Name: Root Flowchart
   m_TagString: Root
@@ -670,6 +676,25 @@ MonoBehaviour:
   scope: 0
   key: story
   value: -1
+--- !u!95 &1066737893
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1066737885}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6a9ce281eb8550d48880e36f6179d19a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &1066737896
 MonoBehaviour:
   m_ObjectHideFlags: 2
