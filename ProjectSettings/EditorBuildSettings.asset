@@ -8,7 +8,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Start Menu.unity
     guid: 149f56ef3684e0340ba62b18af0ad680
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/JustPlayAround.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: 6ad6e29db6d784a00bab1bf868a7a2ba
+  - enabled: 1
+    path: Assets/Scenes/PlantNourishment.unity
+    guid: 77354d8f88aaf2549a5895cb185a8f32
   m_configObjects: {}
