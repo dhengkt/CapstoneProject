@@ -13,16 +13,20 @@ public class NourishmentSystem : MonoBehaviour
         Stage4,
     }
 
-    [SerializeField] Sprite stage1;
-    [SerializeField] Sprite stage2;
-    [SerializeField] Sprite stage3;
-    [SerializeField] Sprite stage4;
+    [SerializeField]
+    private Sprite stage1;
+    [SerializeField]
+    private Sprite stage2;
+    [SerializeField]
+    private Sprite stage3;
+    [SerializeField]
+    private Sprite stage4;
+
     private State currState;
     private int water, fertilizer;
-    private int timeSegment;
-    TimeSystem timeSystem;
-    Plant plantS;
-    Canvas actionMenu;
+    private TimeSystem tSystem;
+    private Plant plantS;
+    private Canvas actMenu;
 
     void Awake()
     {
@@ -30,12 +34,11 @@ public class NourishmentSystem : MonoBehaviour
 
         // get access to Time System script
         GameObject door = GameObject.FindGameObjectWithTag("Door");
-        timeSystem = door.GetComponent<TimeSystem>();
-        timeSegment = timeSystem.GetTimeSegement();
+        tSystem = door.GetComponent<TimeSystem>();
 
         //get access to Plant script
         plantS = gameObject.GetComponent<Plant>();
-        actionMenu = plantS.actionMenu;
+        actMenu = plantS.actionMenu;
     }
 
     void Update()
@@ -48,15 +51,14 @@ public class NourishmentSystem : MonoBehaviour
             default:
             case State.Stage1:
                 rend.sprite = stage1;
-                GetTimeSegment();
-                if (timeSegment == 6)
+                if (tSystem.tSegment == 6)
                 {
                     currState = State.Stage2;
                 }
                 break;
             case State.Stage2:
                 rend.sprite = stage2;
-                GetTimeSegment();
+                // need to reset the condition
                 if (water > 4 && fertilizer > 4)
                 {
                     currState = State.Stage3;
@@ -64,7 +66,7 @@ public class NourishmentSystem : MonoBehaviour
                 break;
             case State.Stage3:
                 rend.sprite = stage3;
-                GetTimeSegment();
+                // need to reset the condition
                 if (water > 6 && fertilizer > 6)
                 {
                     currState = State.Stage4;
@@ -72,20 +74,16 @@ public class NourishmentSystem : MonoBehaviour
                 break;
             case State.Stage4:
                 rend.sprite = stage4;
+                // need to reset the condition
                 if (water > 8 && fertilizer > 8)
                 {
+                    //move the plant to backtable
                     gameObject.transform.position = new Vector3(5.18f, 7.45f, -5f);
                     //disable the Action Menu of plant here
-                    actionMenu.gameObject.SetActive(false);
+                    actMenu.gameObject.SetActive(false);
                 }
                 break;
         }
-    }
-
-    private int GetTimeSegment()
-    {
-        timeSegment = timeSystem.GetTimeSegement();
-        return timeSegment;
     }
 
     public void AddWater()

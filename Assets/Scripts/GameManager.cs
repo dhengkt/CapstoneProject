@@ -37,7 +37,7 @@ public class GameManager : MonoBehaviour
         }
 
         // Disable the door when game's over
-        if (tSystem.GetTimeSegement() == 21)
+        if (tSystem.tSegment == 21)
         {
             pActions.SetMenu(false);
         }

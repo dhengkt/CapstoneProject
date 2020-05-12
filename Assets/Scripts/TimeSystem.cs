@@ -15,10 +15,10 @@ public class TimeSystem : MonoBehaviour
     [SerializeField]
     private Text tText;
 
+    public int tSegment;
     private int[] tSegmentList = new int[21];
     private int dayNum = 0;
     private int segIndex = 1;
-    private int tSegment;
     private string currTime;
     private string[] timeOfDay = { "Morning", "Afternoon" };
 
@@ -107,9 +107,4 @@ public class TimeSystem : MonoBehaviour
         }
     }
 
-
-    public int GetTimeSegement()
-    {
-        return tSegment;
-    }
 }
