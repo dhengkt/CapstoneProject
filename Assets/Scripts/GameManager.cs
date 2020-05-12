@@ -32,7 +32,7 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.C))
         {
-            createPlant();
+            CreatePlant();
             numberOfPlants++;
         }
 
@@ -44,7 +44,7 @@ public class GameManager : MonoBehaviour
     }
 
     // Create a plant object before placing it in the game
-    public void createPlant()
+    public void CreatePlant()
     {
         // Create and add plant to currentPlants[]
         Debug.Log("Creating Plant...");
@@ -52,10 +52,10 @@ public class GameManager : MonoBehaviour
         GameObject plantObject = GameObject.Find("Plant");
         plant = plantObject.GetComponent<Plant>();
 
-        plant.setStory(assignStory());
+        plant.SetStory(AssignStory());
         // Seeting Spawn Location Coordinates
-        var (tempX, tempY) = assignOpenLocation();
-        plant.setLocation(tempX, tempY);
+        var (tempX, tempY) = AssignOpenLocation();
+        plant.SetLocation(tempX, tempY);
 
         currentPlants[numberOfPlants] = plant;
         Debug.Log("currentPlants: " + currentPlants[numberOfPlants]);
@@ -65,7 +65,7 @@ public class GameManager : MonoBehaviour
     }
 
     // Return a random story from the unusedStories list and transfer it to the usedStories when creating a plant
-    private int assignStory()
+    private int AssignStory()
     {
         //UnityEngine.Random rnd = new UnityEngine.Random();
         int storyIndex = UnityEngine.Random.Range(0, unusedStories.Count);
@@ -78,7 +78,7 @@ public class GameManager : MonoBehaviour
     }
 
     // Get an open location for the plant and spawn it in that location
-    private (float, float) assignOpenLocation()
+    private (float, float) AssignOpenLocation()
     {
         int locationIndex = -1;
         for (int i = 0; i < plantLocations.Length; i++)
@@ -93,20 +93,21 @@ public class GameManager : MonoBehaviour
 
     Coordinates:
         Debug.Log("Location index: " + locationIndex);
+        // Figure out coordinates for each location
         switch (locationIndex)
         {
             case 0:
                 return (5.81f, -1.38f);
             case 1:
-                return (5.81f, -1.38f);
+                return (9.81f, -1.38f);
             case 2:
-                return (5.81f, -1.38f);
+                return (13.81f, -1.38f);
             case 3:
-                return (5.81f, -1.38f);
+                return (5.18f, 7.45f);
             case 4:
-                return (5.81f, -1.38f);
+                return (9.18f, 7.45f);
             case 5:
-                return (5.81f, -1.38f);
+                return (12.81f, 7.45f);
             default:
                 return (0f, 0f);
         }

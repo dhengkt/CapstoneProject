@@ -32,24 +32,24 @@ public class Plant : MonoBehaviour
 
     }
 
-    public void setStory(int assignedStory)
+    public void SetStory(int assignedStory)
     {
         Debug.Log("Setting Story to: "+ assignedStory);
         this.story = assignedStory;
     }
-    public int getStory()
+    public int GetStory()
     {
         return this.story;
     }
 
-    public void setLocation(float x, float y)
+    public void SetLocation(float x, float y)
     {
         Debug.Log("Setting Location to: " + x +", " + y);
         this.location = new Vector3 (x, y, -5);
         transform.position = this.location;
     }
 
-    public Vector3 getLocation()
+    public Vector3 GetLocation()
     {
         return this.location;
     }
