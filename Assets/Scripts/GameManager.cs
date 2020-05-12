@@ -14,12 +14,15 @@ public class GameManager: MonoBehaviour
     int numberOfPlants = 0;
     private GameObject firstPlant = null; // First plant in the game
 
-    void Start()
+    private void Awake()
     {
         GameObject temDoor = Resources.Load<GameObject>("Prefabs/Door");
         GameObject door = Instantiate(temDoor);
         door.transform.position = new Vector3(-.23f, -7.99f, 0f);
         //CreateFirstPlant();
+
+        // get access to Time System and Player Action script
+
     }
 
     /*****Create plant should be called when the player reaches a certain time segment and goes outside*****/

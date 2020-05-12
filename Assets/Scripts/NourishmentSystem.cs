@@ -28,7 +28,7 @@ public class NourishmentSystem : MonoBehaviour
     {
         currState = State.Stage1;
 
-        // get access of Time System script
+        // get access to Time System script
         GameObject door = GameObject.FindGameObjectWithTag("Door");
         timeSystem = door.GetComponent<TimeSystem>();
         timeSegment = timeSystem.GetTimeSegement();

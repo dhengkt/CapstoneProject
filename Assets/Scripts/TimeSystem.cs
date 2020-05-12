@@ -9,31 +9,37 @@ public class TimeSystem : MonoBehaviour
     [SerializeField] Sprite afternoonBG = null;
     [SerializeField] Sprite morningBG = null;
     public GameObject backgroundPic = null;
-    private int[] timeSegmentList = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-    public Text timeText;
-    private int numOfDay = 0;
+    private int[] tSegmentList = new int[20];
+    public Text tText;
+    private int dayNum = 0;
     private int timeSegment;
-    private int segmentIndex = 0;
-    private string timeOfDay = "Morning";
+    private int segIndex = 0;
+    private string currTime;
+    private string[] timeOfDay = new string[2] {"Morning", "Afternoon" };
 
-    /*
-     * TODO: find a way to let Game Manager has the access to the variables here. 
-     */
-    void Start()
+    // need to fix the problem that when game reach to the end the text won't change to "Time's Up!"
+    void Awake()
     {
         backgroundPic = GameObject.FindGameObjectWithTag("Background");
-        numOfDay = 1;
-        timeText = FindObjectOfType<Text>();
-        timeSegment = timeSegmentList[0];
+        tText = FindObjectOfType<Text>();
+    }
+
+    void Start()
+    {
+        dayNum = 1;
+        for (int i = 0; i < tSegmentList.Length; i++)
+        {
+            tSegmentList[i] = i + 1;
+        }
+        timeSegment = tSegmentList[0];
+        currTime = timeOfDay[0];
+        ChangeBackground();
+        ChangeText();
     }
 
     void Update()
     {
-        timeText.text = "Day: " + numOfDay.ToString() + "\nTime: " + timeOfDay.ToString();
-        if (numOfDay == 10)
-        {
-            Debug.Log("Game Over!");
-        }
+        ChangeText();
     }
 
     /*
@@ -41,32 +47,35 @@ public class TimeSystem : MonoBehaviour
      */
     public void ChangeTime()
     {
-        if (numOfDay < 10 && timeOfDay == "Morning")
+        if (dayNum <= 10)
         {
-            ChangeBackground();
-            timeOfDay = "Afternoon";
-            UpdateTimeSegment();
-            Debug.Log(timeSegment);
-        }
-        else
-        {
-            ChangeBackground();
-            timeOfDay = "Morning";
-            UpdateTimeSegment();
-            numOfDay++;
-            Debug.Log(timeSegment);
+            if (currTime == timeOfDay[0])
+            {
+                currTime = timeOfDay[1];
+                ChangeBackground();
+                UpdateTimeSegment();
+            }
+            else
+            {
+                currTime = timeOfDay[0];
+                ChangeBackground();
+                UpdateTimeSegment();
+                dayNum++;
+                Debug.Log(dayNum);
+            }
         }
     }
 
     private void ChangeBackground()
     {
         SpriteRenderer rend = backgroundPic.GetComponent<SpriteRenderer>();
-        if (timeOfDay == "Morning")
+
+        if (currTime == timeOfDay[0])
         {
             //rend.sprite = morningBG;
-            rend.color = new Color(219f, 157f, 61f, 255f);
+            rend.color = Color.grey;
         }
-        if (timeOfDay == "Afternoon")
+        if (currTime == timeOfDay[1])
         {
             //rend.sprite = afternoonBG;
             rend.color = Color.green;
@@ -74,13 +83,28 @@ public class TimeSystem : MonoBehaviour
     }
 
     private void UpdateTimeSegment()
-    { 
-        timeSegment = timeSegmentList[segmentIndex+1];
-        segmentIndex++;
+    {
+        if (dayNum <= 10)
+        {
+            timeSegment = tSegmentList[segIndex + 1];
+            segIndex++;
+        }
     }
 
     public int GetTimeSegement()
     {
         return timeSegment;
+    }
+
+    private void ChangeText()
+    {
+        if (dayNum <= 10)
+        {
+            tText.text = "Day: " + dayNum.ToString() + "\nTime: " + currTime.ToString();
+        }
+        else
+        {
+            tText.text = "Time's Up!";
+        }
     }
 }

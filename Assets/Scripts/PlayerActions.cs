@@ -6,6 +6,20 @@ public class PlayerActions : MonoBehaviour
 {
     public Canvas actionMenu;
     private bool atDoor = false;
+    TimeSystem tSystem;
+
+    void Awake()
+    {
+        tSystem = gameObject.GetComponent<TimeSystem>();
+    }
+
+    void Update()
+    {
+        if (tSystem.GetTimeSegement() == 21)
+        {
+            actionMenu.gameObject.SetActive(false);
+        }
+    }
 
     public void SetMenu(bool trigger)
     {
@@ -29,7 +43,6 @@ public class PlayerActions : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("At door");
         atDoor = true;
         if (collision.gameObject.tag == "Player")
         {
