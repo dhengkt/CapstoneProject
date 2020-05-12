@@ -6,40 +6,82 @@ using UnityEngine.UI;
 
 public class TimeSystem : MonoBehaviour
 {
-    [SerializeField] Sprite afternoonBG = null;
-    [SerializeField] Sprite morningBG = null;
-    public GameObject backgroundPic = null;
-    private int[] tSegmentList = new int[20];
-    public Text tText;
-    private int dayNum = 0;
-    private int timeSegment;
-    private int segIndex = 0;
-    private string currTime;
-    private string[] timeOfDay = new string[2] {"Morning", "Afternoon" };
+    [SerializeField]
+    private Sprite afternoonBG = null;
+    [SerializeField]
+    private Sprite morningBG = null;
+    [SerializeField]
+    private GameObject bgPicture = null;
+    [SerializeField]
+    private Text tText;
 
-    // need to fix the problem that when game reach to the end the text won't change to "Time's Up!"
-    void Awake()
+    private int[] tSegmentList = new int[21];
+    private int dayNum = 0;
+    private int segIndex = 1;
+    private int tSegment;
+    private string currTime;
+    private string[] timeOfDay = { "Morning", "Afternoon" };
+
+    private void Awake()
     {
-        backgroundPic = GameObject.FindGameObjectWithTag("Background");
+        bgPicture = GameObject.FindGameObjectWithTag("Background");
         tText = FindObjectOfType<Text>();
     }
 
-    void Start()
+    private void Start()
     {
         dayNum = 1;
         for (int i = 0; i < tSegmentList.Length; i++)
         {
             tSegmentList[i] = i + 1;
         }
-        timeSegment = tSegmentList[0];
+        tSegment = tSegmentList[0];
         currTime = timeOfDay[0];
         ChangeBackground();
         ChangeText();
     }
 
-    void Update()
+    private void Update()
     {
         ChangeText();
+    }
+
+
+    private void ChangeBackground()
+    {
+        SpriteRenderer rend = bgPicture.GetComponent<SpriteRenderer>();
+
+        if (currTime == timeOfDay[0])
+        {
+            //rend.sprite = morningBG;
+            rend.color = Color.grey;
+        }
+        if (currTime == timeOfDay[1])
+        {
+            //rend.sprite = afternoonBG;
+            rend.color = Color.green;
+        }
+    }
+
+    private void UpdateTimeSegment()
+    {
+        if (dayNum <= 11)
+        {
+            tSegment = tSegmentList[segIndex];
+            segIndex++;
+        }
+    }
+
+    private void ChangeText()
+    {
+        if (dayNum <= 10)
+        {
+            tText.text = "Day: " + dayNum.ToString() + "\nTime: " + currTime.ToString();
+        }
+        else
+        {
+            tText.text = "Time's Up!";
+        }
     }
 
     /*
@@ -57,54 +99,17 @@ public class TimeSystem : MonoBehaviour
             }
             else
             {
+                dayNum++;
                 currTime = timeOfDay[0];
                 ChangeBackground();
                 UpdateTimeSegment();
-                dayNum++;
-                Debug.Log(dayNum);
             }
         }
     }
 
-    private void ChangeBackground()
-    {
-        SpriteRenderer rend = backgroundPic.GetComponent<SpriteRenderer>();
-
-        if (currTime == timeOfDay[0])
-        {
-            //rend.sprite = morningBG;
-            rend.color = Color.grey;
-        }
-        if (currTime == timeOfDay[1])
-        {
-            //rend.sprite = afternoonBG;
-            rend.color = Color.green;
-        }
-    }
-
-    private void UpdateTimeSegment()
-    {
-        if (dayNum <= 10)
-        {
-            timeSegment = tSegmentList[segIndex + 1];
-            segIndex++;
-        }
-    }
 
     public int GetTimeSegement()
     {
-        return timeSegment;
-    }
-
-    private void ChangeText()
-    {
-        if (dayNum <= 10)
-        {
-            tText.text = "Day: " + dayNum.ToString() + "\nTime: " + currTime.ToString();
-        }
-        else
-        {
-            tText.text = "Time's Up!";
-        }
+        return tSegment;
     }
 }

@@ -4,7 +4,7 @@ using UnityEditor.PackageManager.Requests;
 using UnityEngine;
 
 public class NourishmentSystem : MonoBehaviour
-{   
+{
     private enum State
     {
         Stage1,
@@ -24,7 +24,7 @@ public class NourishmentSystem : MonoBehaviour
     Plant plantS;
     Canvas actionMenu;
 
-    private void Awake()
+    void Awake()
     {
         currState = State.Stage1;
 
@@ -38,7 +38,7 @@ public class NourishmentSystem : MonoBehaviour
         actionMenu = plantS.actionMenu;
     }
 
-    private void Update()
+    void Update()
     {
         // get SpriteRenderer to change sprite in different stage
         SpriteRenderer rend = gameObject.GetComponent<SpriteRenderer>();
@@ -50,7 +50,7 @@ public class NourishmentSystem : MonoBehaviour
                 rend.sprite = stage1;
                 GetTimeSegment();
                 if (timeSegment == 6)
-                { 
+                {
                     currState = State.Stage2;
                 }
                 break;
@@ -81,11 +81,13 @@ public class NourishmentSystem : MonoBehaviour
                 break;
         }
     }
+
     private int GetTimeSegment()
     {
         timeSegment = timeSystem.GetTimeSegement();
         return timeSegment;
     }
+
     public void AddWater()
     {
         // check if player has enough water

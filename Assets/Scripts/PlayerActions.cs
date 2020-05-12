@@ -4,22 +4,10 @@ using UnityEngine;
 
 public class PlayerActions : MonoBehaviour
 {
-    public Canvas actionMenu;
+
+    [SerializeField]
+    private Canvas actionMenu;
     private bool atDoor = false;
-    TimeSystem tSystem;
-
-    void Awake()
-    {
-        tSystem = gameObject.GetComponent<TimeSystem>();
-    }
-
-    void Update()
-    {
-        if (tSystem.GetTimeSegement() == 21)
-        {
-            actionMenu.gameObject.SetActive(false);
-        }
-    }
 
     public void SetMenu(bool trigger)
     {
@@ -31,15 +19,9 @@ public class PlayerActions : MonoBehaviour
         // random give player certain amount of water/fertilizer
     }
 
-    public void GoToRiver()
-    {
-        //
-    }
+    public void GoToRiver() { }
 
-    public void GoToForest()
-    {
-        //
-    }
+    public void GoToForest() { }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

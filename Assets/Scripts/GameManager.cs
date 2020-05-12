@@ -3,18 +3,19 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Fungus;
 
-public class GameManager: MonoBehaviour
+public class GameManager : MonoBehaviour
 {
-    List<int> unusedStories = new List<int>() { 0, 1, 2 }; // Full list of unused story IDs
-    List<int> usedStories = new List<int>(); // List of currently assigned story IDs
-    int[] plantLocations = new int[6] { 0, 0, 0, 0, 0, 0 }; // 0: Vacant; 1: Occupied
-    GameObject[] currentPlants = new GameObject[6]; // Keeps track of all plants currently in the game
-    int numberOfPlants = 0;
+    private List<int> unusedStories = new List<int>() { 0, 1, 2 }; // Full list of unused story IDs
+    private List<int> usedStories = new List<int>(); // List of currently assigned story IDs
+    private int[] plantLocations = new int[6] { 0, 0, 0, 0, 0, 0 }; // 0: Vacant; 1: Occupied
+    private GameObject[] currentPlants = new GameObject[6]; // Keeps track of all plants currently in the game
     private GameObject firstPlant = null; // First plant in the game
+    private int numberOfPlants = 0;
+    private TimeSystem tSystem;
+    private PlayerActions pActions;
 
-    private void Awake()
+    void Awake()
     {
         GameObject temDoor = Resources.Load<GameObject>("Prefabs/Door");
         GameObject door = Instantiate(temDoor);
@@ -22,7 +23,8 @@ public class GameManager: MonoBehaviour
         //CreateFirstPlant();
 
         // get access to Time System and Player Action script
-
+        tSystem = door.GetComponent<TimeSystem>();
+        pActions = door.GetComponent<PlayerActions>();
     }
 
     /*****Create plant should be called when the player reaches a certain time segment and goes outside*****/
@@ -32,6 +34,12 @@ public class GameManager: MonoBehaviour
         {
             createPlant();
             numberOfPlants++;
+        }
+
+        // Disable the door when game's over
+        if (tSystem.GetTimeSegement() == 21)
+        {
+            pActions.SetMenu(false);
         }
     }
 
@@ -70,14 +78,14 @@ public class GameManager: MonoBehaviour
     {
         //Debug.Log("Unused Stories: " + unusedStories);
         UnityEngine.Random rnd = new UnityEngine.Random();
-        int storyIndex = UnityEngine.Random.Range(0,unusedStories.Count);
+        int storyIndex = UnityEngine.Random.Range(0, unusedStories.Count);
         int tempStory = unusedStories[storyIndex];
-       // plant.setStory(tempStory);//***** GAME OBJECT ISN'T CONNECTED TO THE PLANT OBJECT
+        // plant.setStory(tempStory);//***** GAME OBJECT ISN'T CONNECTED TO THE PLANT OBJECT
         usedStories.Add(tempStory);
         unusedStories.RemoveAt(storyIndex);
-        
+
     }
-    
+
     // Get an open location for the plant and spawn it in that location
     private int assignOpenLocation(GameObject plant)
     {
