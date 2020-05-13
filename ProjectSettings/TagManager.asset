@@ -9,6 +9,7 @@ TagManager:
   - Door
   - Root
   - Background
+  - Tutorial
   layers:
   - Default
   - TransparentFX
