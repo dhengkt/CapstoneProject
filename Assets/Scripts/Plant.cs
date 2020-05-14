@@ -36,6 +36,8 @@ public class Plant : MonoBehaviour
     {
         Debug.Log("Setting Story to: "+ assignedStory);
         this.story = assignedStory;
+        flowchart.SetIntegerVariable("story", assignedStory); // Update flowchart story variable
+        Debug.Log("Flowchart story var: " + flowchart.GetIntegerVariable("story"));
     }
     public int GetStory()
     {
