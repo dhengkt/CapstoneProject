@@ -500,7 +500,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 6618056600232126934}
-        m_MethodName: ChooseGather
+        m_MethodName: GatherResources
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1388,8 +1388,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   afternoonBG: {fileID: 0}
   morningBG: {fileID: 0}
-  backgroundPic: {fileID: 0}
+  bgPicture: {fileID: 0}
   tText: {fileID: 0}
+  tSegment: 0
 --- !u!1 &6618056600291812968
 GameObject:
   m_ObjectHideFlags: 0
