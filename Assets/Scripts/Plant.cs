@@ -12,6 +12,7 @@ public class Plant : MonoBehaviour
     private Vector3 location;
     private bool plantTrigger; // plantTrigger is true if the player is touching the plant
     public Canvas actionMenu;
+    private int water, fertilizer; 
 
     void Start()
     {
@@ -54,6 +55,14 @@ public class Plant : MonoBehaviour
     public Vector3 GetLocation()
     {
         return this.location;
+    }
+
+    // Sync water and fetilizer variables to Flowchart's water and fertilizer variables
+    public void SyncWaterAndFertilizer(int nSWater, int nSFertilizer) // nS: NourishmentSystem
+    {
+        flowchart.SetIntegerVariable("water", nSWater);
+        flowchart.SetIntegerVariable("fertilizer", nSFertilizer);
+        Debug.Log("Plant Setters- Water: " + flowchart.GetIntegerVariable("water") + " Fertilizer: " + flowchart.GetIntegerVariable("fertilizer"));
     }
 
     private void SetActionMenu(bool isTrigger)

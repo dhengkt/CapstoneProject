@@ -23,7 +23,7 @@ public class NourishmentSystem : MonoBehaviour
     private Sprite stage4;
 
     private State currState;
-    private int water, fertilizer;
+    private int water, fertilizer = 0; // Set water and fertilizer to 0
     private TimeSystem tSystem;
     private Plant plantS;
     private Canvas actMenu;
@@ -39,6 +39,9 @@ public class NourishmentSystem : MonoBehaviour
         //get access to Plant script
         plantS = gameObject.GetComponent<Plant>();
         actMenu = plantS.actionMenu;
+
+        // Sync water and fertilizer variables (0) with plant flowchart
+        plantS.SyncWaterAndFertilizer(water, fertilizer);
     }
 
     void Update()
@@ -84,6 +87,8 @@ public class NourishmentSystem : MonoBehaviour
                 }
                 break;
         }
+        // update plant's water and fertilizer to match flowchart
+        plantS.SyncWaterAndFertilizer(water, fertilizer);
     }
 
     public void AddWater()
