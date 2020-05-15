@@ -10,6 +10,9 @@ TagManager:
   - Root
   - Background
   - Tutorial
+  - Story 0
+  - Story 1
+  - Story 2
   layers:
   - Default
   - TransparentFX

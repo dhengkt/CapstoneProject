@@ -30,7 +30,6 @@ public class GameManager : MonoBehaviour
     /*****Create plant should be called when the player reaches a certain time segment and goes outside*****/
     void Update()
     {
-        Debug.Log("rnd: " + UnityEngine.Random.Range(0, unusedStories.Count));
         if (Input.GetKeyDown(KeyCode.C))
         {
             CreatePlant();

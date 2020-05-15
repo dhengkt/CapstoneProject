@@ -8,7 +8,7 @@ public class Plant : MonoBehaviour
 {
     // Set associated flowchart to plant
     public Flowchart flowchart;
-    private int story;
+    private string story;
     private Vector3 location;
     private bool plantTrigger; // plantTrigger is true if the player is touching the plant
     public Canvas actionMenu;
@@ -16,8 +16,7 @@ public class Plant : MonoBehaviour
 
     void Start()
     {
-        //Debug.Log("Found flowchart: " + GameObject.FindObjectOfType<Flowchart>());
-        this.flowchart = GameObject.FindObjectOfType<Flowchart>(); // Finds the root
+        //Debug.Log("Found flowchart: " + GameObject.FindObjectOfType<Flowchart>
     }
 
     void Update()
@@ -28,7 +27,7 @@ public class Plant : MonoBehaviour
         // When player is touching plant and presses X, start
         if (plantTrigger && Input.GetKeyDown(KeyCode.X))
         {
-            flowchart.ExecuteBlock("Assign a Story");
+            flowchart.ExecuteBlock("Start");
         }
 
     }
@@ -36,11 +35,35 @@ public class Plant : MonoBehaviour
     public void SetStory(int assignedStory)
     {
         Debug.Log("Setting Story to: "+ assignedStory);
-        this.story = assignedStory;
-        flowchart.SetIntegerVariable("story", assignedStory); // Update flowchart story variable
-        Debug.Log("Flowchart story var: " + flowchart.GetIntegerVariable("story"));
+        // Assign story tag **add more story cases
+        switch (assignedStory)
+        {
+            case 0:
+                this.story = "Story 0";
+                break;
+            case 1:
+                this.story = "Story 1";
+                break;
+            case 2:
+                this.story = "Story 2";
+                break;
+            default:
+                break;
+        }
+        Flowchart[] allFlowcharts = GameObject.FindObjectsOfType<Flowchart>();
+        for (int i = 0; i < allFlowcharts.Length; i++)
+        {
+            if (allFlowcharts[i].gameObject.tag == this.story)
+            {
+                Debug.Log("Setting story to " + allFlowcharts[i]);
+                this.flowchart = allFlowcharts[i];
+            }
+        }
+        
+        //flowchart.SetIntegerVariable("story", assignedStory); // Update flowchart story variable
+        //Debug.Log("Flowchart story var: " + flowchart.GetIntegerVariable("story"));
     }
-    public int GetStory()
+    public string GetStory()
     {
         return this.story;
     }
