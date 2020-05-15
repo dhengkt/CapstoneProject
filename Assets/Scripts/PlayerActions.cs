@@ -8,15 +8,25 @@ public class PlayerActions : MonoBehaviour
     [SerializeField]
     private Canvas actionMenu;
     private bool atDoor = false;
+    private Player player;
+    private int water, fertilizer;
+
+    void Awake()
+    {
+        player = FindObjectOfType<Player>();
+    }
 
     public void SetMenu(bool trigger)
     {
         actionMenu.gameObject.SetActive(trigger);
     }
 
-    public void ChooseGather()
+    public void GatherResources()
     {
         // random give player certain amount of water/fertilizer
+        if (player.wAmount < 4 && player.fAmount < 4)
+        {
+        }
     }
 
     public void GoToRiver() { }

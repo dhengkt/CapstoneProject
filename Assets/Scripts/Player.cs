@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] private float moveSpeed = 5f;
+    [SerializeField] 
+    private float moveSpeed = 5f;
+
     public Rigidbody2D rb;
     private Vector2 targetPoint;
     public Animator animator;
     private int x;
+    public int wAmount, fAmount = 0;
     
 
    void Update()

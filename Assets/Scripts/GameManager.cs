@@ -3,9 +3,10 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
-{
+{   
     private List<int> unusedStories = new List<int>() { 0, 1, 2 }; // Full list of unused story IDs
     private List<int> usedStories = new List<int>(); // List of currently assigned story IDs
     private int[] plantLocations = new int[6] { 0, 0, 0, 0, 0, 0 }; // 0: Vacant; 1: Occupied
