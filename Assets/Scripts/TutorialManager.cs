@@ -9,11 +9,14 @@ public class TutorialManager : MonoBehaviour
     private TimeSystem tSystem;
     private PlayerActions pActions;
     private Flowchart tuFlowchart;
-    // Tutorial Scene:
-    // When game starts up, tutorial plant will spawn and tutorial dialogue will appear
-    // Player talks to the tutorial plant and gives it water
-    // Player finishes the reading the rest of the tutorial plant
-    // Player leaves greenhouse and finds a new plant that replaces the tutorial plant
+
+    /*
+     * Tutorial Scene:
+     * When game starts up, tutorial plant will spawn and tutorial dialogue will appear
+     * Player talks to the tutorial plant and gives it water
+     * Player finishes the reading the rest of the tutorial plant
+     * Player leaves greenhouse and finds a new plant that replaces the tutorial plant
+     */
 
     void Awake()
     {
