@@ -23,7 +23,7 @@ public class NourishmentSystem : MonoBehaviour
     private Sprite stage4;
 
     private State currState;
-    private int water, fertilizer = 0; // Set water and fertilizer to 0
+    public int water, fertilizer = 0; // Set water and fertilizer to 0
     private TimeSystem tSystem;
     private Plant plantS;
     private Canvas actMenu;

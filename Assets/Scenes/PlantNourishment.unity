@@ -1093,6 +1093,7 @@ GameObject:
   - component: {fileID: 1625257634}
   - component: {fileID: 1625257633}
   - component: {fileID: 1625257632}
+  - component: {fileID: 1625257679}
   m_Layer: 0
   m_Name: 'Story 0: Rations'
   m_TagString: Story 0
@@ -2459,8 +2460,7 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 1625257676}
+  selectedBlocks: []
   selectedCommands: []
   variables:
   - {fileID: 1625257670}
@@ -2468,6 +2468,7 @@ MonoBehaviour:
   - {fileID: 1625257657}
   - {fileID: 1625257656}
   - {fileID: 1625257653}
+  - {fileID: 1625257679}
   description: 
   stepPause: 0
   colorCommands: 1
@@ -2492,6 +2493,21 @@ Transform:
   m_Father: {fileID: 2002694634}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1625257679
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1625257631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afb91b566ceda411bad1e9d3c3243ecc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 0
+  key: fertilizer
+  value: 0
 --- !u!1 &1905980084
 GameObject:
   m_ObjectHideFlags: 0
@@ -2896,6 +2912,8 @@ MonoBehaviour:
   stage2: {fileID: 21300000, guid: da3aea3d78cd4e047b5142a2612def8b, type: 3}
   stage3: {fileID: 21300000, guid: ea245fe07b41e87478a3c1289427863b, type: 3}
   stage4: {fileID: 21300000, guid: 84551a368bbcd194ea0bcd6676d0687d, type: 3}
+  water: 0
+  fertilizer: 0
 --- !u!61 &2557259208293928608
 BoxCollider2D:
   m_ObjectHideFlags: 0
