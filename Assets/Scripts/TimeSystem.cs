@@ -21,11 +21,13 @@ public class TimeSystem : MonoBehaviour
     private int segIndex = 1;
     private string currTime;
     private string[] timeOfDay = { "Morning", "Afternoon" };
+    private Player player;
 
     private void Awake()
     {
         bgPicture = GameObject.FindGameObjectWithTag("Background");
         tText = FindObjectOfType<Text>();
+        player = FindObjectOfType<Player>();
     }
 
     private void Start()
@@ -45,7 +47,6 @@ public class TimeSystem : MonoBehaviour
     {
         ChangeText();
     }
-
 
     private void ChangeBackground()
     {
@@ -76,7 +77,8 @@ public class TimeSystem : MonoBehaviour
     {
         if (dayNum <= 10)
         {
-            tText.text = "Day: " + dayNum.ToString() + "\nTime: " + currTime.ToString();
+            tText.text = "Day: " + dayNum.ToString() + "\nTime: " + currTime.ToString() + 
+                "\nWater: " + player.wAmount + " Fertilizer: " + player.fAmount;
         }
         else
         {
