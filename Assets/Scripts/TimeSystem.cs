@@ -16,13 +16,14 @@ public class TimeSystem : MonoBehaviour
     private Text tText;
 
     public int tSegment;
+    public bool isTutorial = false;
     private int[] tSegmentList = new int[21];
     private int dayNum = 0;
     private int segIndex = 1;
+    private int pWater, pFertilizer;
     private string currTime;
     private string[] timeOfDay = { "Morning", "Afternoon" };
     private Player player;
-    private int water, fertilizer;
 
     private void Awake()
     {
@@ -77,20 +78,27 @@ public class TimeSystem : MonoBehaviour
 
     private void UpdateResourceAmount()
     {
-        water = player.wAmount;
-        fertilizer = player.fAmount;
+        pWater = player.wAmount;
+        pFertilizer = player.fAmount;
     }
 
-    private void ChangeText()
+    public void ChangeText()
     {
-        if (dayNum <= 10)
+        if (isTutorial)
         {
-            tText.text = "Day: " + dayNum.ToString() + "\nTime: " + currTime.ToString() + 
-                "\nWater: " + water + " Fertilizer: " + fertilizer;
+            tText.text = "Press 'X' to interact with the plant.";
         }
         else
         {
-            tText.text = "Time's Up!";
+            if (dayNum <= 10)
+            {
+                tText.text = "Day: " + dayNum.ToString() + "\nTime: " + currTime.ToString() +
+                    "\nWater: " + pWater + " Fertilizer: " + pFertilizer;
+            }
+            else
+            {
+                tText.text = "Time's Up!";
+            }
         }
     }
 

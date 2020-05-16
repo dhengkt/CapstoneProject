@@ -2,6 +2,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class Tutorial : MonoBehaviour
@@ -9,6 +10,7 @@ public class Tutorial : MonoBehaviour
     private TimeSystem tSystem;
     private ActionsMenu pActions;
     private Flowchart tuFlowchart;
+    private bool isDone = false;
 
     /*
      * Tutorial Scene:
@@ -32,15 +34,19 @@ public class Tutorial : MonoBehaviour
 
     void Start()
     {
-        CreateTutorialPlant();
+        tSystem.isTutorial = true;
+        CreatePlant();
     }
 
     void Update()
     {
-
+        if (isDone)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
     }
 
-    private void CreateTutorialPlant()
+    private void CreatePlant()
     {
         Plant plant;
         GameObject p = Resources.Load<GameObject>("Prefabs/Plant");
