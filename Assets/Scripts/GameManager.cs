@@ -54,6 +54,8 @@ public class GameManager : MonoBehaviour
         //GameObject.Find("Plant");
         GameObject plantObject = Instantiate(p);
         plant = plantObject.GetComponent<Plant>();
+        NourishmentSystem nSystem = plant.GetComponent<NourishmentSystem>();
+        nSystem.gameObject.SetActive(true);
 
         plant.SetStory(AssignStory());
         // Seeting Spawn Location Coordinates

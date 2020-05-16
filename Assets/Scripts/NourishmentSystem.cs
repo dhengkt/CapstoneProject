@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Fungus;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.PackageManager.Requests;
 using UnityEngine;
@@ -25,24 +26,30 @@ public class NourishmentSystem : MonoBehaviour
     private State currState;
     public int water, fertilizer = 0; // Set water and fertilizer to 0
     private TimeSystem tSystem;
-    private Plant plantS;
+    private Plant pScript;
+    private Flowchart pFlowchart;
     private Canvas actMenu;
     private Player player;
 
     void Awake()
     {
-        currState = State.Stage1;
         player = FindObjectOfType<Player>();
         // Get access to Time System script
         GameObject door = GameObject.FindGameObjectWithTag("Door");
         tSystem = door.GetComponent<TimeSystem>();
 
         // Get access to Plant script
-        plantS = gameObject.GetComponent<Plant>();
-        actMenu = plantS.actionMenu;
+        pScript = gameObject.GetComponent<Plant>();
+        pFlowchart = gameObject.GetComponent<Flowchart>();
+        actMenu = pScript.actionMenu;
+    }
+
+     void Start()
+    {
+        currState = State.Stage1;
 
         // Sync water and fertilizer variables (0) with plant flowchart
-        plantS.SyncWaterAndFertilizer(water, fertilizer);
+        pScript.SyncWaterAndFertilizer(water, fertilizer);
     }
 
     void Update()
@@ -89,7 +96,7 @@ public class NourishmentSystem : MonoBehaviour
                 break;
         }
         // update plant's water and fertilizer to match flowchart
-        plantS.SyncWaterAndFertilizer(water, fertilizer);
+        pScript.SyncWaterAndFertilizer(water, fertilizer);
     }
 
     public void AddWater()
@@ -113,4 +120,13 @@ public class NourishmentSystem : MonoBehaviour
             Debug.Log(fertilizer);
         }
     }
+
+    // Sync water and fetilizer variables to Flowchart's water and fertilizer variables
+    // This function is also in Plant.cs we will decide which one to use later on
+    //private void SyncWaterAndFertilizer(int nSWater, int nSFertilizer)
+    //{
+    //    pFlowchart.SetIntegerVariable("water", nSWater);
+    //    pFlowchart.SetIntegerVariable("fertilizer", nSFertilizer);
+    //    Debug.Log("Plant Setters- Water: " + pFlowchart.GetIntegerVariable("water") + " Fertilizer: " + pFlowchart.GetIntegerVariable("fertilizer"));
+    //}
 }
