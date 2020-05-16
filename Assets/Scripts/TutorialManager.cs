@@ -7,7 +7,7 @@ using UnityEngine;
 public class TutorialManager : MonoBehaviour
 {
     private TimeSystem tSystem;
-    private PlayerActions pActions;
+    private ActionsMenu pActions;
     private Flowchart tuFlowchart;
 
     /*
@@ -25,7 +25,7 @@ public class TutorialManager : MonoBehaviour
 
         door.transform.position = new Vector3(-.23f, -7.99f, 0f);
         tSystem = door.GetComponent<TimeSystem>();
-        pActions = door.GetComponent<PlayerActions>();
+        pActions = door.GetComponent<ActionsMenu>();
 
         tuFlowchart = FindObjectOfType<Flowchart>();
     }

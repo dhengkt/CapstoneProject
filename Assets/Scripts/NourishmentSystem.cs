@@ -27,16 +27,17 @@ public class NourishmentSystem : MonoBehaviour
     private TimeSystem tSystem;
     private Plant plantS;
     private Canvas actMenu;
+    private Player player;
 
     void Awake()
     {
         currState = State.Stage1;
 
-        // get access to Time System script
+        // Get access to Time System script
         GameObject door = GameObject.FindGameObjectWithTag("Door");
         tSystem = door.GetComponent<TimeSystem>();
 
-        //get access to Plant script
+        // Get access to Plant script
         plantS = gameObject.GetComponent<Plant>();
         actMenu = plantS.actionMenu;
 
@@ -46,7 +47,7 @@ public class NourishmentSystem : MonoBehaviour
 
     void Update()
     {
-        // get SpriteRenderer to change sprite in different stage
+        // Get SpriteRenderer to change sprite in different stage
         SpriteRenderer rend = gameObject.GetComponent<SpriteRenderer>();
 
         switch (currState)
@@ -94,14 +95,20 @@ public class NourishmentSystem : MonoBehaviour
     public void AddWater()
     {
         // check if player has enough water
-        water++;
-        Debug.Log(water);
+        if (player.wAmount > 0)
+        {
+            water++;
+            Debug.Log(water);
+        }
     }
 
     public void AddFertilizer()
     {
         // check if player has enough fertilizer
-        fertilizer++;
-        Debug.Log(fertilizer);
+        if (player.fAmount > 0)
+        {
+            fertilizer++;
+            Debug.Log(fertilizer);
+        }
     }
 }

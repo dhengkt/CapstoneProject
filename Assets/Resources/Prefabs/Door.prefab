@@ -118,7 +118,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: -7718275789351061602}
+      - m_Target: {fileID: 7477141550808058761}
         m_MethodName: ChangeTime
         m_Mode: 1
         m_Arguments:
@@ -499,7 +499,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6618056600232126934}
+      - m_Target: {fileID: 6343405252757004908}
         m_MethodName: GatherResources
         m_Mode: 1
         m_Arguments:
@@ -1268,7 +1268,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: -7718275789351061602}
+      - m_Target: {fileID: 7477141550808058761}
         m_MethodName: ChangeTime
         m_Mode: 1
         m_Arguments:
@@ -1311,8 +1311,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6618056600232126933}
   - component: {fileID: 6618056600232126932}
-  - component: {fileID: 6618056600232126934}
-  - component: {fileID: -7718275789351061602}
+  - component: {fileID: 6343405252757004908}
+  - component: {fileID: 7477141550808058761}
   m_Layer: 0
   m_Name: Door
   m_TagString: Door
@@ -1361,7 +1361,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.869564, y: 1}
   m_EdgeRadius: 0
---- !u!114 &6618056600232126934
+--- !u!114 &6343405252757004908
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1374,7 +1374,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actionMenu: {fileID: 6618056599570390417}
---- !u!114 &-7718275789351061602
+--- !u!114 &7477141550808058761
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1509,8 +1509,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6618056600232126934}
-        m_MethodName: ChooseExplore
+      - m_Target: {fileID: 6618056600232126935}
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

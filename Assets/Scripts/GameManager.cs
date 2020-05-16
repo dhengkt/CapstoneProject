@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
     //private GameObject firstPlant = null; // First plant in the game
     private int numberOfPlants = 0;
     private TimeSystem tSystem;
-    private PlayerActions pActions;
+    private ActionsMenu pActions;
 
     void Awake()
     {
@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
 
         // get access to Time System and Player Action script
         tSystem = door.GetComponent<TimeSystem>();
-        pActions = door.GetComponent<PlayerActions>();
+        pActions = door.GetComponent<ActionsMenu>();
     }
 
     /*****Create plant should be called when the player reaches a certain time segment and goes outside*****/
