@@ -32,7 +32,7 @@ public class NourishmentSystem : MonoBehaviour
     void Awake()
     {
         currState = State.Stage1;
-
+        player = FindObjectOfType<Player>();
         // Get access to Time System script
         GameObject door = GameObject.FindGameObjectWithTag("Door");
         tSystem = door.GetComponent<TimeSystem>();
@@ -98,6 +98,7 @@ public class NourishmentSystem : MonoBehaviour
         if (player.wAmount > 0)
         {
             water++;
+            player.wAmount--;
             Debug.Log(water);
         }
     }
@@ -108,6 +109,7 @@ public class NourishmentSystem : MonoBehaviour
         if (player.fAmount > 0)
         {
             fertilizer++;
+            player.fAmount--;
             Debug.Log(fertilizer);
         }
     }

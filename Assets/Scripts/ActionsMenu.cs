@@ -26,11 +26,21 @@ public class ActionsMenu : MonoBehaviour
         // random give player certain amount of water/fertilizer
         if (player.wAmount < 4 && player.fAmount < 4)
         {
+            int temp = Random.Range(1, 4);
+            if (player.fAmount + temp > 4 || player.wAmount > 4)
+            {
+                player.fAmount = 4;
+                player.wAmount = 4;
+            }
+            else
+            {
+                player.fAmount += temp;
+                player.wAmount += temp;
+            }
         }
     }
 
     public void GoToRiver() { }
-
     public void GoToForest() { }
 
     private void OnTriggerEnter2D(Collider2D collision)

@@ -22,6 +22,7 @@ public class TimeSystem : MonoBehaviour
     private string currTime;
     private string[] timeOfDay = { "Morning", "Afternoon" };
     private Player player;
+    private int water, fertilizer;
 
     private void Awake()
     {
@@ -45,6 +46,7 @@ public class TimeSystem : MonoBehaviour
 
     private void Update()
     {
+        UpdateResourceAmount();
         ChangeText();
     }
 
@@ -73,12 +75,18 @@ public class TimeSystem : MonoBehaviour
         }
     }
 
+    private void UpdateResourceAmount()
+    {
+        water = player.wAmount;
+        fertilizer = player.fAmount;
+    }
+
     private void ChangeText()
     {
         if (dayNum <= 10)
         {
             tText.text = "Day: " + dayNum.ToString() + "\nTime: " + currTime.ToString() + 
-                "\nWater: " + player.wAmount + " Fertilizer: " + player.fAmount;
+                "\nWater: " + water + " Fertilizer: " + fertilizer;
         }
         else
         {
