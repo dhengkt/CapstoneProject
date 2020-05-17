@@ -41,7 +41,6 @@ public class Tutorial : MonoBehaviour
 
     void Update()
     {
-        CheckVariable();
         if (isDone && tuFlowchart.GetVariable("isDone") == true)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
@@ -56,11 +55,5 @@ public class Tutorial : MonoBehaviour
         plant = plantObject.GetComponent<Plant>();
         plant.transform.position = new Vector3(5.81f, -1.38f, -5f);
         plant.flowchart = tuFlowchart;
-    }
-
-    private void CheckVariable()
-    {
-        Debug.Log(tuFlowchart.GetVariable("isDone"));
-        isDone = !(tuFlowchart.GetVariable("isDone"));
     }
 }
