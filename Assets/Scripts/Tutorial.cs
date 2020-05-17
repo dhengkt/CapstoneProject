@@ -28,19 +28,21 @@ public class Tutorial : MonoBehaviour
         door.transform.position = new Vector3(-.23f, -7.99f, 0f);
         tSystem = door.GetComponent<TimeSystem>();
         pActions = door.GetComponent<ActionsMenu>();
-
         tuFlowchart = FindObjectOfType<Flowchart>();
+        tuFlowchart.SetBooleanVariable("isDone", false);
     }
 
     void Start()
     {
+        Debug.Log(tuFlowchart.GetVariable("isDone"));
         tSystem.isTutorial = true;
         CreatePlant();
     }
 
     void Update()
     {
-        if (isDone)
+        CheckVariable();
+        if (isDone && tuFlowchart.GetVariable("isDone") == true)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
@@ -53,7 +55,12 @@ public class Tutorial : MonoBehaviour
         GameObject plantObject = Instantiate(p);
         plant = plantObject.GetComponent<Plant>();
         plant.transform.position = new Vector3(5.81f, -1.38f, -5f);
-
         plant.flowchart = tuFlowchart;
+    }
+
+    private void CheckVariable()
+    {
+        Debug.Log(tuFlowchart.GetVariable("isDone"));
+        isDone = !(tuFlowchart.GetVariable("isDone"));
     }
 }

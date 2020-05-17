@@ -63,7 +63,7 @@ public class TimeSystem : MonoBehaviour
         if (currTime == timeOfDay[1])
         {
             //rend.sprite = afternoonBG;
-            rend.color = Color.green;
+            rend.color = new Color(255f, 153f, 51f);
         }
     }
 
@@ -86,7 +86,12 @@ public class TimeSystem : MonoBehaviour
     {
         if (isTutorial)
         {
-            tText.text = "Press 'X' to interact with the plant.";
+            tText.text = "Press X to interact with the plant. \nUse space to read next text.";
+            if (tSegment == 3)
+            {
+                tText.text = "Day: " + dayNum.ToString() + "\nTime: " + currTime.ToString() +
+                    "\nWater: " + pWater + " Fertilizer: " + pFertilizer;
+            }
         }
         else
         {
