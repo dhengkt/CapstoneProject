@@ -6,28 +6,50 @@ using UnityEngine.UI;
 
 public class Plant : MonoBehaviour
 {
+    [SerializeField]
+    public Canvas actionMenu;
+    [SerializeField]
+    public Text pText;
+
     // Set associated flowchart to plant
     public Flowchart flowchart;
-    public Canvas actionMenu;
     private string story;
     private Vector3 location;
     private bool plantTrigger; // plantTrigger is true if the player is touching the plant
     private int tempTimeSegment;
     private TimeSystem tSystem;
+    public NourishmentSystem nourSystem;
 
     void Start()
     {
         GameObject door = GameObject.FindGameObjectWithTag("Door");
         //GameObject door = FindObjectOfType<Door>();
         tSystem = door.GetComponent<TimeSystem>();
+        nourSystem = gameObject.GetComponent<NourishmentSystem>();
     }
 
     void Update()
     {
+        SetActionMenu(plantTrigger);
+        UpdateText();
+
         if (plantTrigger && Input.GetKeyDown(KeyCode.X))
         {
             flowchart.ExecuteBlock("Start");
             UpdateTimeSegement();
+        }
+
+        if (plantTrigger)
+        {
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                nourSystem.AddFertilizer();
+            }
+
+            if (Input.GetKeyDown(KeyCode.G))
+            {
+                nourSystem.AddWater();
+            }
         }
     }
 
@@ -124,20 +146,22 @@ public class Plant : MonoBehaviour
         actionMenu.gameObject.SetActive(isTrigger);
     }
 
+    private void UpdateText()
+    {
+        pText.text = "Water amount: " + nourSystem.water + " Fertilizer amount: " + nourSystem.fertilizer;
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        plantTrigger = true;
         if (collision.gameObject.tag == "Player")
         {
-            SetActionMenu(plantTrigger);
-            Debug.Log("Touch");
+            plantTrigger = true;
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         plantTrigger = false;
-        SetActionMenu(plantTrigger);
     }
 
     public override string ToString()

@@ -24,10 +24,12 @@ public class ActionsMenu : MonoBehaviour
     public void GatherResources()
     {
         // random give player certain amount of water/fertilizer
-        if (player.wAmount < 4 && player.fAmount < 4)
+        if (player.wAmount < 4 || player.fAmount < 4)
         {
-            int temp = Random.Range(1, 4);
-            if (player.fAmount + temp > 4 || player.wAmount > 4)
+            int temp = Random.Range(0, 4);
+            int temp2 = Random.Range(0, 4);
+
+            if (player.fAmount + temp > 4 || player.wAmount + temp2 > 4)
             {
                 player.fAmount = 4;
                 player.wAmount = 4;
@@ -35,7 +37,7 @@ public class ActionsMenu : MonoBehaviour
             else
             {
                 player.fAmount += temp;
-                player.wAmount += temp;
+                player.wAmount += temp2;
             }
         }
     }
