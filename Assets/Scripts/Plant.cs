@@ -22,26 +22,24 @@ public class Plant : MonoBehaviour
 
     void Update()
     {
-        this.tempTimeSegment = flowchart.GetIntegerVariable("tempTimeSegment");
         if (plantTrigger && Input.GetKeyDown(KeyCode.X))
         {
             flowchart.ExecuteBlock("Start");
             UpdateTimeSegement();
-
         }
-
     }
 
     private void UpdateTimeSegement()
     {
-        //set tempTimeSegment when a segment is set to true in Start
-        //once S1 is true, update flowchart temptimesegment with current time segment
-        //
         //if update time segment is true, then set temp time segment to current time segment and set update to false
+        Debug.Log("***UPDATE TEMP: " + flowchart.GetBooleanVariable("updateTemp"));
+        Debug.Log("Temp Time Seg: " + this.tempTimeSegment);
+        //Debug.Log("Current Seg: " + this.tSystem.tSegment); 
         if (flowchart.GetBooleanVariable("updateTemp") == true)
         {
-            this.tempTimeSegment = tSystem.tSegment;
+            this.tempTimeSegment = tSystem.tSegment; // ERROR
             flowchart.SetBooleanVariable("updateTemp", false);
+            Debug.Log("***Temp FALSE?: " + flowchart.GetBooleanVariable("updateTemp"));
         }
         //if current time segment is more than temp time segment, set movetoNext (stage) to true and update time segment to true
         if (tSystem.tSegment > this.tempTimeSegment)
@@ -52,6 +50,13 @@ public class Plant : MonoBehaviour
         else
         {
             flowchart.SetBooleanVariable("moveToNext", false);
+        }
+
+        if (flowchart.GetBooleanVariable("moved") == true)
+        {
+            flowchart.SetBooleanVariable("moveToNext", false); //set moveToNext to false (while on the same time segment) once the story stage has moved forward
+            flowchart.SetBooleanVariable("moved", false);
+
         }
     }
 
