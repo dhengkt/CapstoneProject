@@ -51,7 +51,6 @@ public class GameManager : MonoBehaviour
         Debug.Log("Creating Plant...");
         Plant plant;
         GameObject p = Resources.Load<GameObject>("Prefabs/Plant");
-        //GameObject.Find("Plant");
         GameObject plantObject = Instantiate(p);
         plant = plantObject.GetComponent<Plant>();
         NourishmentSystem nSystem = plant.GetComponent<NourishmentSystem>();

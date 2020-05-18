@@ -123,10 +123,10 @@ public class NourishmentSystem : MonoBehaviour
 
     // Sync water and fetilizer variables to Flowchart's water and fertilizer variables
     // This function is also in Plant.cs we will decide which one to use later on
-    //private void SyncWaterAndFertilizer(int nSWater, int nSFertilizer)
-    //{
-    //    pFlowchart.SetIntegerVariable("water", nSWater);
-    //    pFlowchart.SetIntegerVariable("fertilizer", nSFertilizer);
-    //    Debug.Log("Plant Setters- Water: " + pFlowchart.GetIntegerVariable("water") + " Fertilizer: " + pFlowchart.GetIntegerVariable("fertilizer"));
-    //}
+    private void SyncWaterAndFertilizer(int nSWater, int nSFertilizer)
+    {
+        pFlowchart.SetIntegerVariable("water", nSWater);
+        pFlowchart.SetIntegerVariable("fertilizer", nSFertilizer);
+        Debug.Log("Plant Setters- Water: " + pFlowchart.GetIntegerVariable("water") + " Fertilizer: " + pFlowchart.GetIntegerVariable("fertilizer"));
+    }
 }

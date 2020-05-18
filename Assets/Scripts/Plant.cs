@@ -12,24 +12,47 @@ public class Plant : MonoBehaviour
     private Vector3 location;
     private bool plantTrigger; // plantTrigger is true if the player is touching the plant
     public Canvas actionMenu;
-    private int water, fertilizer; 
+    private int tempTimeSegment;
+    private TimeSystem tSystem;
 
     void Start()
     {
-        //Debug.Log("Found flowchart: " + GameObject.FindObjectOfType<Flowchart>
+        
     }
 
     void Update()
     {
-        //Debug.Log("flowchart name: " + flowchart.GetName());
-        //flowchart.SetIntegerVariable("story", this.story);
-        //Debug.Log("Story for plant: " + flowchart.GetIntegerVariable("story"));
-        // When player is touching plant and presses X, start
+        this.tempTimeSegment = flowchart.GetIntegerVariable("tempTimeSegment");
         if (plantTrigger && Input.GetKeyDown(KeyCode.X))
         {
             flowchart.ExecuteBlock("Start");
+            UpdateTimeSegement();
+
         }
 
+    }
+
+    private void UpdateTimeSegement()
+    {
+        //set tempTimeSegment when a segment is set to true in Start
+        //once S1 is true, update flowchart temptimesegment with current time segment
+        //
+        //if update time segment is true, then set temp time segment to current time segment and set update to false
+        if (flowchart.GetBooleanVariable("updateTemp") == true)
+        {
+            this.tempTimeSegment = tSystem.tSegment;
+            flowchart.SetBooleanVariable("updateTemp", false);
+        }
+        //if current time segment is more than temp time segment, set movetoNext (stage) to true and update time segment to true
+        if (tSystem.tSegment > this.tempTimeSegment)
+        {
+            flowchart.SetBooleanVariable("moveToNext", true);
+        }
+        //if current time segment is less than or equal to temp time segment, set move to next to false
+        else
+        {
+            flowchart.SetBooleanVariable("moveToNext", false);
+        }
     }
 
     public void SetStory(int assignedStory)
@@ -50,6 +73,7 @@ public class Plant : MonoBehaviour
             default:
                 break;
         }
+        // Assign the appropriate flowchart 
         Flowchart[] allFlowcharts = GameObject.FindObjectsOfType<Flowchart>();
         for (int i = 0; i < allFlowcharts.Length; i++)
         {
@@ -85,7 +109,7 @@ public class Plant : MonoBehaviour
     {
         flowchart.SetIntegerVariable("water", nSWater);
         flowchart.SetIntegerVariable("fertilizer", nSFertilizer);
-        Debug.Log("Plant Setters- Water: " + flowchart.GetIntegerVariable("water") + " Fertilizer: " + flowchart.GetIntegerVariable("fertilizer"));
+        //Debug.Log("Plant Setters- Water: " + flowchart.GetIntegerVariable("water") + " Fertilizer: " + flowchart.GetIntegerVariable("fertilizer"));
     }
 
     private void SetActionMenu(bool isTrigger)
