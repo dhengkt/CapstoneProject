@@ -31,7 +31,6 @@ public class Plant : MonoBehaviour
     void Update()
     {
         SetActionMenu(plantTrigger);
-        UpdateText();
 
         if (plantTrigger && Input.GetKeyDown(KeyCode.X))
         {
@@ -39,6 +38,7 @@ public class Plant : MonoBehaviour
             UpdateTimeSegement();
         }
 
+        // only add water/fertilizer when player is in the range
         if (plantTrigger)
         {
             if (Input.GetKeyDown(KeyCode.F))
@@ -144,6 +144,7 @@ public class Plant : MonoBehaviour
     private void SetActionMenu(bool isTrigger)
     {
         actionMenu.gameObject.SetActive(isTrigger);
+        UpdateText();
     }
 
     private void UpdateText()
