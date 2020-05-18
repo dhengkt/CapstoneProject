@@ -62,7 +62,7 @@ public class NourishmentSystem : MonoBehaviour
             default:
             case State.Stage1:
                 rend.sprite = stage1;
-                if (tSystem.tSegment == 6)
+                if (tSystem.tSegment == 3)
                 {
                     currState = State.Stage2;
                 }
@@ -70,23 +70,21 @@ public class NourishmentSystem : MonoBehaviour
             case State.Stage2:
                 rend.sprite = stage2;
                 // need to reset the condition
-                if (water > 4 && fertilizer > 4)
+                if (tSystem.tSegment == 5)
                 {
                     currState = State.Stage3;
                 }
                 break;
             case State.Stage3:
                 rend.sprite = stage3;
-                // need to reset the condition
-                if (water > 6 && fertilizer > 6)
+                if (tSystem.tSegment == 7)
                 {
                     currState = State.Stage4;
                 }
                 break;
             case State.Stage4:
                 rend.sprite = stage4;
-                // need to reset the condition
-                if (water > 8 && fertilizer > 8)
+                if (tSystem.tSegment == 9)
                 {
                     //move the plant to backtable
                     gameObject.transform.position = new Vector3(5.18f, 7.45f, -5f);

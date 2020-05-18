@@ -10,6 +10,8 @@ public class Plant : MonoBehaviour
     public Canvas actionMenu;
     [SerializeField]
     public Text pText;
+    [SerializeField]
+    public NourishmentSystem nourSystem;
 
     // Set associated flowchart to plant
     public Flowchart flowchart;
@@ -18,29 +20,24 @@ public class Plant : MonoBehaviour
     private bool plantTrigger; // plantTrigger is true if the player is touching the plant
     private int tempTimeSegment;
     private TimeSystem tSystem;
-    public NourishmentSystem nourSystem;
 
     void Start()
     {
         GameObject door = GameObject.FindGameObjectWithTag("Door");
-        //GameObject door = FindObjectOfType<Door>();
         tSystem = door.GetComponent<TimeSystem>();
-        nourSystem = gameObject.GetComponent<NourishmentSystem>();
     }
 
     void Update()
     {
         SetActionMenu(plantTrigger);
 
-        if (plantTrigger && Input.GetKeyDown(KeyCode.X))
-        {
-            flowchart.ExecuteBlock("Start");
-            UpdateTimeSegement();
-        }
-
-        // only add water/fertilizer when player is in the range
         if (plantTrigger)
         {
+            if (Input.GetKeyDown(KeyCode.X))
+            {
+                flowchart.ExecuteBlock("Start");
+                UpdateTimeSegement();
+            }
             if (Input.GetKeyDown(KeyCode.F))
             {
                 nourSystem.AddFertilizer();
@@ -50,37 +47,6 @@ public class Plant : MonoBehaviour
             {
                 nourSystem.AddWater();
             }
-        }
-    }
-
-    private void UpdateTimeSegement()
-    {
-        //if update time segment is true, then set temp time segment to current time segment and set update to false
-        Debug.Log("***UPDATE TEMP: " + flowchart.GetBooleanVariable("updateTemp"));
-        Debug.Log("Temp Time Seg: " + this.tempTimeSegment);
-        //Debug.Log("Current Seg: " + this.tSystem.tSegment); 
-        if (flowchart.GetBooleanVariable("updateTemp") == true)
-        {
-            this.tempTimeSegment = tSystem.tSegment; // ERROR
-            flowchart.SetBooleanVariable("updateTemp", false);
-            Debug.Log("***Temp FALSE?: " + flowchart.GetBooleanVariable("updateTemp"));
-        }
-        //if current time segment is more than temp time segment, set movetoNext (stage) to true and update time segment to true
-        if (tSystem.tSegment > this.tempTimeSegment)
-        {
-            flowchart.SetBooleanVariable("moveToNext", true);
-        }
-        //if current time segment is less than or equal to temp time segment, set move to next to false
-        else
-        {
-            flowchart.SetBooleanVariable("moveToNext", false);
-        }
-
-        if (flowchart.GetBooleanVariable("moved") == true)
-        {
-            flowchart.SetBooleanVariable("moveToNext", false); //set moveToNext to false (while on the same time segment) once the story stage has moved forward
-            flowchart.SetBooleanVariable("moved", false);
-
         }
     }
 
@@ -112,10 +78,10 @@ public class Plant : MonoBehaviour
                 this.flowchart = allFlowcharts[i];
             }
         }
-        
         //flowchart.SetIntegerVariable("story", assignedStory); // Update flowchart story variable
         //Debug.Log("Flowchart story var: " + flowchart.GetIntegerVariable("story"));
     }
+
     public string GetStory()
     {
         return this.story;
@@ -139,6 +105,37 @@ public class Plant : MonoBehaviour
         flowchart.SetIntegerVariable("water", nSWater);
         flowchart.SetIntegerVariable("fertilizer", nSFertilizer);
         //Debug.Log("Plant Setters- Water: " + flowchart.GetIntegerVariable("water") + " Fertilizer: " + flowchart.GetIntegerVariable("fertilizer"));
+    }
+
+    private void UpdateTimeSegement()
+    {
+        //if update time segment is true, then set temp time segment to current time segment and set update to false
+        Debug.Log("***UPDATE TEMP: " + flowchart.GetBooleanVariable("updateTemp"));
+        Debug.Log("Temp Time Seg: " + this.tempTimeSegment);
+        //Debug.Log("Current Seg: " + this.tSystem.tSegment); 
+        if (flowchart.GetBooleanVariable("updateTemp") == true)
+        {
+            this.tempTimeSegment = tSystem.tSegment; // ERROR
+            flowchart.SetBooleanVariable("updateTemp", false);
+            Debug.Log("***Temp FALSE?: " + flowchart.GetBooleanVariable("updateTemp"));
+        }
+        //if current time segment is more than temp time segment, set movetoNext (stage) to true and update time segment to true
+        if (tSystem.tSegment > this.tempTimeSegment)
+        {
+            flowchart.SetBooleanVariable("moveToNext", true);
+        }
+        //if current time segment is less than or equal to temp time segment, set move to next to false
+        else
+        {
+            flowchart.SetBooleanVariable("moveToNext", false);
+        }
+
+        if (flowchart.GetBooleanVariable("moved") == true)
+        {
+            flowchart.SetBooleanVariable("moveToNext", false); //set moveToNext to false (while on the same time segment) once the story stage has moved forward
+            flowchart.SetBooleanVariable("moved", false);
+
+        }
     }
 
     private void SetActionMenu(bool isTrigger)
