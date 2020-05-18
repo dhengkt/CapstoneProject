@@ -8,10 +8,10 @@ public class Plant : MonoBehaviour
 {
     // Set associated flowchart to plant
     public Flowchart flowchart;
+    public Canvas actionMenu;
     private string story;
     private Vector3 location;
     private bool plantTrigger; // plantTrigger is true if the player is touching the plant
-    public Canvas actionMenu;
     private int tempTimeSegment;
     private TimeSystem tSystem;
 
@@ -144,5 +144,4 @@ public class Plant : MonoBehaviour
     {
         return "Made Plant. Story: " + story + " Loc: " + location;
     }
-
 }

@@ -8,10 +8,10 @@ public class Player : MonoBehaviour
     private float moveSpeed = 5f;
 
     public Rigidbody2D rb;
-    private Vector2 targetPoint;
     public Animator animator;
-    private int x;
     public int wAmount, fAmount = 0;
+    private Vector2 targetPoint;
+    private int x;
     
 
    void Update()
