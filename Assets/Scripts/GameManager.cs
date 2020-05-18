@@ -11,7 +11,6 @@ public class GameManager : MonoBehaviour
     private List<int> usedStories = new List<int>(); // List of currently assigned story IDs
     private int[] plantLocations = new int[6] { 0, 0, 0, 0, 0, 0 }; // 0: Vacant; 1: Occupied
     private Plant[] currentPlants = new Plant[6]; // Keeps track of all plants currently in the game
-    //private GameObject firstPlant = null; // First plant in the game
     private int numberOfPlants = 0;
     private TimeSystem tSystem;
     private ActionsMenu pActions;

@@ -17,7 +17,9 @@ public class Plant : MonoBehaviour
 
     void Start()
     {
-        
+        GameObject door = GameObject.FindGameObjectWithTag("Door");
+        //GameObject door = FindObjectOfType<Door>();
+        tSystem = door.GetComponent<TimeSystem>();
     }
 
     void Update()
