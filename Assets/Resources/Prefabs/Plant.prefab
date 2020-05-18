@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2557259207095973897}
   - component: {fileID: 2557259207095973896}
-  - component: {fileID: 2557259207095973903}
+  - component: {fileID: 4825729437624019679}
   - component: {fileID: 2557259207095973902}
   - component: {fileID: 4156057937336300748}
   m_Layer: 0
@@ -85,8 +85,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &2557259207095973903
-BoxCollider2D:
+--- !u!58 &4825729437624019679
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -95,22 +95,12 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.10456562, y: -0.97593987}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.87, y: 6.64}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 3.5327978, y: 3.6489813}
-  m_EdgeRadius: 0
+  m_Radius: 0.8958241
 --- !u!114 &2557259207095973902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,8 +113,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0a552d3de59c9445b1c65d191e2eff7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flowchart: {fileID: 0}
   actionMenu: {fileID: 3503905480845822006}
+  pText: {fileID: 3048700507758531512}
+  flowchart: {fileID: 0}
+  nourSystem: {fileID: 4156057937336300748}
 --- !u!114 &4156057937336300748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -348,7 +340,7 @@ PrefabInstance:
     - target: {fileID: 5459605708954788135, guid: 49606f34ecf1a964181f33ce70c814c5,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -19
       objectReference: {fileID: 0}
     - target: {fileID: 6183468690485328545, guid: 49606f34ecf1a964181f33ce70c814c5,
         type: 3}
@@ -369,3 +361,15 @@ Canvas:
     type: 3}
   m_PrefabInstance: {fileID: 4303723545629025981}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3048700507758531512 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1294447577868268805, guid: 49606f34ecf1a964181f33ce70c814c5,
+    type: 3}
+  m_PrefabInstance: {fileID: 4303723545629025981}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
