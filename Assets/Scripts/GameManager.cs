@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {   
-    private List<int> unusedStories = new List<int>() { 0, 1, 2, 3, 4, 5, 6 }; // Full list of unused story IDs
+    private List<int> unusedStories = new List<int>() { 0, 1, 2,}; // Full list of unused story IDs
     private List<int> usedStories = new List<int>(); // List of currently assigned story IDs
     private int[] plantLocations = new int[6] { 0, 0, 0, 0, 0, 0 }; // 0: Vacant; 1: Occupied
     private Plant[] currentPlants = new Plant[6]; // Keeps track of all plants currently in the game
