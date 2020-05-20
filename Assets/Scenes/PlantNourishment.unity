@@ -1098,7 +1098,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1625257677}
+  selectedFlowchart: {fileID: 816518580}
 --- !u!4 &773127528
 Transform:
   m_ObjectHideFlags: 1
@@ -1265,6 +1265,28 @@ GameObject:
   - component: {fileID: 816518440}
   - component: {fileID: 816518439}
   - component: {fileID: 816518438}
+  - component: {fileID: 816518583}
+  - component: {fileID: 816518582}
+  - component: {fileID: 816518581}
+  - component: {fileID: 816518602}
+  - component: {fileID: 816518601}
+  - component: {fileID: 816518600}
+  - component: {fileID: 816518599}
+  - component: {fileID: 816518598}
+  - component: {fileID: 816518597}
+  - component: {fileID: 816518596}
+  - component: {fileID: 816518595}
+  - component: {fileID: 816518594}
+  - component: {fileID: 816518593}
+  - component: {fileID: 816518592}
+  - component: {fileID: 816518591}
+  - component: {fileID: 816518590}
+  - component: {fileID: 816518589}
+  - component: {fileID: 816518588}
+  - component: {fileID: 816518587}
+  - component: {fileID: 816518586}
+  - component: {fileID: 816518585}
+  - component: {fileID: 816518584}
   m_Layer: 0
   m_Name: Template
   m_TagString: Untagged
@@ -1465,7 +1487,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 163
   indentLevel: 0
-  storyText: 
+  storyText: 'The water runs out of the tap as brewed tea; this is quite the problem.
+
+'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -1492,7 +1516,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 162
   indentLevel: 0
-  storyText: 
+  storyText: 'Plant more trees. Plant more green.
+
+    From a gray orangey haze,
+    the green will clean, and bring back blue.
+
+'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -1519,7 +1548,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 161
   indentLevel: 0
-  storyText: 
+  storyText: "Just like every day, I\u2019ll be working at the same place even though
+    I don\u2019t like it there.\r\n"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -1546,7 +1576,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 160
   indentLevel: 0
-  storyText: 
+  storyText: "Even though I don\u2019t like it here, I\u2019ll be here every day.\r"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -1573,7 +1603,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 159
   indentLevel: 0
-  storyText: 
+  storyText: "Just like every day, I\u2019ll be taking the bus.\r"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -1600,7 +1630,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 158
   indentLevel: 0
-  storyText: 
+  storyText: "Even when it poured rain, it feels like we just end up drinking and
+    washing in this lingering filth. \r\n"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -1627,7 +1658,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 157
   indentLevel: 0
-  storyText: 
+  storyText: "I think we\u2019d all run away if we could, but the most I move is
+    when I take the bus every day.\r"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -1654,7 +1686,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 156
   indentLevel: 0
-  storyText: 
+  storyText: "It\u2019s been quite cold, which makes the air feel more stagnant and
+    poisonous than usual.\r"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -2640,7 +2673,7 @@ MonoBehaviour:
     booleanVal: 0
   integerData:
     integerRef: {fileID: 0}
-    integerVal: 4
+    integerVal: 5
   floatData:
     floatRef: {fileID: 0}
     floatVal: 0
@@ -2789,7 +2822,7 @@ MonoBehaviour:
     booleanVal: 0
   integerData:
     integerRef: {fileID: 0}
-    integerVal: 5
+    integerVal: 6
   floatData:
     floatRef: {fileID: 0}
     floatVal: 0
@@ -3653,7 +3686,7 @@ MonoBehaviour:
     booleanVal: 0
   integerData:
     integerRef: {fileID: 0}
-    integerVal: 3
+    integerVal: 4
   floatData:
     floatRef: {fileID: 0}
     floatVal: 0
@@ -4030,7 +4063,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 98
   indentLevel: 0
-  storyText: 
+  storyText: "Something as green as you... I don\u2019t think you can survive here.\r\nIf
+    I send you off, will you reach blue skies?\r\n"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -4057,7 +4091,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 91
   indentLevel: 0
-  storyText: 
+  storyText: 'Perhaps I was the one who closed off the blue skies.
+
+'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -4084,7 +4120,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 87
   indentLevel: 0
-  storyText: 
+  storyText: "Green. It\u2019s been a while since I\u2019ve seen a lot of green.\r\n"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -4111,7 +4147,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 81
   indentLevel: 0
-  storyText: 
+  storyText: 'What did I do? I signed it.
+
+    I took the bus, as always, to my
+    place of work, as always.
+
+'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -5269,6 +5310,9 @@ MonoBehaviour:
   commandList:
   - {fileID: 816518439}
   - {fileID: 816518520}
+  - {fileID: 816518588}
+  - {fileID: 816518587}
+  - {fileID: 816518582}
   suppressAllAutoSelections: 0
 --- !u!114 &816518556
 MonoBehaviour:
@@ -5297,6 +5341,10 @@ MonoBehaviour:
   commandList:
   - {fileID: 816518440}
   - {fileID: 816518522}
+  - {fileID: 816518590}
+  - {fileID: 816518591}
+  - {fileID: 816518589}
+  - {fileID: 816518583}
   suppressAllAutoSelections: 0
 --- !u!114 &816518557
 MonoBehaviour:
@@ -5325,6 +5373,8 @@ MonoBehaviour:
   commandList:
   - {fileID: 816518443}
   - {fileID: 816518450}
+  - {fileID: 816518599}
+  - {fileID: 816518598}
   suppressAllAutoSelections: 0
 --- !u!114 &816518558
 MonoBehaviour:
@@ -5353,6 +5403,9 @@ MonoBehaviour:
   commandList:
   - {fileID: 816518441}
   - {fileID: 816518523}
+  - {fileID: 816518592}
+  - {fileID: 816518593}
+  - {fileID: 816518594}
   suppressAllAutoSelections: 0
 --- !u!114 &816518559
 MonoBehaviour:
@@ -5381,6 +5434,10 @@ MonoBehaviour:
   commandList:
   - {fileID: 816518438}
   - {fileID: 816518521}
+  - {fileID: 816518585}
+  - {fileID: 816518586}
+  - {fileID: 816518584}
+  - {fileID: 816518581}
   suppressAllAutoSelections: 0
 --- !u!114 &816518560
 MonoBehaviour:
@@ -5411,6 +5468,7 @@ MonoBehaviour:
   - {fileID: 816518453}
   - {fileID: 816518451}
   - {fileID: 816518452}
+  - {fileID: 816518600}
   suppressAllAutoSelections: 0
 --- !u!114 &816518561
 MonoBehaviour:
@@ -5454,6 +5512,9 @@ MonoBehaviour:
   commandList:
   - {fileID: 816518442}
   - {fileID: 816518449}
+  - {fileID: 816518596}
+  - {fileID: 816518597}
+  - {fileID: 816518595}
   suppressAllAutoSelections: 0
 --- !u!114 &816518563
 MonoBehaviour:
@@ -5575,7 +5636,7 @@ MonoBehaviour:
     booleanVal: 0
   integerData:
     integerRef: {fileID: 0}
-    integerVal: 1
+    integerVal: 3
   floatData:
     floatRef: {fileID: 0}
     floatVal: 0
@@ -5718,7 +5779,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 14
   indentLevel: 0
-  storyText: 
+  storyText: "I hope the skies are blue when you look up.\r\nIf I do look up, the
+    closest thing that I can see clearly is the ceiling. \r"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -5758,6 +5820,8 @@ MonoBehaviour:
   commandList:
   - {fileID: 816518446}
   - {fileID: 816518572}
+  - {fileID: 816518601}
+  - {fileID: 816518602}
   suppressAllAutoSelections: 0
 --- !u!114 &816518574
 MonoBehaviour:
@@ -5999,7 +6063,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 159.14043, y: 22.920866}
+  scrollPos: {x: 86.28332, y: 61.49227}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -6012,7 +6076,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 816518579}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 816518487}
   variables:
   - {fileID: 816518574}
   - {fileID: 816518570}
@@ -6041,6 +6106,615 @@ MonoBehaviour:
   hideCommands: []
   luaEnvironment: {fileID: 0}
   luaBindingName: flowchart
+--- !u!114 &816518581
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816518436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 177
+  indentLevel: 0
+  storyText: '{color=#34b7eb} The note abruptly ends here. It seems like you''ve
+    uncovered all the notes!'
+  description: 
+  character: {fileID: 1245540266}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &816518582
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816518436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 176
+  indentLevel: 0
+  storyText: '{color=#34b7eb} The note abruptly ends here. It seems like you''ve
+    uncovered all the notes!'
+  description: 
+  character: {fileID: 1245540266}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &816518583
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816518436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 175
+  indentLevel: 0
+  storyText: '{color=#34b7eb} The note abruptly ends here. It seems like you''ve
+    uncovered all the notes!'
+  description: 
+  character: {fileID: 1245540266}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &816518584
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816518436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 196
+  indentLevel: 0
+  storyText: "I don\u2019t deserve something as green as you.\r"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &816518585
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816518436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 195
+  indentLevel: 0
+  storyText: "I took the bus, I signed and signed, and then I took the bus home.\r"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &816518586
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816518436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 194
+  indentLevel: 0
+  storyText: "It turns out, I sign a lot of things, and make a lot of decisions for
+    people and entities.\r"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &816518587
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816518436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 193
+  indentLevel: 0
+  storyText: "But if you are to bring anything from here, I think these stories are
+    plenty enough.\r"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &816518588
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816518436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 192
+  indentLevel: 0
+  storyText: "Something so pure\u2026 you surely won\u2019t bring over the haze,
+    the gray-orangey-brown, the dust, the signs of the bus?\r"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &816518589
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816518436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 191
+  indentLevel: 0
+  storyText: "I won\u2019t ever understand why someone would throw you out.\r"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &816518590
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816518436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 190
+  indentLevel: 0
+  storyText: "The greenest things are always alive, so what does that make the dusty
+    gray trees that line the sidewalks?\r"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &816518591
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816518436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 189
+  indentLevel: 0
+  storyText: "A very pretty green within a clear and clean dome. I wish I could just
+    shrink down and join you.\r"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &816518592
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816518436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 188
+  indentLevel: 0
+  storyText: "\u201CThat\u2019s a lot of zeros,\u201D I thought. I signed it.\r\n\u201CThat\u2019s
+    a lot of gallons\u201D and \u201CThat\u2019s a lot of tonnes.\u201D\r"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &816518593
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816518436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 187
+  indentLevel: 0
+  storyText: "I signed it aways: out of sight, out of mind.\r"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &816518594
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816518436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 186
+  indentLevel: 0
+  storyText: "But I still took the bus as always.\r"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &816518595
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816518436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 185
+  indentLevel: 0
+  storyText: "All I can do is take the bus as always.\r"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &816518596
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816518436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 184
+  indentLevel: 0
+  storyText: "Stories have shown that good solutions come from targeting the root
+    of the problem.\r"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &816518597
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816518436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 183
+  indentLevel: 0
+  storyText: "But as it turns out, there might just be too many roots to this problem--
+    too much for me to do on my own.\r"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &816518598
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816518436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 182
+  indentLevel: 0
+  storyText: "Plant more trees and green they said, but I don\u2019t think they thought
+    they\u2019d turn gray too.\r"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &816518599
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816518436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 181
+  indentLevel: 0
+  storyText: "Orange, green, and blue; yes, I much prefer greens and blues.\r"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &816518600
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816518436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 180
+  indentLevel: 0
+  storyText: "Just like this perpetual haze, I\u2019m stuck and continue to linger.\r\nWhat\u2019s
+    more until the water runs an off-color of orange and brown?\r"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &816518601
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816518436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 179
+  indentLevel: 0
+  storyText: "It doesn\u2019t matter what time of day it is, the hazy sky is permanently
+    stained a brownish-gray.\r\n"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &816518602
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816518436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 178
+  indentLevel: 0
+  storyText: "I don\u2019t think the birds sing anymore, but if they do, it seems
+    that they\u2019ve learned to sing like car horns all day and night.\r"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1001 &896993943
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6788,6 +7462,9 @@ GameObject:
   - component: {fileID: 1412336886}
   - component: {fileID: 1412336885}
   - component: {fileID: 1412336884}
+  - component: {fileID: 1412337029}
+  - component: {fileID: 1412337028}
+  - component: {fileID: 1412337027}
   m_Layer: 0
   m_Name: 'Story 2: Pollution'
   m_TagString: Story 2
@@ -10792,6 +11469,7 @@ MonoBehaviour:
   commandList:
   - {fileID: 1412336885}
   - {fileID: 1412336966}
+  - {fileID: 1412337028}
   suppressAllAutoSelections: 0
 --- !u!114 &1412337002
 MonoBehaviour:
@@ -10820,6 +11498,7 @@ MonoBehaviour:
   commandList:
   - {fileID: 1412336886}
   - {fileID: 1412336968}
+  - {fileID: 1412337029}
   suppressAllAutoSelections: 0
 --- !u!114 &1412337003
 MonoBehaviour:
@@ -10904,6 +11583,7 @@ MonoBehaviour:
   commandList:
   - {fileID: 1412336884}
   - {fileID: 1412336967}
+  - {fileID: 1412337027}
   suppressAllAutoSelections: 0
 --- !u!114 &1412337006
 MonoBehaviour:
@@ -11522,7 +12202,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 159.14043, y: 22.920866}
+  scrollPos: {x: 166.28328, y: 45.777996}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -11534,7 +12214,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1412337025}
+  - {fileID: 1412337005}
   selectedCommands: []
   variables:
   - {fileID: 1412337020}
@@ -11564,6 +12244,90 @@ MonoBehaviour:
   hideCommands: []
   luaEnvironment: {fileID: 0}
   luaBindingName: flowchart
+--- !u!114 &1412337027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1412336882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 177
+  indentLevel: 0
+  storyText: '{color=#34b7eb} The note abruptly ends here. It seems like you''ve
+    uncovered all the notes!'
+  description: 
+  character: {fileID: 1245540266}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1412337028
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1412336882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 176
+  indentLevel: 0
+  storyText: '{color=#34b7eb} The note abruptly ends here. It seems like you''ve
+    uncovered all the notes!'
+  description: 
+  character: {fileID: 1245540266}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1412337029
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1412336882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 175
+  indentLevel: 0
+  storyText: '{color=#34b7eb} The note abruptly ends here. It seems like you''ve
+    uncovered all the notes!'
+  description: 
+  character: {fileID: 1245540266}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1 &1456208985
 GameObject:
   m_ObjectHideFlags: 0
@@ -11842,16 +12606,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4782cf42f2644447b9631f6e522160b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  volume: 1
+  volume: 0.405
   loop: 1
   targetAudioSource: {fileID: 0}
-  audioMode: 0
+  audioMode: 1
   beepSounds:
   - {fileID: 8300000, guid: 774486030b696474e8b3cf7f178123da, type: 3}
   - {fileID: 8300000, guid: f637c5ce9d10e45c7855ed89bfc6b97e, type: 3}
   - {fileID: 8300000, guid: c53b7c20372e444c6bd7f2ac0729bbe2, type: 3}
-  soundEffect: {fileID: 0}
-  inputSound: {fileID: 8300000, guid: 14a396b1562834718b2d52b9c4639264, type: 3}
+  soundEffect: {fileID: 8300000, guid: 14a396b1562834718b2d52b9c4639264, type: 3}
+  inputSound: {fileID: 8300000, guid: c18ae2c530c264a6880266d5e0a71337, type: 3}
 --- !u!114 &1606155845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12156,6 +12920,7 @@ GameObject:
   - component: {fileID: 1625257787}
   - component: {fileID: 1625257786}
   - component: {fileID: 1625257659}
+  - component: {fileID: 1625257794}
   m_Layer: 0
   m_Name: 'Story 0: Rations'
   m_TagString: Story 0
@@ -13446,7 +14211,7 @@ MonoBehaviour:
   itemId: 0
   blockName: Start
   description: 
-  eventHandler: {fileID: 0}
+  eventHandler: {fileID: 1625257794}
   commandList:
   - {fileID: 1625257674}
   - {fileID: 1625257672}
@@ -13533,8 +14298,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1625257676}
-  selectedCommands: []
+  - {fileID: 1625257681}
+  selectedCommands:
+  - {fileID: 1625257675}
   variables:
   - {fileID: 1625257670}
   - {fileID: 1625257658}
@@ -17468,6 +18234,21 @@ MonoBehaviour:
   itemId: 156
   indentLevel: 0
   sayDialog: {fileID: 1606155846}
+--- !u!114 &1625257794
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1625257631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 1625257676}
+  suppressBlockAutoSelect: 0
+  waitForFrames: 1
 --- !u!1 &1706614925
 GameObject:
   m_ObjectHideFlags: 0
@@ -17703,7 +18484,6 @@ GameObject:
   - component: {fileID: 1778225890}
   - component: {fileID: 1778225889}
   - component: {fileID: 1778225961}
-  - component: {fileID: 1778225959}
   - component: {fileID: 1778225958}
   - component: {fileID: 1778225957}
   - component: {fileID: 1778225956}
@@ -17721,6 +18501,27 @@ GameObject:
   - component: {fileID: 1778225965}
   - component: {fileID: 1778225963}
   - component: {fileID: 1778225962}
+  - component: {fileID: 1778225976}
+  - component: {fileID: 1778225975}
+  - component: {fileID: 1778226029}
+  - component: {fileID: 1778226028}
+  - component: {fileID: 1778226027}
+  - component: {fileID: 1778226015}
+  - component: {fileID: 1778225959}
+  - component: {fileID: 1778226042}
+  - component: {fileID: 1778226041}
+  - component: {fileID: 1778226040}
+  - component: {fileID: 1778226039}
+  - component: {fileID: 1778226030}
+  - component: {fileID: 1778226044}
+  - component: {fileID: 1778226043}
+  - component: {fileID: 1778226048}
+  - component: {fileID: 1778226047}
+  - component: {fileID: 1778226046}
+  - component: {fileID: 1778226045}
+  - component: {fileID: 1778226051}
+  - component: {fileID: 1778226050}
+  - component: {fileID: 1778226049}
   m_Layer: 0
   m_Name: 'Story 1: Heat Wave'
   m_TagString: Story 1
@@ -18864,7 +19665,7 @@ MonoBehaviour:
     booleanVal: 0
   integerData:
     integerRef: {fileID: 0}
-    integerVal: 5
+    integerVal: 7
   floatData:
     floatRef: {fileID: 0}
     floatVal: 0
@@ -19438,7 +20239,7 @@ MonoBehaviour:
     booleanVal: 0
   integerData:
     integerRef: {fileID: 0}
-    integerVal: 2
+    integerVal: 3
   floatData:
     floatRef: {fileID: 0}
     floatVal: 0
@@ -19728,7 +20529,7 @@ MonoBehaviour:
     booleanVal: 0
   integerData:
     integerRef: {fileID: 0}
-    integerVal: 3
+    integerVal: 4
   floatData:
     floatRef: {fileID: 0}
     floatVal: 0
@@ -20105,7 +20906,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 163
   indentLevel: 0
-  storyText: 
+  storyText: "I bought these large plastic water dispensers just in case.\r"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -20132,7 +20933,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 98
   indentLevel: 0
-  storyText: 
+  storyText: "Got a notice in the mail today. Surprisingly, it\u2019s a large fine
+    that I don\u2019t think I can pay off.\r"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -20159,7 +20961,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 162
   indentLevel: 0
-  storyText: 
+  storyText: "A notice was just sent out that we have to limit our water use. If
+    you go over it, you\u2019ll be sent another notice: a hefty fine.\r"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -20186,7 +20989,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 161
   indentLevel: 0
-  storyText: 
+  storyText: "But because it\u2019s so hot, they\u2019ve been needing a lot of water
+    too. \r\n"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -20213,7 +21017,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 160
   indentLevel: 0
-  storyText: 
+  storyText: "Regardless, it seems like it\u2019ll help reduce some last-minute grocery
+    runs and save money in the long run. That, and it\u2019ll help me eat a little
+    healthier!\r"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -20240,7 +21046,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 159
   indentLevel: 0
-  storyText: 
+  storyText: "I\u2019ve been growing vegetables outside recently. Since it\u2019s
+    been so hot out, they\u2019re on track to an early harvest.\r"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -20267,7 +21074,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 158
   indentLevel: 0
-  storyText: 
+  storyText: "Perhaps I should get more, or maybe band together with a few neighbors
+    to get more water?\r\nI think it\u2019s better to be safe in this case.\r"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -20292,9 +21100,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 157
+  itemId: 181
   indentLevel: 0
-  storyText: 
+  storyText: 'Considering my financial state, probably not the best use of money,
+    but hopefully a worthy investment. '
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -20321,7 +21130,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 91
   indentLevel: 0
-  storyText: 
+  storyText: "Sometimes, you look forward to getting mail. I wish that was one of
+    those times, but it couldn\u2019t be worse for me. "
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -20348,7 +21158,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 156
   indentLevel: 0
-  storyText: 
+  storyText: "Bottled water is flying off the shelves. I only managed to pick up
+    a few cases myself.\r"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -20405,7 +21216,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 87
   indentLevel: 0
-  storyText: 
+  storyText: "Got a large fine in the mail today for apparently going over the water
+    limit.\r"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -20507,7 +21319,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 81
   indentLevel: 0
-  storyText: 
+  storyText: "My garden plants are doing really well right now, but I\u2019m starting
+    to get worried. \r\n"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -20580,6 +21393,62 @@ MonoBehaviour:
   itemId: 164
   indentLevel: 0
   sayDialog: {fileID: 1826639375}
+--- !u!114 &1778225975
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778225887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 176
+  indentLevel: 0
+  storyText: "To say the least, it\u2019s been an abnormal past two seasons and it
+    looks like there\u2019s more to come.\r"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1778225976
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778225887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 175
+  indentLevel: 0
+  storyText: "On top of that, it\u2019s been a while since the last time it rained
+    a lot. \r\n"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &1778225977
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -21696,7 +22565,6 @@ MonoBehaviour:
   - {fileID: 1778225971}
   - {fileID: 1778225961}
   - {fileID: 1778225958}
-  - {fileID: 1778225959}
   suppressAllAutoSelections: 0
 --- !u!114 &1778226008
 MonoBehaviour:
@@ -21725,6 +22593,9 @@ MonoBehaviour:
   commandList:
   - {fileID: 1778225963}
   - {fileID: 1778225953}
+  - {fileID: 1778226043}
+  - {fileID: 1778226044}
+  - {fileID: 1778226050}
   suppressAllAutoSelections: 0
 --- !u!114 &1778226009
 MonoBehaviour:
@@ -21753,6 +22624,10 @@ MonoBehaviour:
   commandList:
   - {fileID: 1778225965}
   - {fileID: 1778225964}
+  - {fileID: 1778226039}
+  - {fileID: 1778226040}
+  - {fileID: 1778226030}
+  - {fileID: 1778226049}
   suppressAllAutoSelections: 0
 --- !u!114 &1778226010
 MonoBehaviour:
@@ -21781,6 +22656,8 @@ MonoBehaviour:
   commandList:
   - {fileID: 1778225968}
   - {fileID: 1778225954}
+  - {fileID: 1778226028}
+  - {fileID: 1778226029}
   suppressAllAutoSelections: 0
 --- !u!114 &1778226011
 MonoBehaviour:
@@ -21809,6 +22686,8 @@ MonoBehaviour:
   commandList:
   - {fileID: 1778225966}
   - {fileID: 1778225970}
+  - {fileID: 1778226041}
+  - {fileID: 1778226042}
   suppressAllAutoSelections: 0
 --- !u!114 &1778226012
 MonoBehaviour:
@@ -21837,6 +22716,11 @@ MonoBehaviour:
   commandList:
   - {fileID: 1778225962}
   - {fileID: 1778225960}
+  - {fileID: 1778226046}
+  - {fileID: 1778226047}
+  - {fileID: 1778226048}
+  - {fileID: 1778226045}
+  - {fileID: 1778226051}
   suppressAllAutoSelections: 0
 --- !u!114 &1778226013
 MonoBehaviour:
@@ -21883,6 +22767,34 @@ MonoBehaviour:
   scope: 0
   key: fertilizer
   value: 0
+--- !u!114 &1778226015
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778225887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 180
+  indentLevel: 0
+  storyText: "We were told to limit our water use and that we\u2019d have to pay
+    a fine if we used over the limit.\r\n"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &1778226016
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -21910,6 +22822,9 @@ MonoBehaviour:
   commandList:
   - {fileID: 1778225967}
   - {fileID: 1778225952}
+  - {fileID: 1778226015}
+  - {fileID: 1778226027}
+  - {fileID: 1778225959}
   suppressAllAutoSelections: 0
 --- !u!114 &1778226017
 MonoBehaviour:
@@ -22031,7 +22946,7 @@ MonoBehaviour:
     booleanVal: 0
   integerData:
     integerRef: {fileID: 0}
-    integerVal: 1
+    integerVal: 2
   floatData:
     floatRef: {fileID: 0}
     floatVal: 0
@@ -22174,7 +23089,119 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 14
   indentLevel: 0
-  storyText: 
+  storyText: "It\u2019s been hotter than normal these past few weeks; it\u2019ll
+    still be a couple of months before we officially hit summer.\r"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1778226027
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778225887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 179
+  indentLevel: 0
+  storyText: "They\u2019re not tracking our water use until a few days from now,
+    so I better start stocking up.\r"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1778226028
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778225887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 178
+  indentLevel: 0
+  storyText: "Turns out we\u2019re in the middle of a drought and it\u2019s bad.
+    Looks like I\u2019ll have to go out on a shopping run to stock up on water.\r\n\r"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1778226029
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778225887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 177
+  indentLevel: 0
+  storyText: "From the looks of things, it\u2019s only going to get hotter and dryer.\r"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1778226030
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778225887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 187
+  indentLevel: 0
+  storyText: "I don\u2019t think I can even pay the fine\u2026 and I doubt arguing
+    for an appeal will even make it through.\r"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -22214,6 +23241,8 @@ MonoBehaviour:
   commandList:
   - {fileID: 1778225972}
   - {fileID: 1778226026}
+  - {fileID: 1778225976}
+  - {fileID: 1778225975}
   suppressAllAutoSelections: 0
 --- !u!114 &1778226032
 MonoBehaviour:
@@ -22370,7 +23399,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 180.9367
+    x: 179.11853
     y: 2.8860788
     width: 120
     height: 40
@@ -22455,11 +23484,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 159.14043, y: 22.920866}
+  scrollPos: {x: 62.13241, y: 95.43328}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.7000003
+  zoom: 0.5500004
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -22467,8 +23496,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1778226037}
-  selectedCommands: []
+  - {fileID: 1778226009}
+  selectedCommands:
+  - {fileID: 1778226049}
   variables:
   - {fileID: 1778226032}
   - {fileID: 1778226024}
@@ -22497,6 +23527,373 @@ MonoBehaviour:
   hideCommands: []
   luaEnvironment: {fileID: 0}
   luaBindingName: flowchart
+--- !u!114 &1778226039
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778225887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 186
+  indentLevel: 0
+  storyText: "I know that I\u2019ve stayed within it for the past few weeks though,
+    so I took a look around the outside of the townhouse.\r And guess what I found?
+    \n"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1778226040
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778225887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 184
+  indentLevel: 0
+  storyText: "Wet concrete around the garden tap with the perfect outline of a large
+    round container.\r It looks like we\u2019ve reached that point!"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1778226041
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778225887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 183
+  indentLevel: 0
+  storyText: "The government just sent out a notice that they\u2019ll be monitoring
+    our water use, and if someone goes over that limit, they\u2019ll be fined.\r"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1778226042
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778225887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 182
+  indentLevel: 0
+  storyText: "I might have to move the plants in the shade or inside for now. I guess
+    it was getting a bit too hot anyways.\r"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1778226043
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778225887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 189
+  indentLevel: 0
+  storyText: "I\u2019m thinking that it might have been all the water I stored up
+    when that limited water-use notice came out, but I really thought they didn\u2019t
+    put that monitoring into effect immediately.\r\n"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1778226044
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778225887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 188
+  indentLevel: 0
+  storyText: "Didn\u2019t I have a couple more days without water limits?\r\nI think
+    I\u2019m done for either way...\r"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1778226045
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778225887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 193
+  indentLevel: 0
+  storyText: "To think such a sacrifice could become so meaningless in an instant.\r\nAt
+    least this plant isn\u2019t going to die now or any time soon, isn\u2019t that
+    right?\r"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1778226046
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778225887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 192
+  indentLevel: 0
+  storyText: 'A hefty fine for going over the water limit. '
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1778226047
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778225887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 191
+  indentLevel: 0
+  storyText: "I feel like this is a mistake, but it\u2019s almost not worth the time
+    to try and appeal it; I hear they\u2019re swamped with calls anyways and it\u2019s
+    not like I have any proof I didn\u2019t use it.\r"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1778226048
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778225887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 190
+  indentLevel: 0
+  storyText: "I don\u2019t think I can use the dead vegetable plants as proof-- I\u2019ve
+    been working so hard on that garden too.\r"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1778226049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778225887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 196
+  indentLevel: 0
+  storyText: '{color=#34b7eb} The note abruptly ends here. It seems like you''ve
+    uncovered all the notes!'
+  description: 
+  character: {fileID: 1245540266}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1778226050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778225887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 195
+  indentLevel: 0
+  storyText: '{color=#34b7eb} The note abruptly ends here. It seems like you''ve
+    uncovered all the notes!'
+  description: 
+  character: {fileID: 1245540266}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1778226051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778225887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 194
+  indentLevel: 0
+  storyText: '{color=#34b7eb} The note abruptly ends here. It seems like you''ve
+    uncovered all the notes!'
+  description: 
+  character: {fileID: 1245540266}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1 &1826639370
 GameObject:
   m_ObjectHideFlags: 0
@@ -22646,15 +24043,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4782cf42f2644447b9631f6e522160b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  volume: 1
+  volume: 0.305
   loop: 1
   targetAudioSource: {fileID: 0}
-  audioMode: 0
+  audioMode: 1
   beepSounds:
   - {fileID: 8300000, guid: 774486030b696474e8b3cf7f178123da, type: 3}
   - {fileID: 8300000, guid: f637c5ce9d10e45c7855ed89bfc6b97e, type: 3}
   - {fileID: 8300000, guid: c53b7c20372e444c6bd7f2ac0729bbe2, type: 3}
-  soundEffect: {fileID: 0}
+  soundEffect: {fileID: 8300000, guid: f637c5ce9d10e45c7855ed89bfc6b97e, type: 3}
   inputSound: {fileID: 8300000, guid: 14a396b1562834718b2d52b9c4639264, type: 3}
 --- !u!114 &1826639374
 MonoBehaviour:
