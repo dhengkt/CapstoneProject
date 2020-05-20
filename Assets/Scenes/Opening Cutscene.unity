@@ -1349,7 +1349,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 199
+    x: 200
     y: 67
     width: 120
     height: 40
@@ -1439,7 +1439,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 666067024}
   selectedCommands:
-  - {fileID: 666067076}
+  - {fileID: 666067069}
   variables: []
   description: 
   stepPause: 0
@@ -1968,7 +1968,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 24
   indentLevel: 0
-  duration: 20
+  duration: 10
   targetView: {fileID: 1967164809}
   waitUntilFinished: 0
   targetCamera: {fileID: 0}
@@ -2345,7 +2345,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 44
   indentLevel: 0
-  duration: 3
+  duration: 2
   targetView: {fileID: 571377278}
   waitUntilFinished: 0
   targetCamera: {fileID: 0}
