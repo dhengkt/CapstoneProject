@@ -41,7 +41,10 @@ public class Tutorial : MonoBehaviour
 
     void Update()
     {
-
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            tSystem.isTutorial = false;
+        }
     }
 
     private void CreatePlant()
