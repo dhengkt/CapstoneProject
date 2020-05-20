@@ -40,6 +40,7 @@ public class ActionsMenu : MonoBehaviour
                 player.wAmount += temp2;
             }
         }
+
     }
 
     public void GoToRiver() { }
