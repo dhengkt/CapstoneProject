@@ -510,6 +510,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 7477141550808058761}
+        m_MethodName: ChangeTime
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6618056598834479904
 GameObject:
   m_ObjectHideFlags: 0
@@ -1437,8 +1448,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adb5490f8c97ce444b40ebebae8f20f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  afternoonBG: {fileID: 0}
-  morningBG: {fileID: 0}
+  afternoonBG: {fileID: 21300000, guid: e1bb698157cfa404eb387ddf807e6224, type: 3}
+  morningBG: {fileID: 21300000, guid: 1c5f6028c1b23b04f914f7a6b7ad830f, type: 3}
   bgPicture: {fileID: 0}
   tText: {fileID: 0}
   tSegment: 0

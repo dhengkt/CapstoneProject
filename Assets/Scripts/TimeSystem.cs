@@ -58,13 +58,13 @@ public class TimeSystem : MonoBehaviour
 
         if (currTime == timeOfDay[0])
         {
-            //rend.sprite = morningBG;
-            rend.color = Color.grey;
+            rend.sprite = morningBG;
+            //rend.color = Color.grey;
         }
         if (currTime == timeOfDay[1])
         {
-            //rend.sprite = afternoonBG;
-            rend.color = new Color(255f, 153f, 51f);
+            rend.sprite = afternoonBG;
+            //rend.color = new Color(255f, 153f, 51f);
         }
     }
 
