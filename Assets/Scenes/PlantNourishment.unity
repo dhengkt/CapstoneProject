@@ -233,9 +233,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 301952390}
-  selectedCommands:
-  - {fileID: 301952397}
+  - {fileID: 301952375}
+  selectedCommands: []
   variables:
   - {fileID: 301952378}
   - {fileID: 301952377}
@@ -1098,7 +1097,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 816518580}
+  selectedFlowchart: {fileID: 1625257677}
 --- !u!4 &773127528
 Transform:
   m_ObjectHideFlags: 1
@@ -4149,8 +4148,8 @@ MonoBehaviour:
   indentLevel: 0
   storyText: 'What did I do? I signed it.
 
-    I took the bus, as always, to my
-    place of work, as always.
+    I took the bus, as always, to my place
+    of work, as always.
 
 '
   description: 
@@ -12481,7 +12480,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &1606155842
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12920,7 +12919,6 @@ GameObject:
   - component: {fileID: 1625257787}
   - component: {fileID: 1625257786}
   - component: {fileID: 1625257659}
-  - component: {fileID: 1625257794}
   m_Layer: 0
   m_Name: 'Story 0: Rations'
   m_TagString: Story 0
@@ -14211,7 +14209,7 @@ MonoBehaviour:
   itemId: 0
   blockName: Start
   description: 
-  eventHandler: {fileID: 1625257794}
+  eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1625257674}
   - {fileID: 1625257672}
@@ -14298,9 +14296,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1625257681}
-  selectedCommands:
-  - {fileID: 1625257675}
+  - {fileID: 1625257676}
+  selectedCommands: []
   variables:
   - {fileID: 1625257670}
   - {fileID: 1625257658}
@@ -18234,21 +18231,6 @@ MonoBehaviour:
   itemId: 156
   indentLevel: 0
   sayDialog: {fileID: 1606155846}
---- !u!114 &1625257794
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1625257631}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parentBlock: {fileID: 1625257676}
-  suppressBlockAutoSelect: 0
-  waitForFrames: 1
 --- !u!1 &1706614925
 GameObject:
   m_ObjectHideFlags: 0
@@ -23918,7 +23900,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &1826639371
 AudioSource:
   m_ObjectHideFlags: 0
