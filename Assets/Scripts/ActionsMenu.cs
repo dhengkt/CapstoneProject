@@ -1,12 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ActionsMenu : MonoBehaviour
 {
 
     [SerializeField]
     private Canvas actionMenu;
+    [SerializeField]
+    private Sprite river;
+    [SerializeField]
+    private Sprite forest;
+
     private bool atDoor = false;
     private Player player;
     private int water, fertilizer;
@@ -14,7 +20,7 @@ public class ActionsMenu : MonoBehaviour
     void Awake()
     {
         player = FindObjectOfType<Player>();
-    }
+   }
 
     public void SetMenu(bool trigger)
     {
@@ -43,8 +49,15 @@ public class ActionsMenu : MonoBehaviour
 
     }
 
-    public void GoToRiver() { }
-    public void GoToForest() { }
+    public void GoToRiver()
+    {
+
+    }
+
+    public void GoToForest()
+    {
+
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

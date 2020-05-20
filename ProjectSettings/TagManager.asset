@@ -17,6 +17,7 @@ TagManager:
   - Story 4
   - Story 5
   - Story 6
+  - Cutscene
   layers:
   - Default
   - TransparentFX

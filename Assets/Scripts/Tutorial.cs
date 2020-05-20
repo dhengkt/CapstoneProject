@@ -41,10 +41,7 @@ public class Tutorial : MonoBehaviour
 
     void Update()
     {
-        if (isDone && tuFlowchart.GetVariable("isDone") == true)
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        }
+
     }
 
     private void CreatePlant()
