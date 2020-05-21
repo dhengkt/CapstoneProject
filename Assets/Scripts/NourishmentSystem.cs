@@ -105,26 +105,26 @@ public class NourishmentSystem : MonoBehaviour
                 rend.sprite = stage4;
                 if (needWater == water && needFertilizer == fertilizer && currState == State.Stage4)
                 {
-                    //move the plant to backtable
-                    if (plantNumber > 3)
-                    {
-                        // don't move position
-                    }
-                    else
-                    {
-                        if (plantNumber == 1)
-                        {
-                            gameObject.transform.position = new Vector3(5.49f, 7.64f, -5f);
-                        }
-                        if (plantNumber == 2)
-                        {
-                            gameObject.transform.position = new Vector3(9.12f, 7.64f, -5f);
-                        }
-                        if (plantNumber == 3)
-                        {
-                            gameObject.transform.position = new Vector3(12.75f, 7.64f, -5f);
-                        }
-                    }
+                    ////move the plant to backtable
+                    //if (plantNumber > 3)
+                    //{
+                    //    // don't move position
+                    //}
+                    //else
+                    //{
+                    //    if (plantNumber == 1)
+                    //    {
+                    //        gameObject.transform.position = new Vector3(5.49f, 7.64f, -5f);
+                    //    }
+                    //    if (plantNumber == 2)
+                    //    {
+                    //        gameObject.transform.position = new Vector3(9.12f, 7.64f, -5f);
+                    //    }
+                    //    if (plantNumber == 3)
+                    //    {
+                    //        gameObject.transform.position = new Vector3(12.75f, 7.64f, -5f);
+                    //    }
+                    //}
                     //disable the plant info of plant here
                     plMenu.gameObject.SetActive(false);
                 }

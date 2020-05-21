@@ -41,14 +41,26 @@ public class Plant : MonoBehaviour
                 flowchart.ExecuteBlock("Start");
                 UpdateTimeSegement();
             }
-            if (Input.GetKeyDown(KeyCode.F))
+            if (nourSystem.needWater - nourSystem.water > 0 || nourSystem.needWater - nourSystem.fertilizer > 0)
             {
-                nourSystem.AddFertilizer();
+                if (nourSystem.needWater - nourSystem.fertilizer > 0)
+                {
+                    if (Input.GetKeyDown(KeyCode.F))
+                    {
+                        nourSystem.AddFertilizer();
+                    }
+                }
+                if (nourSystem.needWater - nourSystem.water > 0)
+                {
+                    if (Input.GetKeyDown(KeyCode.G))
+                    {
+                        nourSystem.AddWater();
+                    }
+                }
             }
-
-            if (Input.GetKeyDown(KeyCode.G))
+            if (nourSystem.needWater - nourSystem.water == 0 || nourSystem.needFertilizer - nourSystem.fertilizer == 0)
             {
-                nourSystem.AddWater();
+
             }
         }
     }

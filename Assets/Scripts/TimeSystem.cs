@@ -103,7 +103,7 @@ public class TimeSystem : MonoBehaviour
             }
             else
             {
-                tText.text = "Time's Up!";
+                tText.text = "Time's Up!\nThank you for playing!\nDon't forget to fill out the survey.";
             }
         }
     }
