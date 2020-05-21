@@ -10,6 +10,7 @@ public class Tutorial : MonoBehaviour
     private TimeSystem tSystem;
     private ActionsMenu pActions;
     private Flowchart tuFlowchart;
+    private Player player;
     private bool isDone = false;
 
     /*
@@ -22,19 +23,23 @@ public class Tutorial : MonoBehaviour
 
     void Awake()
     {
-        GameObject temDoor = Resources.Load<GameObject>("Prefabs/Door");
-        GameObject door = Instantiate(temDoor);
-
+        //GameObject temDoor = Resources.Load<GameObject>("Prefabs/Door");
+        //GameObject door = Instantiate(temDoor);
+        GameObject door = GameObject.FindGameObjectWithTag("Door");
         door.transform.position = new Vector3(-.23f, -7.99f, 0f);
         tSystem = door.GetComponent<TimeSystem>();
         pActions = door.GetComponent<ActionsMenu>();
         tuFlowchart = FindObjectOfType<Flowchart>();
         tuFlowchart.SetBooleanVariable("isDone", false);
+
+        player = GameObject.FindObjectOfType<Player>();
     }
 
     void Start()
     {
         Debug.Log(tuFlowchart.GetVariable("isDone"));
+        player.fAmount = 2;
+        player.wAmount = 3;
         tSystem.isTutorial = true;
         CreatePlant();
     }

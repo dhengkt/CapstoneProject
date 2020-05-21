@@ -17,8 +17,9 @@ public class GameManager : MonoBehaviour
 
     void Awake()
     {
-        GameObject temDoor = Resources.Load<GameObject>("Prefabs/Door");
-        GameObject door = Instantiate(temDoor);
+        //GameObject temDoor = Resources.Load<GameObject>("Prefabs/Door");
+        //GameObject door = Instantiate(temDoor);
+        GameObject door = GameObject.FindGameObjectWithTag("Door");
         door.transform.position = new Vector3(-.23f, -7.99f, 0f);
         //CreateFirstPlant();
 
@@ -30,12 +31,23 @@ public class GameManager : MonoBehaviour
     /*****Create plant should be called when the player reaches a certain time segment and goes outside*****/
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.C))
+        //if (Input.GetKeyDown(KeyCode.C))
+        //{
+        //    CreatePlant();
+        //    numberOfPlants++;
+        //}
+        if (tSystem.tSegment == 1 && numberOfPlants == 0)
         {
             CreatePlant();
-            numberOfPlants++;
         }
-
+        if (tSystem.tSegment == 3 && numberOfPlants == 1)
+        {
+            CreatePlant();
+        }
+        if (tSystem.tSegment == 5 && numberOfPlants == 2)
+        {
+            CreatePlant();
+        }
         // Disable the door when game's over
         if (tSystem.tSegment == 21)
         {
@@ -44,8 +56,9 @@ public class GameManager : MonoBehaviour
     }
 
     // Create a plant object before placing it in the game
-    public void CreatePlant()
+    private void CreatePlant()
     {
+        numberOfPlants++;
         // Create and add plant to currentPlants[]
         Debug.Log("Creating Plant...");
         Plant plant;
@@ -54,6 +67,7 @@ public class GameManager : MonoBehaviour
         plant = plantObject.GetComponent<Plant>();
         NourishmentSystem nSystem = plant.GetComponent<NourishmentSystem>();
         nSystem.gameObject.SetActive(true);
+        nSystem.plantNumber = numberOfPlants;
 
         plant.SetStory(AssignStory());
         // Seeting Spawn Location Coordinates
@@ -63,7 +77,6 @@ public class GameManager : MonoBehaviour
         currentPlants[numberOfPlants] = plant;
         Debug.Log("currentPlants: " + currentPlants[numberOfPlants]);
         Debug.Log("Current # of plants: "+ numberOfPlants);
-        numberOfPlants++;
         //Debug.Log("Unused Stories (after assign): " + unusedStories);
     }
 
