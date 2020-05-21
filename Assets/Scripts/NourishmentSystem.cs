@@ -56,7 +56,7 @@ public class NourishmentSystem : MonoBehaviour
         stageNum = 0;
     }
 
-    void Update()
+    void FixedUpdate()
     {
         // Get SpriteRenderer to change sprite in different stage
         SpriteRenderer rend = gameObject.GetComponent<SpriteRenderer>();

@@ -31,7 +31,7 @@ public class Plant : MonoBehaviour
         plantMenu = FindObjectOfType<Canvas>();
     }
 
-    void Update()
+    void FixedUpdate()
     {
         SetActionMenu(plantTrigger);
         if (plantTrigger)
@@ -41,7 +41,7 @@ public class Plant : MonoBehaviour
                 flowchart.ExecuteBlock("Start");
                 UpdateTimeSegement();
             }
-            if (nourSystem.needWater - nourSystem.water > 0 || nourSystem.needWater - nourSystem.fertilizer > 0)
+            if (nourSystem.needWater > nourSystem.water || nourSystem.needWater > nourSystem.fertilizer)
             {
                 if (nourSystem.needWater - nourSystem.fertilizer > 0)
                 {
@@ -57,10 +57,6 @@ public class Plant : MonoBehaviour
                         nourSystem.AddWater();
                     }
                 }
-            }
-            if (nourSystem.needWater - nourSystem.water == 0 || nourSystem.needFertilizer - nourSystem.fertilizer == 0)
-            {
-
             }
         }
     }
