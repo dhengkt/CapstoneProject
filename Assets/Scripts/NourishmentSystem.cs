@@ -25,6 +25,7 @@ public class NourishmentSystem : MonoBehaviour
     public int water, fertilizer = 0; // Set water and fertilizer to 0
     public int needWater, needFertilizer;
     public int plantNumber;
+    public int stageNum;
     private State currState;
     private TimeSystem tSystem;
     private Plant pScript;
@@ -52,6 +53,7 @@ public class NourishmentSystem : MonoBehaviour
         currState = State.Stage1;
         needWater = 1;
         needFertilizer = 1;
+        stageNum = 0;
     }
 
     void Update()
@@ -67,6 +69,7 @@ public class NourishmentSystem : MonoBehaviour
                 if (needWater == water && needFertilizer == fertilizer && currState == State.Stage1)
                 {
                     currState = State.Stage2;
+                    stageNum = 1;
                     needWater = 2;
                     needFertilizer = 2;
                     water = 0;
@@ -79,6 +82,7 @@ public class NourishmentSystem : MonoBehaviour
                 if (needWater == water && needFertilizer == fertilizer && currState == State.Stage2)
                 {
                     currState = State.Stage3;
+                    stageNum = 2;
                     needWater = 4;
                     needFertilizer = 3;
                     water = 0;
@@ -90,6 +94,7 @@ public class NourishmentSystem : MonoBehaviour
                 if (needWater == water && needFertilizer == fertilizer && currState == State.Stage3)
                 {
                     currState = State.Stage4;
+                    stageNum = 3;
                     needWater = 6;
                     needFertilizer = 4;
                     water = 0;

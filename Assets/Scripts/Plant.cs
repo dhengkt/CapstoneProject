@@ -155,7 +155,7 @@ public class Plant : MonoBehaviour
 
     private void UpdateText()
     {
-        pText.text = "Need " + (nourSystem.needWater - nourSystem.water) + " water" + " \nNeed " + (nourSystem.needFertilizer - nourSystem.fertilizer) + " fertilizer";
+        pText.text = "Stage " + nourSystem.stageNum + "\nNeed " + (nourSystem.needWater - nourSystem.water) + " water" + " \nNeed " + (nourSystem.needFertilizer - nourSystem.fertilizer) + " fertilizer";
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
