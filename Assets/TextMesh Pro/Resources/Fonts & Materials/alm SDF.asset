@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
-  m_Name: alm_____ SDF
+  m_Name: alm SDF
   m_EditorClassIdentifier: 
   hashCode: -870504306
   material: {fileID: 4082284478040306712}
