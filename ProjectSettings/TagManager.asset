@@ -18,6 +18,7 @@ TagManager:
   - Story 5
   - Story 6
   - Cutscene
+  - PlantInfo
   layers:
   - Default
   - TransparentFX
