@@ -138,7 +138,6 @@ GameObject:
   - component: {fileID: 244803910}
   - component: {fileID: 244803909}
   - component: {fileID: 244803908}
-  - component: {fileID: 244803907}
   - component: {fileID: 244803906}
   - component: {fileID: 244803905}
   - component: {fileID: 244803904}
@@ -153,8 +152,6 @@ GameObject:
   - component: {fileID: 244803895}
   - component: {fileID: 244803894}
   - component: {fileID: 244803893}
-  - component: {fileID: 244803892}
-  - component: {fileID: 244803891}
   - component: {fileID: 244803890}
   - component: {fileID: 244803889}
   - component: {fileID: 244803888}
@@ -187,8 +184,6 @@ GameObject:
   - component: {fileID: 244803861}
   - component: {fileID: 244803860}
   - component: {fileID: 244803859}
-  - component: {fileID: 244803858}
-  - component: {fileID: 244803857}
   - component: {fileID: 244803856}
   - component: {fileID: 244803855}
   - component: {fileID: 244803854}
@@ -199,13 +194,9 @@ GameObject:
   - component: {fileID: 244803849}
   - component: {fileID: 244803848}
   - component: {fileID: 244803847}
-  - component: {fileID: 244803846}
-  - component: {fileID: 244803845}
-  - component: {fileID: 244803844}
   - component: {fileID: 244803843}
   - component: {fileID: 244803842}
   - component: {fileID: 244803841}
-  - component: {fileID: 244803840}
   - component: {fileID: 244803839}
   - component: {fileID: 244803838}
   - component: {fileID: 244803837}
@@ -223,27 +214,18 @@ GameObject:
   - component: {fileID: 244803825}
   - component: {fileID: 244803824}
   - component: {fileID: 244803823}
-  - component: {fileID: 244803822}
   - component: {fileID: 244803821}
   - component: {fileID: 244803820}
   - component: {fileID: 244803819}
-  - component: {fileID: 244803818}
-  - component: {fileID: 244803817}
   - component: {fileID: 244803816}
   - component: {fileID: 244803815}
   - component: {fileID: 244803814}
-  - component: {fileID: 244803813}
-  - component: {fileID: 244803812}
-  - component: {fileID: 244803811}
   - component: {fileID: 244803810}
   - component: {fileID: 244803809}
   - component: {fileID: 244803808}
   - component: {fileID: 244803807}
   - component: {fileID: 244803806}
   - component: {fileID: 244803805}
-  - component: {fileID: 244803804}
-  - component: {fileID: 244803803}
-  - component: {fileID: 244803802}
   - component: {fileID: 244803801}
   - component: {fileID: 244803800}
   - component: {fileID: 244803799}
@@ -254,29 +236,23 @@ GameObject:
   - component: {fileID: 244803794}
   - component: {fileID: 244803793}
   - component: {fileID: 244803792}
-  - component: {fileID: 244803791}
-  - component: {fileID: 244803790}
-  - component: {fileID: 244803789}
   - component: {fileID: 244803788}
-  - component: {fileID: 244803787}
-  - component: {fileID: 244803786}
-  - component: {fileID: 244803785}
-  - component: {fileID: 244803784}
   - component: {fileID: 244803783}
   - component: {fileID: 244803782}
   - component: {fileID: 244803781}
   - component: {fileID: 244803780}
   - component: {fileID: 244803779}
-  - component: {fileID: 244803778}
   - component: {fileID: 244803777}
   - component: {fileID: 244803776}
-  - component: {fileID: 244803775}
   - component: {fileID: 244803774}
   - component: {fileID: 244803773}
-  - component: {fileID: 244803772}
   - component: {fileID: 244803771}
   - component: {fileID: 244803770}
   - component: {fileID: 244803769}
+  - component: {fileID: 244803784}
+  - component: {fileID: 244803778}
+  - component: {fileID: 244803775}
+  - component: {fileID: 244803772}
   - component: {fileID: 244803768}
   - component: {fileID: 244803767}
   - component: {fileID: 244803766}
@@ -295,9 +271,11 @@ GameObject:
   - component: {fileID: 244803753}
   - component: {fileID: 244803752}
   - component: {fileID: 244803751}
+  - component: {fileID: 244803786}
+  - component: {fileID: 244803785}
   m_Layer: 0
-  m_Name: Template (2)
-  m_TagString: Untagged
+  m_Name: 'Story 4: Rain'
+  m_TagString: Story 4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -314,11 +292,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2002694634}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &244803751
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -328,9 +306,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 196
+  itemId: 219
   indentLevel: 0
-  storyText: "I don\u2019t deserve something as green as you.\r"
+  storyText: "I can\u2019t go much of anywhere until some of the water subsides,
+    but I\u2019ve got plenty of food to last me a while.\r"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -345,7 +324,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &244803752
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -355,9 +334,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 195
+  itemId: 218
   indentLevel: 0
-  storyText: "I took the bus, I signed and signed, and then I took the bus home.\r"
+  storyText: "For now, I\u2019m trapped just like you, but I\u2019ll have to leave
+    eventually.\r Although it won\u2019t be by me, someday, you\u2019ll be set free
+    too.\r\n"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -372,7 +353,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &244803753
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -382,10 +363,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 194
+  itemId: 217
   indentLevel: 0
-  storyText: "It turns out, I sign a lot of things, and make a lot of decisions for
-    people and entities.\r"
+  storyText: "You may be quite the symbol of hope to most people, but right now,
+    it\u2019s quite the opposite.\r"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -400,7 +381,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &244803754
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -410,10 +391,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 193
+  itemId: 216
   indentLevel: 0
-  storyText: "But if you are to bring anything from here, I think these stories are
-    plenty enough.\r"
+  storyText: "Even though the rain stopped, a foot down those stairs means entering
+    the large communal wade pool.\r"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -435,25 +416,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 244803749}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Script: {fileID: 11500000, guid: 3fa968f01a7f9496bb50e13dfe16760d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 192
-  indentLevel: 0
-  storyText: "Something so pure\u2026 you surely won\u2019t bring over the haze,
-    the gray-orangey-brown, the dust, the signs of the bus?\r"
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
+  itemId: 215
+  indentLevel: 2
 --- !u!114 &244803756
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -466,9 +433,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 191
+  itemId: 214
   indentLevel: 0
-  storyText: "I won\u2019t ever understand why someone would throw you out.\r"
+  storyText: "I\u2019m doing fairly well on food, but it seems that I\u2019ll have
+    to boil and filter any water I plan on drinking.\r"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -493,10 +461,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 190
+  itemId: 213
   indentLevel: 0
-  storyText: "The greenest things are always alive, so what does that make the dusty
-    gray trees that line the sidewalks?\r"
+  storyText: "If I run the water from the tap, the water keeps coming out a slight
+    brown; I\u2019m guessing it\u2019s from the dirt.\r\n"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -521,10 +489,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 189
+  itemId: 212
   indentLevel: 0
-  storyText: "A very pretty green within a clear and clean dome. I wish I could just
-    shrink down and join you.\r"
+  storyText: "This has happened before, but it\u2019s become a bit difficult to actually
+    go out to buy more water.\r"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -549,10 +517,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 188
+  itemId: 211
   indentLevel: 0
-  storyText: "\u201CThat\u2019s a lot of zeros,\u201D I thought. I signed it.\r\n\u201CThat\u2019s
-    a lot of gallons\u201D and \u201CThat\u2019s a lot of tonnes.\u201D\r"
+  storyText: "The rain caused a mudslide that contaminated the water supply.\r"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -577,9 +544,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 187
+  itemId: 210
   indentLevel: 0
-  storyText: "I signed it aways: out of sight, out of mind.\r"
+  storyText: "Luckily, I\u2019ve been stocking up on bottled water as soon as the
+    flood warnings were announced last week. "
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -604,9 +572,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 186
+  itemId: 209
   indentLevel: 0
-  storyText: "But I still took the bus as always.\r"
+  storyText: "Now that we\u2019re in the middle of it all, I\u2019m hoping I\u2019m
+    well stocked with everything else I might need if things start to get worse.
+    \r"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -631,9 +601,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 185
+  itemId: 208
   indentLevel: 0
-  storyText: "All I can do is take the bus as always.\r"
+  storyText: "I\u2019d rather not risk going outside today.\r\n\r"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -658,10 +628,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 184
+  itemId: 207
   indentLevel: 0
-  storyText: "Stories have shown that good solutions come from targeting the root
-    of the problem.\r"
+  storyText: 'With so much water, the rivers on the road seem like they can turn
+    into rapids at any moment.
+
+'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -686,10 +658,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 183
+  itemId: 206
   indentLevel: 0
-  storyText: "But as it turns out, there might just be too many roots to this problem--
-    too much for me to do on my own.\r"
+  storyText: "At first, I think we all enjoyed the unexpected rain, but when the
+    roads start becoming rivers, I think it\u2019s more than just us who are reaching
+    their limits.\r"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -714,10 +687,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 182
+  itemId: 205
   indentLevel: 0
-  storyText: "Plant more trees and green they said, but I don\u2019t think they thought
-    they\u2019d turn gray too.\r"
+  storyText: "I better stock up on more food in the meantime.\r"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -742,9 +714,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 181
+  itemId: 203
   indentLevel: 0
-  storyText: "Orange, green, and blue; yes, I much prefer greens and blues.\r"
+  storyText: "It\u2019s almost like moving by car is more of a necessity now than
+    ever. That, or maybe I\u2019m just noticing now after having biked everywhere
+    all the time.\r"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -769,10 +743,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 180
+  itemId: 202
   indentLevel: 0
-  storyText: "Just like this perpetual haze, I\u2019m stuck and continue to linger.\r\nWhat\u2019s
-    more until the water runs an off-color of orange and brown?\r"
+  storyText: "I never liked driving to work, but I don\u2019t plan on spending the
+    whole day drenched at work.\r"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -797,10 +771,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 179
+  itemId: 201
   indentLevel: 0
-  storyText: "It doesn\u2019t matter what time of day it is, the hazy sky is permanently
-    stained a brownish-gray.\r\n"
+  storyText: "No one can bike or walk; everyone goes by car because it is the only
+    means of staying noticeably dry while outside.\r"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -827,8 +801,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 178
   indentLevel: 0
-  storyText: "I don\u2019t think the birds sing anymore, but if they do, it seems
-    that they\u2019ve learned to sing like car horns all day and night.\r"
+  storyText: "Every day, it sounds like we\u2019re breaking more and more records,
+    and more and more expectations.\r"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -909,12 +883,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 175
+  itemId: 200
   indentLevel: 0
-  storyText: '{color=#34b7eb} The note abruptly ends here. It seems like you''ve
-    uncovered all the notes!'
+  storyText: "The road outside is gradually becoming a river.\r"
   description: 
-  character: {fileID: 1245540266}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -964,12 +937,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 244803749}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d65d551a201c94bc79950076ff3eaf2e, type: 3}
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 172
+  itemId: 199
   indentLevel: 0
-  sayDialog: {fileID: 1606155846}
+  storyText: More and more rain.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &244803776
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1009,12 +994,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 244803749}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d65d551a201c94bc79950076ff3eaf2e, type: 3}
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 169
+  itemId: 198
   indentLevel: 0
-  sayDialog: {fileID: 1606155846}
+  storyText: "Just like everyone else, the weather\u2019s out of my hands, so I can
+    only continue doing what I always do.\r"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &244803779
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1102,11 +1100,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 163
+  itemId: 197
   indentLevel: 0
-  storyText: 'The water runs out of the tap as brewed tea; this is quite the problem.
-
-'
+  storyText: "It\u2019s been incredibly rainy recently, which is particularly concerning
+    given that it\u2019s always been hot and dry during this time of the year.\r\n"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -1121,7 +1118,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &244803785
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1131,14 +1128,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 162
+  itemId: 221
   indentLevel: 0
-  storyText: 'Plant more trees. Plant more green.
-
-    From a gray orangey haze,
-    the green will clean, and bring back blue.
-
-'
+  storyText: "Once I\u2019m out of here, I think it\u2019s time to return you.\r"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -1153,7 +1145,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &244803786
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1163,37 +1155,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 161
+  itemId: 220
   indentLevel: 0
-  storyText: "Just like every day, I\u2019ll be working at the same place even though
-    I don\u2019t like it there.\r\n"
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &244803787
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 244803749}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 160
-  indentLevel: 0
-  storyText: "Even though I don\u2019t like it here, I\u2019ll be here every day.\r"
+  storyText: "There\u2019s a lot of work to be done to get things back to normal.
+    Can\u2019t step out of the job today.\r"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -1220,91 +1185,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 159
   indentLevel: 0
-  storyText: "Just like every day, I\u2019ll be taking the bus.\r"
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &244803789
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 244803749}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 158
-  indentLevel: 0
-  storyText: "Even when it poured rain, it feels like we just end up drinking and
-    washing in this lingering filth. \r\n"
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &244803790
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 244803749}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 157
-  indentLevel: 0
-  storyText: "I think we\u2019d all run away if we could, but the most I move is
-    when I take the bus every day.\r"
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &244803791
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 244803749}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 156
-  indentLevel: 0
-  storyText: "It\u2019s been quite cold, which makes the air feel more stagnant and
-    poisonous than usual.\r"
+  storyText: "The rain never stops. \r\n"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -1631,109 +1512,6 @@ MonoBehaviour:
   vector3Data:
     vector3Ref: {fileID: 0}
     vector3Val: {x: 0, y: 0, z: 0}
---- !u!114 &244803802
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 244803749}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93cb9773f2ca04e2bbf7a68ccfc23267, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 145
-  indentLevel: 0
---- !u!114 &244803803
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 244803749}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 144
-  indentLevel: 1
-  text: Note 4
-  description: 
-  targetBlock: {fileID: 244803891}
-  hideIfVisited: 0
-  interactable:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  setMenuDialog: {fileID: 0}
-  hideThisOption:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
---- !u!114 &244803804
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 244803749}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70c5622b8a80845c980954170295f292, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 143
-  indentLevel: 0
-  compareOperator: 0
-  variable: {fileID: 244803834}
-  booleanData:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  integerData:
-    integerRef: {fileID: 0}
-    integerVal: 0
-  floatData:
-    floatRef: {fileID: 0}
-    floatVal: 0
-  stringData:
-    stringRef: {fileID: 0}
-    stringVal: 
-  animatorData:
-    animatorRef: {fileID: 0}
-    animatorVal: {fileID: 0}
-  audioSourceData:
-    audioSourceRef: {fileID: 0}
-    audioSourceVal: {fileID: 0}
-  colorData:
-    colorRef: {fileID: 0}
-    colorVal: {r: 0, g: 0, b: 0, a: 0}
-  gameObjectData:
-    gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
-  materialData:
-    materialRef: {fileID: 0}
-    materialVal: {fileID: 0}
-  objectData:
-    objectRef: {fileID: 0}
-    objectVal: {fileID: 0}
-  rigidbody2DData:
-    rigidbody2DRef: {fileID: 0}
-    rigidbody2DVal: {fileID: 0}
-  spriteData:
-    spriteRef: {fileID: 0}
-    spriteVal: {fileID: 0}
-  textureData:
-    textureRef: {fileID: 0}
-    textureVal: {fileID: 0}
-  transformData:
-    transformRef: {fileID: 0}
-    transformVal: {fileID: 0}
-  vector2Data:
-    vector2Ref: {fileID: 0}
-    vector2Val: {x: 0, y: 0}
-  vector3Data:
-    vector3Ref: {fileID: 0}
-    vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &244803805
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1940,109 +1718,6 @@ MonoBehaviour:
   vector3Data:
     vector3Ref: {fileID: 0}
     vector3Val: {x: 0, y: 0, z: 0}
---- !u!114 &244803811
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 244803749}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93cb9773f2ca04e2bbf7a68ccfc23267, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 136
-  indentLevel: 0
---- !u!114 &244803812
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 244803749}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 135
-  indentLevel: 1
-  text: Note 3
-  description: 
-  targetBlock: {fileID: 244803892}
-  hideIfVisited: 0
-  interactable:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  setMenuDialog: {fileID: 0}
-  hideThisOption:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
---- !u!114 &244803813
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 244803749}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70c5622b8a80845c980954170295f292, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 134
-  indentLevel: 0
-  compareOperator: 0
-  variable: {fileID: 244803837}
-  booleanData:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  integerData:
-    integerRef: {fileID: 0}
-    integerVal: 0
-  floatData:
-    floatRef: {fileID: 0}
-    floatVal: 0
-  stringData:
-    stringRef: {fileID: 0}
-    stringVal: 
-  animatorData:
-    animatorRef: {fileID: 0}
-    animatorVal: {fileID: 0}
-  audioSourceData:
-    audioSourceRef: {fileID: 0}
-    audioSourceVal: {fileID: 0}
-  colorData:
-    colorRef: {fileID: 0}
-    colorVal: {r: 0, g: 0, b: 0, a: 0}
-  gameObjectData:
-    gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
-  materialData:
-    materialRef: {fileID: 0}
-    materialVal: {fileID: 0}
-  objectData:
-    objectRef: {fileID: 0}
-    objectVal: {fileID: 0}
-  rigidbody2DData:
-    rigidbody2DRef: {fileID: 0}
-    rigidbody2DVal: {fileID: 0}
-  spriteData:
-    spriteRef: {fileID: 0}
-    spriteVal: {fileID: 0}
-  textureData:
-    textureRef: {fileID: 0}
-    textureVal: {fileID: 0}
-  transformData:
-    transformRef: {fileID: 0}
-    transformVal: {fileID: 0}
-  vector2Data:
-    vector2Ref: {fileID: 0}
-    vector2Val: {x: 0, y: 0}
-  vector3Data:
-    vector3Ref: {fileID: 0}
-    vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &244803814
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2085,91 +1760,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 131
   indentLevel: 2
---- !u!114 &244803817
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 244803749}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 130
-  indentLevel: 3
-  targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 244803891}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 0
-  callMode: 0
---- !u!114 &244803818
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 244803749}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 129
-  indentLevel: 3
-  variable: {fileID: 244803834}
-  setOperator: 0
-  booleanData:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  integerData:
-    integerRef: {fileID: 0}
-    integerVal: 0
-  floatData:
-    floatRef: {fileID: 0}
-    floatVal: 0
-  stringData:
-    stringRef: {fileID: 0}
-    stringVal: 
-  animatorData:
-    animatorRef: {fileID: 0}
-    animatorVal: {fileID: 0}
-  audioSourceData:
-    audioSourceRef: {fileID: 0}
-    audioSourceVal: {fileID: 0}
-  colorData:
-    colorRef: {fileID: 0}
-    colorVal: {r: 0, g: 0, b: 0, a: 0}
-  gameObjectData:
-    gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
-  materialData:
-    materialRef: {fileID: 0}
-    materialVal: {fileID: 0}
-  objectData:
-    objectRef: {fileID: 0}
-    objectVal: {fileID: 0}
-  rigidbody2DData:
-    rigidbody2DRef: {fileID: 0}
-    rigidbody2DVal: {fileID: 0}
-  spriteData:
-    spriteRef: {fileID: 0}
-    spriteVal: {fileID: 0}
-  textureData:
-    textureRef: {fileID: 0}
-    textureVal: {fileID: 0}
-  transformData:
-    transformRef: {fileID: 0}
-    transformVal: {fileID: 0}
-  vector2Data:
-    vector2Ref: {fileID: 0}
-    vector2Val: {x: 0, y: 0}
-  vector3Data:
-    vector3Ref: {fileID: 0}
-    vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &244803819
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2227,70 +1817,6 @@ MonoBehaviour:
   integerData:
     integerRef: {fileID: 0}
     integerVal: 0
-  floatData:
-    floatRef: {fileID: 0}
-    floatVal: 0
-  stringData:
-    stringRef: {fileID: 0}
-    stringVal: 
-  animatorData:
-    animatorRef: {fileID: 0}
-    animatorVal: {fileID: 0}
-  audioSourceData:
-    audioSourceRef: {fileID: 0}
-    audioSourceVal: {fileID: 0}
-  colorData:
-    colorRef: {fileID: 0}
-    colorVal: {r: 0, g: 0, b: 0, a: 0}
-  gameObjectData:
-    gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
-  materialData:
-    materialRef: {fileID: 0}
-    materialVal: {fileID: 0}
-  objectData:
-    objectRef: {fileID: 0}
-    objectVal: {fileID: 0}
-  rigidbody2DData:
-    rigidbody2DRef: {fileID: 0}
-    rigidbody2DVal: {fileID: 0}
-  spriteData:
-    spriteRef: {fileID: 0}
-    spriteVal: {fileID: 0}
-  textureData:
-    textureRef: {fileID: 0}
-    textureVal: {fileID: 0}
-  transformData:
-    transformRef: {fileID: 0}
-    transformVal: {fileID: 0}
-  vector2Data:
-    vector2Ref: {fileID: 0}
-    vector2Val: {x: 0, y: 0}
-  vector3Data:
-    vector3Ref: {fileID: 0}
-    vector3Val: {x: 0, y: 0, z: 0}
---- !u!114 &244803822
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 244803749}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18c5e8d46183346b59f64b820e71f97f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 125
-  indentLevel: 2
-  compareOperator: 5
-  variable: {fileID: 244803896}
-  booleanData:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
-  integerData:
-    integerRef: {fileID: 0}
-    integerVal: 5
   floatData:
     floatRef: {fileID: 0}
     floatVal: 0
@@ -2992,70 +2518,6 @@ MonoBehaviour:
     stringVal: 
   startIndex: 0
   callMode: 0
---- !u!114 &244803840
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 244803749}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18c5e8d46183346b59f64b820e71f97f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 114
-  indentLevel: 2
-  compareOperator: 5
-  variable: {fileID: 244803896}
-  booleanData:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
-  integerData:
-    integerRef: {fileID: 0}
-    integerVal: 2
-  floatData:
-    floatRef: {fileID: 0}
-    floatVal: 0
-  stringData:
-    stringRef: {fileID: 0}
-    stringVal: 
-  animatorData:
-    animatorRef: {fileID: 0}
-    animatorVal: {fileID: 0}
-  audioSourceData:
-    audioSourceRef: {fileID: 0}
-    audioSourceVal: {fileID: 0}
-  colorData:
-    colorRef: {fileID: 0}
-    colorVal: {r: 0, g: 0, b: 0, a: 0}
-  gameObjectData:
-    gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
-  materialData:
-    materialRef: {fileID: 0}
-    materialVal: {fileID: 0}
-  objectData:
-    objectRef: {fileID: 0}
-    objectVal: {fileID: 0}
-  rigidbody2DData:
-    rigidbody2DRef: {fileID: 0}
-    rigidbody2DVal: {fileID: 0}
-  spriteData:
-    spriteRef: {fileID: 0}
-    spriteVal: {fileID: 0}
-  textureData:
-    textureRef: {fileID: 0}
-    textureVal: {fileID: 0}
-  transformData:
-    transformRef: {fileID: 0}
-    transformVal: {fileID: 0}
-  vector2Data:
-    vector2Ref: {fileID: 0}
-    vector2Val: {x: 0, y: 0}
-  vector3Data:
-    vector3Ref: {fileID: 0}
-    vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &244803841
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -3097,105 +2559,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 111
-  indentLevel: 2
---- !u!114 &244803844
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 244803749}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 110
-  indentLevel: 3
-  targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 244803892}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 0
-  callMode: 0
---- !u!114 &244803845
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 244803749}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 109
-  indentLevel: 3
-  variable: {fileID: 244803837}
-  setOperator: 0
-  booleanData:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  integerData:
-    integerRef: {fileID: 0}
-    integerVal: 0
-  floatData:
-    floatRef: {fileID: 0}
-    floatVal: 0
-  stringData:
-    stringRef: {fileID: 0}
-    stringVal: 
-  animatorData:
-    animatorRef: {fileID: 0}
-    animatorVal: {fileID: 0}
-  audioSourceData:
-    audioSourceRef: {fileID: 0}
-    audioSourceVal: {fileID: 0}
-  colorData:
-    colorRef: {fileID: 0}
-    colorVal: {r: 0, g: 0, b: 0, a: 0}
-  gameObjectData:
-    gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
-  materialData:
-    materialRef: {fileID: 0}
-    materialVal: {fileID: 0}
-  objectData:
-    objectRef: {fileID: 0}
-    objectVal: {fileID: 0}
-  rigidbody2DData:
-    rigidbody2DRef: {fileID: 0}
-    rigidbody2DVal: {fileID: 0}
-  spriteData:
-    spriteRef: {fileID: 0}
-    spriteVal: {fileID: 0}
-  textureData:
-    textureRef: {fileID: 0}
-    textureVal: {fileID: 0}
-  transformData:
-    transformRef: {fileID: 0}
-    transformVal: {fileID: 0}
-  vector2Data:
-    vector2Ref: {fileID: 0}
-    vector2Val: {x: 0, y: 0}
-  vector3Data:
-    vector3Ref: {fileID: 0}
-    vector3Val: {x: 0, y: 0, z: 0}
---- !u!114 &244803846
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 244803749}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fa968f01a7f9496bb50e13dfe16760d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 108
   indentLevel: 2
 --- !u!114 &244803847
 MonoBehaviour:
@@ -3680,8 +3043,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 98
   indentLevel: 0
-  storyText: "Something as green as you... I don\u2019t think you can survive here.\r\nIf
-    I send you off, will you reach blue skies?\r\n"
+  storyText: "To think that something like this little plant would survive such odds.\r\nYou
+    must feel so secure inside it\u2019s capsule.\r\n"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -3708,68 +3071,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 91
   indentLevel: 0
-  storyText: 'Perhaps I was the one who closed off the blue skies.
-
-'
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &244803857
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 244803749}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 87
-  indentLevel: 0
-  storyText: "Green. It\u2019s been a while since I\u2019ve seen a lot of green.\r\n"
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &244803858
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 244803749}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 81
-  indentLevel: 0
-  storyText: 'What did I do? I signed it.
-
-    I took the bus, as always, to my place
-    of work, as always.
-
-'
+  storyText: "Of all the things I had to rush upstairs, I had to bring this along.
+    \rThis little plant inside it\u2019s capsule: completely safe and closed off.\r\n"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -4644,18 +3947,12 @@ MonoBehaviour:
   - {fileID: 244803861}
   - {fileID: 244803860}
   - {fileID: 244803859}
-  - {fileID: 244803813}
-  - {fileID: 244803812}
-  - {fileID: 244803811}
   - {fileID: 244803810}
   - {fileID: 244803809}
   - {fileID: 244803808}
   - {fileID: 244803807}
   - {fileID: 244803806}
   - {fileID: 244803805}
-  - {fileID: 244803804}
-  - {fileID: 244803803}
-  - {fileID: 244803802}
   - {fileID: 244803798}
   - {fileID: 244803797}
   - {fileID: 244803796}
@@ -4896,9 +4193,11 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 244803780}
-  - {fileID: 244803791}
-  - {fileID: 244803789}
-  - {fileID: 244803790}
+  - {fileID: 244803775}
+  - {fileID: 244803772}
+  - {fileID: 244803767}
+  - {fileID: 244803768}
+  - {fileID: 244803766}
   suppressAllAutoSelections: 0
 --- !u!114 &244803890
 MonoBehaviour:
@@ -4914,8 +4213,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 370.9424
-    y: 205.53998
+    x: 300.94247
+    y: 139.82571
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -4927,71 +4226,10 @@ MonoBehaviour:
   commandList:
   - {fileID: 244803774}
   - {fileID: 244803855}
-  - {fileID: 244803755}
+  - {fileID: 244803753}
   - {fileID: 244803754}
+  - {fileID: 244803786}
   - {fileID: 244803771}
-  suppressAllAutoSelections: 0
---- !u!114 &244803891
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 244803749}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 365.2372
-    y: 133.74161
-    width: 120
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 43
-  blockName: defS4
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 244803775}
-  - {fileID: 244803857}
-  - {fileID: 244803757}
-  - {fileID: 244803758}
-  - {fileID: 244803756}
-  - {fileID: 244803772}
-  suppressAllAutoSelections: 0
---- !u!114 &244803892
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 244803749}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: -25.341095
-    y: 164.11317
-    width: 120
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 42
-  blockName: defS3
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 244803778}
-  - {fileID: 244803785}
-  - {fileID: 244803766}
-  - {fileID: 244803765}
   suppressAllAutoSelections: 0
 --- !u!114 &244803893
 MonoBehaviour:
@@ -5008,7 +4246,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: -32.902084
-    y: 280.70282
+    y: 196.41714
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -5019,10 +4257,10 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 244803776}
-  - {fileID: 244803858}
   - {fileID: 244803759}
-  - {fileID: 244803760}
-  - {fileID: 244803761}
+  - {fileID: 244803757}
+  - {fileID: 244803758}
+  - {fileID: 244803756}
   suppressAllAutoSelections: 0
 --- !u!114 &244803894
 MonoBehaviour:
@@ -5038,8 +4276,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 360.92578
-    y: 281.55746
+    x: 296.6401
+    y: 195.84325
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -5051,9 +4289,9 @@ MonoBehaviour:
   commandList:
   - {fileID: 244803773}
   - {fileID: 244803856}
-  - {fileID: 244803752}
-  - {fileID: 244803753}
   - {fileID: 244803751}
+  - {fileID: 244803752}
+  - {fileID: 244803785}
   - {fileID: 244803770}
   suppressAllAutoSelections: 0
 --- !u!114 &244803895
@@ -5083,9 +4321,8 @@ MonoBehaviour:
   commandList:
   - {fileID: 244803779}
   - {fileID: 244803788}
-  - {fileID: 244803786}
-  - {fileID: 244803787}
-  - {fileID: 244803767}
+  - {fileID: 244803764}
+  - {fileID: 244803765}
   suppressAllAutoSelections: 0
 --- !u!114 &244803896
 MonoBehaviour:
@@ -5117,7 +4354,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: -36.86908
-    y: 228.26093
+    y: 143.97522
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -5128,10 +4365,10 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 244803777}
-  - {fileID: 244803784}
   - {fileID: 244803763}
-  - {fileID: 244803764}
   - {fileID: 244803762}
+  - {fileID: 244803760}
+  - {fileID: 244803761}
   suppressAllAutoSelections: 0
 --- !u!114 &244803898
 MonoBehaviour:
@@ -5369,8 +4606,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 478.4616
-    y: 45.37049
+    x: 409.89026
+    y: 49.6562
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -5382,34 +4619,6 @@ MonoBehaviour:
   commandList:
   - {fileID: 244803903}
   suppressAllAutoSelections: 0
---- !u!114 &244803907
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 244803749}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 14
-  indentLevel: 0
-  storyText: "I hope the skies are blue when you look up.\r\nIf I do look up, the
-    closest thing that I can see clearly is the ceiling. \r"
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
 --- !u!114 &244803908
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -5436,9 +4645,9 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 244803781}
-  - {fileID: 244803907}
-  - {fileID: 244803768}
+  - {fileID: 244803784}
   - {fileID: 244803769}
+  - {fileID: 244803778}
   suppressAllAutoSelections: 0
 --- !u!114 &244803909
 MonoBehaviour:
@@ -5568,7 +4777,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 3
   indentLevel: 0
-  storyText: '{color=#34b7eb} This plant talks about an intense heat wave.'
+  storyText: '{color=#34b7eb} This plant talks about torrential rain.'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -5638,12 +4847,9 @@ MonoBehaviour:
   - {fileID: 244803849}
   - {fileID: 244803848}
   - {fileID: 244803847}
-  - {fileID: 244803840}
+  - {fileID: 244803755}
   - {fileID: 244803831}
   - {fileID: 244803839}
-  - {fileID: 244803846}
-  - {fileID: 244803845}
-  - {fileID: 244803844}
   - {fileID: 244803843}
   - {fileID: 244803842}
   - {fileID: 244803841}
@@ -5656,12 +4862,9 @@ MonoBehaviour:
   - {fileID: 244803825}
   - {fileID: 244803824}
   - {fileID: 244803823}
-  - {fileID: 244803822}
+  - {fileID: 244803819}
   - {fileID: 244803821}
   - {fileID: 244803820}
-  - {fileID: 244803819}
-  - {fileID: 244803818}
-  - {fileID: 244803817}
   - {fileID: 244803816}
   - {fileID: 244803815}
   - {fileID: 244803814}
@@ -5680,7 +4883,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 86.28332, y: 61.49227}
+  scrollPos: {x: 131.99757, y: 42.92084}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -5692,9 +4895,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 244803914}
-  selectedCommands:
-  - {fileID: 244803822}
+  - {fileID: 244803895}
+  selectedCommands: []
   variables:
   - {fileID: 244803909}
   - {fileID: 244803905}
@@ -6705,7 +5907,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1412337026}
+  selectedFlowchart: {fileID: 244803915}
 --- !u!4 &773127528
 Transform:
   m_ObjectHideFlags: 1
@@ -6913,7 +6115,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2002694634}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &816518438
 MonoBehaviour:
@@ -11681,10 +10883,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 816518579}
-  selectedCommands:
-  - {fileID: 816518487}
+  selectedBlocks: []
+  selectedCommands: []
   variables:
   - {fileID: 816518574}
   - {fileID: 816518570}
@@ -18081,7 +17281,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1012268634}
+  - {fileID: 1012268651}
   selectedCommands: []
   variables:
   - {fileID: 1012268652}
@@ -23481,7 +22681,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -6.9363794, y: 83.36861}
+  scrollPos: {x: 185.60085, y: 41.577583}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -23493,9 +22693,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1412337025}
-  selectedCommands:
-  - {fileID: 1412336928}
+  - {fileID: 1412337019}
+  selectedCommands: []
   variables:
   - {fileID: 1412337020}
   - {fileID: 1412337016}
@@ -23610,7 +22809,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1412337030
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -23637,7 +22836,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1412337031
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -23665,7 +22864,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1412337032
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -23693,7 +22892,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1412337033
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -23721,7 +22920,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1412337034
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -23749,7 +22948,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1412337035
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -23778,7 +22977,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1412337036
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -23806,7 +23005,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1412337037
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -23834,7 +23033,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1412337038
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -23862,7 +23061,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1412337039
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -23890,7 +23089,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1412337040
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -23918,7 +23117,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1412337041
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -26118,8 +25317,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 379.77335
-    y: 0.728096
+    x: -57.369354
+    y: -27.843323
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -26403,7 +25602,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 186.2833, y: 32.920868}
+  scrollPos: {x: 63.426228, y: 45.778027}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -26415,9 +25614,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1625257676}
-  selectedCommands:
-  - {fileID: 1625257674}
+  - {fileID: 1625257669}
+  selectedCommands: []
   variables:
   - {fileID: 1625257670}
   - {fileID: 1625257658}
@@ -35713,7 +34911,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 62.13241, y: 95.43328}
+  scrollPos: {x: 291.2231, y: 159.0696}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -35725,9 +34923,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1778226009}
-  selectedCommands:
-  - {fileID: 1778226049}
+  - {fileID: 1778226031}
+  selectedCommands: []
   variables:
   - {fileID: 1778226032}
   - {fileID: 1778226024}
@@ -36702,8 +35899,8 @@ Transform:
   - {fileID: 1778225888}
   - {fileID: 1012268493}
   - {fileID: 1412336883}
-  - {fileID: 816518437}
   - {fileID: 244803750}
+  - {fileID: 816518437}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

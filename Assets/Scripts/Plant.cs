@@ -65,6 +65,12 @@ public class Plant : MonoBehaviour
             case 2:
                 this.story = "Story 2";
                 break;
+            case 3:
+                this.story = "Story 3";
+                break;
+            case 4:
+                this.story = "Story 4";
+                break;
             default:
                 break;
         }
