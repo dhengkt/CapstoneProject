@@ -125,7 +125,7 @@ public class NourishmentSystem : MonoBehaviour
     public void AddWater()
     {
         // check if player has enough water
-        if (player.wAmount > 0 && water >=0)
+        if (player.wAmount > 0 && water != 0)
         {
             water--;
             player.wAmount--;
@@ -136,7 +136,7 @@ public class NourishmentSystem : MonoBehaviour
     public void AddFertilizer()
     {
         // check if player has enough fertilizer
-        if (player.fAmount > 0 && fertilizer >= 0)
+        if (player.fAmount > 0 && fertilizer != 0)
         {
             fertilizer--;
             player.fAmount--;

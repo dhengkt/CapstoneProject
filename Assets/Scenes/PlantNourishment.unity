@@ -5106,7 +5106,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 301952375}
+  - {fileID: 301952390}
   selectedCommands: []
   variables:
   - {fileID: 301952378}
@@ -5484,7 +5484,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 221
     y: 117
-    width: 170
+    width: 167
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5976,8 +5976,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 4535211889694189112, guid: 5f8f3db085c5808408323be89e0a534a,
-    type: 3}
+  selectedFlowchart: {fileID: 301952376}
 --- !u!4 &773127528
 Transform:
   m_ObjectHideFlags: 1
