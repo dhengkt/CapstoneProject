@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class Plant : MonoBehaviour
 {
     [SerializeField]
-    public Canvas actionMenu;
+    public Canvas plantMenu;
     [SerializeField]
     public Text pText;
     [SerializeField]
@@ -20,17 +20,20 @@ public class Plant : MonoBehaviour
     private bool plantTrigger; // plantTrigger is true if the player is touching the plant
     private int tempTimeSegment;
     private TimeSystem tSystem;
+    private NourishmentSystem nSystem;
 
     void Start()
     {
         GameObject door = GameObject.FindGameObjectWithTag("Door");
         tSystem = door.GetComponent<TimeSystem>();
+        nSystem = gameObject.GetComponent<NourishmentSystem>();
+
+        plantMenu = FindObjectOfType<Canvas>();
     }
 
     void Update()
     {
         SetActionMenu(plantTrigger);
-
         if (plantTrigger)
         {
             if (Input.GetKeyDown(KeyCode.X))
@@ -38,12 +41,12 @@ public class Plant : MonoBehaviour
                 flowchart.ExecuteBlock("Start");
                 UpdateTimeSegement();
             }
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.F))
             {
                 nourSystem.AddFertilizer();
             }
 
-            if (Input.GetKeyDown(KeyCode.Q))
+            if (Input.GetKeyDown(KeyCode.G))
             {
                 nourSystem.AddWater();
             }
@@ -146,13 +149,13 @@ public class Plant : MonoBehaviour
 
     private void SetActionMenu(bool isTrigger)
     {
-        actionMenu.gameObject.SetActive(isTrigger);
+        plantMenu.gameObject.SetActive(isTrigger);
         UpdateText();
     }
 
     private void UpdateText()
     {
-        pText.text = "Water amount: " + nourSystem.water + " Fertilizer amount: " + nourSystem.fertilizer;
+        pText.text = "Need " + nourSystem.water + " water" + " \nNeed " + nourSystem.fertilizer + " fertilizer";
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

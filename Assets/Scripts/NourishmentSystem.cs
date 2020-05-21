@@ -23,12 +23,13 @@ public class NourishmentSystem : MonoBehaviour
     [SerializeField]
     private Sprite stage4;
 
+    public int water, fertilizer; // Set water and fertilizer to 0
+    public int plantNumber;
     private State currState;
-    public int water, fertilizer = 0; // Set water and fertilizer to 0
     private TimeSystem tSystem;
     private Plant pScript;
     private Flowchart pFlowchart;
-    private Canvas actMenu;
+    private Canvas plMenu;
     private Player player;
 
     void Awake()
@@ -41,15 +42,16 @@ public class NourishmentSystem : MonoBehaviour
         // Get access to Plant script
         pScript = gameObject.GetComponent<Plant>();
         pFlowchart = gameObject.GetComponent<Flowchart>();
-        actMenu = pScript.actionMenu;
+        plMenu = pScript.plantMenu;
     }
 
      void Start()
     {
-        currState = State.Stage1;
-
         // Sync water and fertilizer variables (0) with plant flowchart
         pScript.SyncWaterAndFertilizer(water, fertilizer);
+        currState = State.Stage1;
+        water = 2;
+        fertilizer = 1;
     }
 
     void Update()
@@ -62,34 +64,58 @@ public class NourishmentSystem : MonoBehaviour
             default:
             case State.Stage1:
                 rend.sprite = stage1;
-                if (tSystem.tSegment == 3)
+                if (water == 0 && fertilizer == 0 && currState == State.Stage1)
                 {
                     currState = State.Stage2;
+                    water = 2;
+                    fertilizer = 2;
                 }
                 break;
             case State.Stage2:
                 rend.sprite = stage2;
                 // need to reset the condition
-                if (tSystem.tSegment == 5)
+                if (water == 0 && fertilizer == 0 && currState == State.Stage2)
                 {
                     currState = State.Stage3;
+                    water = 4;
+                    fertilizer = 3;
                 }
                 break;
             case State.Stage3:
                 rend.sprite = stage3;
-                if (tSystem.tSegment == 7)
+                if (water == 0 && fertilizer == 0 && currState == State.Stage3)
                 {
                     currState = State.Stage4;
+                    water = 6;
+                    fertilizer = 4; 
                 }
                 break;
             case State.Stage4:
                 rend.sprite = stage4;
-                if (tSystem.tSegment == 9)
+                if (water == 0 && fertilizer == 0 && currState == State.Stage4)
                 {
                     //move the plant to backtable
-                    gameObject.transform.position = new Vector3(5.18f, 7.45f, -5f);
-                    //disable the Action Menu of plant here
-                    actMenu.gameObject.SetActive(false);
+                    if (plantNumber > 3)
+                    {
+                        // don't move position
+                    }
+                    else
+                    {
+                        if (plantNumber == 1)
+                        {
+                            gameObject.transform.position = new Vector3(5.49f, 7.64f, -5f);
+                        }
+                        if (plantNumber == 2)
+                        {
+                            gameObject.transform.position = new Vector3(9.12f, 7.64f, -5f);
+                        }
+                        if (plantNumber == 3)
+                        {
+                            gameObject.transform.position = new Vector3(12.75f, 7.64f, -5f);
+                        }
+                    }
+                    //disable the plant info of plant here
+                    plMenu.gameObject.SetActive(false);
                 }
                 break;
         }
@@ -102,7 +128,7 @@ public class NourishmentSystem : MonoBehaviour
         // check if player has enough water
         if (player.wAmount > 0)
         {
-            water++;
+            water--;
             player.wAmount--;
             Debug.Log(water);
         }
@@ -113,7 +139,7 @@ public class NourishmentSystem : MonoBehaviour
         // check if player has enough fertilizer
         if (player.fAmount > 0)
         {
-            fertilizer++;
+            fertilizer--;
             player.fAmount--;
             Debug.Log(fertilizer);
         }
