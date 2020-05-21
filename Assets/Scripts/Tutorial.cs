@@ -50,6 +50,11 @@ public class Tutorial : MonoBehaviour
         {
             tSystem.isTutorial = false;
         }
+
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            Application.Quit();
+        }
     }
 
     private void CreatePlant()

@@ -53,6 +53,11 @@ public class GameManager : MonoBehaviour
         {
             pActions.SetMenu(false);
         }
+
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            Application.Quit();
+        }
     }
 
     // Create a plant object before placing it in the game
