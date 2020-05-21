@@ -11,6 +11,8 @@ public class Tutorial : MonoBehaviour
     private ActionsMenu pActions;
     private Flowchart tuFlowchart;
     private Player player;
+    private Plant plant;
+    private NourishmentSystem nSystem;
     private bool isDone = false;
 
     /*
@@ -41,11 +43,18 @@ public class Tutorial : MonoBehaviour
         player.fAmount = 2;
         player.wAmount = 3;
         tSystem.isTutorial = true;
-        CreatePlant();
+        GameObject p = Resources.Load<GameObject>("Prefabs/Plant");
+        GameObject plantObject = Instantiate(p);
+        plant = plantObject.GetComponent<Plant>();
+        plant.transform.position = new Vector3(5.81f, -1.38f, -5f);
+        plant.flowchart = tuFlowchart;
+        nSystem = plant.GetComponent<NourishmentSystem>();
+        plant.SyncWaterAndFertilizer(nSystem.water, nSystem.fertilizer);
     }
 
     void Update()
     {
+        plant.SyncWaterAndFertilizer(nSystem.water, nSystem.fertilizer);
         if (Input.GetKeyDown(KeyCode.X))
         {
             tSystem.isTutorial = false;
@@ -55,15 +64,5 @@ public class Tutorial : MonoBehaviour
         {
             Application.Quit();
         }
-    }
-
-    private void CreatePlant()
-    {
-        Plant plant;
-        GameObject p = Resources.Load<GameObject>("Prefabs/Plant");
-        GameObject plantObject = Instantiate(p);
-        plant = plantObject.GetComponent<Plant>();
-        plant.transform.position = new Vector3(5.81f, -1.38f, -5f);
-        plant.flowchart = tuFlowchart;
     }
 }

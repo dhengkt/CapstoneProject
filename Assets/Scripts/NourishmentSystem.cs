@@ -22,7 +22,8 @@ public class NourishmentSystem : MonoBehaviour
     [SerializeField]
     private Sprite stage4;
 
-    public int water, fertilizer; // Set water and fertilizer to 0
+    public int water, fertilizer = 0; // Set water and fertilizer to 0
+    public int needWater, needFertilizer;
     public int plantNumber;
     private State currState;
     private TimeSystem tSystem;
@@ -49,8 +50,8 @@ public class NourishmentSystem : MonoBehaviour
         // Sync water and fertilizer variables (0) with plant flowchart
         pScript.SyncWaterAndFertilizer(water, fertilizer);
         currState = State.Stage1;
-        water = 2;
-        fertilizer = 1;
+        needWater = 1;
+        needFertilizer = 1;
     }
 
     void Update()
@@ -63,35 +64,41 @@ public class NourishmentSystem : MonoBehaviour
             default:
             case State.Stage1:
                 rend.sprite = stage1;
-                if (water == 0 && fertilizer == 0 && currState == State.Stage1)
+                if (needWater == water && needFertilizer == fertilizer && currState == State.Stage1)
                 {
                     currState = State.Stage2;
-                    water = 2;
-                    fertilizer = 2;
+                    needWater = 2;
+                    needFertilizer = 2;
+                    water = 0;
+                    fertilizer = 0;
                 }
                 break;
             case State.Stage2:
                 rend.sprite = stage2;
                 // need to reset the condition
-                if (water == 0 && fertilizer == 0 && currState == State.Stage2)
+                if (needWater == water && needFertilizer == fertilizer && currState == State.Stage2)
                 {
                     currState = State.Stage3;
-                    water = 4;
-                    fertilizer = 3;
+                    needWater = 4;
+                    needFertilizer = 3;
+                    water = 0;
+                    fertilizer = 0;
                 }
                 break;
             case State.Stage3:
                 rend.sprite = stage3;
-                if (water == 0 && fertilizer == 0 && currState == State.Stage3)
+                if (needWater == water && needFertilizer == fertilizer && currState == State.Stage3)
                 {
                     currState = State.Stage4;
-                    water = 6;
-                    fertilizer = 4; 
+                    needWater = 6;
+                    needFertilizer = 4;
+                    water = 0;
+                    fertilizer = 0; 
                 }
                 break;
             case State.Stage4:
                 rend.sprite = stage4;
-                if (water == 0 && fertilizer == 0 && currState == State.Stage4)
+                if (needWater == water && needFertilizer == fertilizer && currState == State.Stage4)
                 {
                     //move the plant to backtable
                     if (plantNumber > 3)
@@ -125,9 +132,9 @@ public class NourishmentSystem : MonoBehaviour
     public void AddWater()
     {
         // check if player has enough water
-        if (player.wAmount > 0 && water != 0)
+        if (player.wAmount > 0 && needWater != 0)
         {
-            water--;
+            water++;
             player.wAmount--;
             Debug.Log(water);
         }
@@ -136,9 +143,9 @@ public class NourishmentSystem : MonoBehaviour
     public void AddFertilizer()
     {
         // check if player has enough fertilizer
-        if (player.fAmount > 0 && fertilizer != 0)
+        if (player.fAmount > 0 && needFertilizer != 0)
         {
-            fertilizer--;
+            fertilizer++;
             player.fAmount--;
             Debug.Log(fertilizer);
         }
