@@ -144,6 +144,10 @@ PrefabInstance:
       propertyPath: targetCamera
       value: 
       objectReference: {fileID: 1920683019}
+    - target: {fileID: 718172988, guid: cab1a23ddb7d1ea47ba7115b8b00165e, type: 3}
+      propertyPath: duration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 718172991, guid: cab1a23ddb7d1ea47ba7115b8b00165e, type: 3}
       propertyPath: targetView
       value: 
@@ -152,6 +156,10 @@ PrefabInstance:
       propertyPath: targetCamera
       value: 
       objectReference: {fileID: 1920683019}
+    - target: {fileID: 718172991, guid: cab1a23ddb7d1ea47ba7115b8b00165e, type: 3}
+      propertyPath: duration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 718172994, guid: cab1a23ddb7d1ea47ba7115b8b00165e, type: 3}
       propertyPath: targetView
       value: 

@@ -2115,6 +2115,10 @@ PrefabInstance:
       propertyPath: targetCamera
       value: 
       objectReference: {fileID: 1167208487}
+    - target: {fileID: 718172988, guid: cab1a23ddb7d1ea47ba7115b8b00165e, type: 3}
+      propertyPath: duration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 718172991, guid: cab1a23ddb7d1ea47ba7115b8b00165e, type: 3}
       propertyPath: targetView
       value: 
@@ -2123,6 +2127,10 @@ PrefabInstance:
       propertyPath: targetCamera
       value: 
       objectReference: {fileID: 1167208487}
+    - target: {fileID: 718172991, guid: cab1a23ddb7d1ea47ba7115b8b00165e, type: 3}
+      propertyPath: duration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 718172994, guid: cab1a23ddb7d1ea47ba7115b8b00165e, type: 3}
       propertyPath: targetView
       value: 
@@ -2941,9 +2949,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1680803808}
+  - {fileID: 1680803775}
   selectedCommands:
-  - {fileID: 1680803806}
+  - {fileID: 1680803773}
   variables:
   - {fileID: 1680803780}
   - {fileID: 1680803779}
@@ -3115,7 +3123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 30
   indentLevel: 0
-  storyText: '{color=#34eb3a}You can go to the botton left of greenhouse to gather
+  storyText: '{color=#34eb3a}You can go to the bottom left of greenhouse to gather
     resources or explore outside.'
   description: 
   character: {fileID: 0}
@@ -3288,7 +3296,7 @@ MonoBehaviour:
   sayDialog: {fileID: 1331437627}
 --- !u!114 &1680803803
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3379,7 +3387,7 @@ MonoBehaviour:
   suppressAllAutoSelections: 0
 --- !u!114 &1680803805
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3489,7 +3497,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 604
     y: 136
-    width: 124
+    width: 123
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
