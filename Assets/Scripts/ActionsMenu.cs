@@ -30,15 +30,15 @@ public class ActionsMenu : MonoBehaviour
     public void GatherResources()
     {
         // random give player certain amount of water/fertilizer
-        if (player.wAmount < 6 || player.fAmount < 6)
+        if (player.wAmount < 10 || player.fAmount < 10)
         {
-            int temp = Random.Range(0, 6);
-            int temp2 = Random.Range(0, 6);
+            int temp = Random.Range(0, 10);
+            int temp2 = Random.Range(0, 10);
 
-            if (player.fAmount + temp > 6 || player.wAmount + temp2 > 6)
+            if (player.fAmount + temp > 10 || player.wAmount + temp2 > 10)
             {
-                player.fAmount = 6;
-                player.wAmount = 6;
+                player.fAmount = 10;
+                player.wAmount = 10;
             }
             else
             {
