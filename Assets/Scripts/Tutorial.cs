@@ -25,8 +25,6 @@ public class Tutorial : MonoBehaviour
 
     void Awake()
     {
-        //GameObject temDoor = Resources.Load<GameObject>("Prefabs/Door");
-        //GameObject door = Instantiate(temDoor);
         GameObject door = GameObject.FindGameObjectWithTag("Door");
         door.transform.position = new Vector3(-.23f, -7.99f, 0f);
         tSystem = door.GetComponent<TimeSystem>();

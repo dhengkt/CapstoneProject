@@ -17,8 +17,6 @@ public class GameManager : MonoBehaviour
 
     void Awake()
     {
-        //GameObject temDoor = Resources.Load<GameObject>("Prefabs/Door");
-        //GameObject door = Instantiate(temDoor);
         GameObject door = GameObject.FindGameObjectWithTag("Door");
         door.transform.position = new Vector3(-.23f, -7.99f, 0f);
         //CreateFirstPlant();
@@ -88,11 +86,9 @@ public class GameManager : MonoBehaviour
     // Return a random story from the unusedStories list and transfer it to the usedStories when creating a plant
     private int AssignStory()
     {
-        //UnityEngine.Random rnd = new UnityEngine.Random();
         int storyIndex = UnityEngine.Random.Range(0, unusedStories.Count);
         Debug.Log("Assign Random story: " + storyIndex);
         int tempStory = unusedStories[storyIndex]; 
-        // plant.setStory(tempStory);//***** GAME OBJECT ISN'T CONNECTED TO THE PLANT OBJECT
         usedStories.Add(tempStory);
         unusedStories.RemoveAt(storyIndex);
         return tempStory;
