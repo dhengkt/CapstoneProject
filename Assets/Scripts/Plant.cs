@@ -31,7 +31,7 @@ public class Plant : MonoBehaviour
         plantMenu = FindObjectOfType<Canvas>();
     }
 
-    void FixedUpdate()
+    void Update()
     {
         SetActionMenu(plantTrigger);
         if (plantTrigger)
@@ -41,21 +41,18 @@ public class Plant : MonoBehaviour
                 flowchart.ExecuteBlock("Start");
                 UpdateTimeSegement();
             }
-            if (nourSystem.needWater > nourSystem.water || nourSystem.needWater > nourSystem.fertilizer)
+            if (Input.GetKeyDown(KeyCode.G))
             {
-                if (nourSystem.needWater - nourSystem.fertilizer > 0)
+                if (nourSystem.needWater != 0)
                 {
-                    if (Input.GetKeyDown(KeyCode.F))
-                    {
-                        nourSystem.AddFertilizer();
-                    }
+                    nourSystem.AddWater();
                 }
-                if (nourSystem.needWater - nourSystem.water > 0)
+            }
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                if (nourSystem.needFertilizer != 0)
                 {
-                    if (Input.GetKeyDown(KeyCode.G))
-                    {
-                        nourSystem.AddWater();
-                    }
+                    nourSystem.AddFertilizer();
                 }
             }
         }
@@ -121,7 +118,6 @@ public class Plant : MonoBehaviour
     {
         flowchart.SetIntegerVariable("water", nSWater);
         flowchart.SetIntegerVariable("fertilizer", nSFertilizer);
-        //Debug.Log("Plant Setters- Water: " + flowchart.GetIntegerVariable("water") + " Fertilizer: " + flowchart.GetIntegerVariable("fertilizer"));
     }
 
     private void UpdateTimeSegement()
@@ -163,7 +159,7 @@ public class Plant : MonoBehaviour
 
     private void UpdateText()
     {
-        pText.text = "Stage " + nourSystem.stageNum + "\nNeed " + (nourSystem.needWater - nourSystem.water) + " water" + " \nNeed " + (nourSystem.needFertilizer - nourSystem.fertilizer) + " fertilizer";
+        pText.text = "Stage " + nourSystem.stageNum + "\nNeed " + nourSystem.needWater + " water" + " \nNeed " + nourSystem.needFertilizer  + " fertilizer";
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
