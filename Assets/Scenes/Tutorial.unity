@@ -1689,7 +1689,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1959937574}
+  selectedFlowchart: {fileID: 1680803786}
 --- !u!4 &1104282622
 Transform:
   m_ObjectHideFlags: 1
@@ -2625,7 +2625,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 14
   indentLevel: 0
-  storyText: '{color=#34eb3a}Press {b}G to water {/b} the plant. Press {b}F to give
+  storyText: '{color=#34eb3a}Press {b}Q to water {/b} the plant. Press {b}E to give
     fertilizer{/b} to the plant.'
   description: 
   character: {fileID: 0}
@@ -2962,9 +2962,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1680803775}
+  - {fileID: 1680803785}
   selectedCommands:
-  - {fileID: 1680803773}
+  - {fileID: 1680803777}
   variables:
   - {fileID: 1680803780}
   - {fileID: 1680803779}
@@ -3776,18 +3776,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1959937574 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 718172996, guid: cab1a23ddb7d1ea47ba7115b8b00165e,
-    type: 3}
-  m_PrefabInstance: {fileID: 1365570101}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2018336942
 GameObject:
   m_ObjectHideFlags: 0
