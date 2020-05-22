@@ -100,7 +100,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.8958241
+  m_Radius: 0.5954058
 --- !u!114 &2557259207095973902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,7 +135,10 @@ MonoBehaviour:
   stage4: {fileID: 21300000, guid: 84551a368bbcd194ea0bcd6676d0687d, type: 3}
   water: 0
   fertilizer: 0
+  needWater: 0
+  needFertilizer: 0
   plantNumber: 0
+  stageNum: 0
 --- !u!1001 &9215509266503298996
 PrefabInstance:
   m_ObjectHideFlags: 0
