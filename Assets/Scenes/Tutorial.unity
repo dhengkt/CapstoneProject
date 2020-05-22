@@ -2107,6 +2107,10 @@ PrefabInstance:
       propertyPath: targetCamera
       value: 
       objectReference: {fileID: 1167208487}
+    - target: {fileID: 718172987, guid: cab1a23ddb7d1ea47ba7115b8b00165e, type: 3}
+      propertyPath: duration
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 718172988, guid: cab1a23ddb7d1ea47ba7115b8b00165e, type: 3}
       propertyPath: targetView
       value: 
@@ -2139,6 +2143,10 @@ PrefabInstance:
       propertyPath: targetCamera
       value: 
       objectReference: {fileID: 1167208487}
+    - target: {fileID: 718172994, guid: cab1a23ddb7d1ea47ba7115b8b00165e, type: 3}
+      propertyPath: duration
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6618056598357041193, guid: cab1a23ddb7d1ea47ba7115b8b00165e,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
