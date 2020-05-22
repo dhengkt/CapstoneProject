@@ -2625,7 +2625,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 14
   indentLevel: 0
-  storyText: '{color=#34eb3a}Press {b}Q to water {/b} the plant. Press {b}E to give
+  storyText: '{color=#34eb3a}Press {b}E to water {/b} the plant. Press {b}F to give
     fertilizer{/b} to the plant.'
   description: 
   character: {fileID: 0}
@@ -2962,9 +2962,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1680803785}
+  - {fileID: 1680803775}
   selectedCommands:
-  - {fileID: 1680803777}
+  - {fileID: 1680803774}
   variables:
   - {fileID: 1680803780}
   - {fileID: 1680803779}
@@ -3413,7 +3413,7 @@ MonoBehaviour:
   parentBlock: {fileID: 1680803804}
   suppressBlockAutoSelect: 0
   keyPressType: 0
-  keyCode: 103
+  keyCode: 101
 --- !u!114 &1680803806
 MonoBehaviour:
   m_ObjectHideFlags: 2
