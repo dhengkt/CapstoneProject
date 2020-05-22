@@ -146,7 +146,11 @@ PrefabInstance:
       objectReference: {fileID: 1920683019}
     - target: {fileID: 718172988, guid: cab1a23ddb7d1ea47ba7115b8b00165e, type: 3}
       propertyPath: duration
-      value: 1
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 718172990, guid: cab1a23ddb7d1ea47ba7115b8b00165e, type: 3}
+      propertyPath: nodeRect.y
+      value: 137
       objectReference: {fileID: 0}
     - target: {fileID: 718172991, guid: cab1a23ddb7d1ea47ba7115b8b00165e, type: 3}
       propertyPath: targetView
@@ -158,7 +162,7 @@ PrefabInstance:
       objectReference: {fileID: 1920683019}
     - target: {fileID: 718172991, guid: cab1a23ddb7d1ea47ba7115b8b00165e, type: 3}
       propertyPath: duration
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 718172994, guid: cab1a23ddb7d1ea47ba7115b8b00165e, type: 3}
       propertyPath: targetView
