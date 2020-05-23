@@ -5004,7 +5004,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 131.99757, y: 42.92084}
+  scrollPos: {x: 223.42612, y: 62.920826}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -5536,7 +5536,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 221
     y: 117
-    width: 167
+    width: 170
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6028,7 +6028,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1872513785}
+  selectedFlowchart: {fileID: 1412337026}
 --- !u!4 &773127528
 Transform:
   m_ObjectHideFlags: 1
@@ -18102,8 +18102,9 @@ GameObject:
   - component: {fileID: 1412337032}
   - component: {fileID: 1412337031}
   - component: {fileID: 1412337030}
+  - component: {fileID: 1412337057}
   m_Layer: 0
-  m_Name: 'Story 3: Farming'
+  m_Name: 'Story 3: Farming/Moving'
   m_TagString: Story 3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18609,7 +18610,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 152
-  indentLevel: 3
+  indentLevel: 2
   storyText: '{color=#34b7eb} A new note has sprouted!'
   description: 
   character: {fileID: 0}
@@ -21092,7 +21093,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 69
-  indentLevel: 3
+  indentLevel: 2
   variable: {fileID: 1412336975}
   setOperator: 0
   booleanData:
@@ -21156,7 +21157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 68
-  indentLevel: 3
+  indentLevel: 2
   variable: {fileID: 1412336976}
   setOperator: 0
   booleanData:
@@ -21250,7 +21251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 67
-  indentLevel: 3
+  indentLevel: 2
   variable: {fileID: 1412336996}
   setOperator: 0
   booleanData:
@@ -21314,7 +21315,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 66
-  indentLevel: 3
+  indentLevel: 2
   variable: {fileID: 1412337016}
   setOperator: 0
   booleanData:
@@ -21378,7 +21379,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 65
-  indentLevel: 3
+  indentLevel: 2
   variable: {fileID: 1412336984}
   setOperator: 0
   booleanData:
@@ -21456,7 +21457,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 63
-  indentLevel: 2
+  indentLevel: 1
 --- !u!114 &1412336982
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -21470,7 +21471,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 62
-  indentLevel: 3
+  indentLevel: 2
   targetFlowchart: {fileID: 0}
   targetBlock: {fileID: 1412337006}
   startLabel:
@@ -21491,7 +21492,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 60
-  indentLevel: 1
+  indentLevel: 0
 --- !u!114 &1412336984
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -21520,7 +21521,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 59
-  indentLevel: 2
+  indentLevel: 1
   compareOperator: 0
   variable: {fileID: 1412336998}
   booleanData:
@@ -22347,7 +22348,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 30
-  indentLevel: 3
+  indentLevel: 2
   targetFlowchart: {fileID: 0}
   targetBlock: {fileID: 1412337000}
   startLabel:
@@ -22368,7 +22369,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 29
-  indentLevel: 2
+  indentLevel: 1
 --- !u!114 &1412337011
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -22382,7 +22383,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 28
-  indentLevel: 1
+  indentLevel: 0
   compareOperator: 0
   variable: {fileID: 1412337016}
   booleanData:
@@ -22446,7 +22447,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 26
-  indentLevel: 2
+  indentLevel: 1
   compareOperator: 3
   variable: {fileID: 1412337013}
   booleanData:
@@ -22670,7 +22671,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 6
-  indentLevel: 2
+  indentLevel: 0
 --- !u!114 &1412337022
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -22799,7 +22800,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 180.9367
-    y: 2.8860788
+    y: 4.3786154
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -22816,13 +22817,14 @@ MonoBehaviour:
   - {fileID: 1412336995}
   - {fileID: 1412336999}
   - {fileID: 1412337023}
+  - {fileID: 1412337021}
   - {fileID: 1412337011}
   - {fileID: 1412336985}
   - {fileID: 1412336977}
   - {fileID: 1412336979}
   - {fileID: 1412336978}
   - {fileID: 1412336906}
-  - {fileID: 1412337021}
+  - {fileID: 1412337057}
   - {fileID: 1412337012}
   - {fileID: 1412336974}
   - {fileID: 1412337009}
@@ -22883,7 +22885,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 185.60085, y: 41.577583}
+  scrollPos: {x: 161.7202, y: 31.129831}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -22894,8 +22896,7 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 1412337019}
+  selectedBlocks: []
   selectedCommands: []
   variables:
   - {fileID: 1412337020}
@@ -23766,6 +23767,20 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &1412337057
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1412336882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93cb9773f2ca04e2bbf7a68ccfc23267, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 208
+  indentLevel: 1
 --- !u!1 &1456208985
 GameObject:
   m_ObjectHideFlags: 0
@@ -24586,8 +24601,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 95
   indentLevel: 0
-  storyText: Neighbors seemed to have be gone, since it had been a while since I've
-    last heared any talking through the walls.
+  storyText: The neighbors seem to be gone. It had been a while since I've last heared
+    any talking through the walls.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -25816,7 +25831,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 63.426228, y: 45.778027}
+  scrollPos: {x: -19.430859, y: -14.22196}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -25828,8 +25843,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1625257669}
-  selectedCommands: []
+  - {fileID: 1625257632}
+  selectedCommands:
+  - {fileID: 1625257634}
   variables:
   - {fileID: 1625257670}
   - {fileID: 1625257658}
@@ -35206,7 +35222,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1778226031}
+  - {fileID: 1778226037}
   selectedCommands: []
   variables:
   - {fileID: 1778226032}
@@ -35990,18 +36006,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1843637759}
   m_CullTransparentMesh: 0
---- !u!114 &1872513785 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 718172996, guid: cab1a23ddb7d1ea47ba7115b8b00165e,
-    type: 3}
-  m_PrefabInstance: {fileID: 177315285}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1920683017
 GameObject:
   m_ObjectHideFlags: 0
