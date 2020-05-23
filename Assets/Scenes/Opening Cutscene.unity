@@ -1445,7 +1445,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 666067024}
   selectedCommands:
-  - {fileID: 666067079}
+  - {fileID: 666067069}
   variables: []
   description: 
   stepPause: 0
@@ -2212,7 +2212,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 30
   indentLevel: 0
-  storyText: You an your team spends a week studying city ruins and artifacts.
+  storyText: You and your team spend a week studying city ruins and artifacts.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -2260,7 +2260,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 40
   indentLevel: 0
-  storyText: After 10 days, you'll make the treck back to regroup.
+  storyText: After 10 days, you'll make the trek back to regroup.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -2606,7 +2606,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 48
   indentLevel: 0
-  storyText: You carry the capsule the the shed.
+  storyText: You carry the capsule the shed.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
