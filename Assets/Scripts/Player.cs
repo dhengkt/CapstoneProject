@@ -10,10 +10,10 @@ public class Player : MonoBehaviour
     public Rigidbody2D rb;
     public Animator animator;
     public int wAmount, fAmount = 0;
+
     private Vector2 targetPoint;
     private int x;
     
-
    void Update()
     {
         // Player movement

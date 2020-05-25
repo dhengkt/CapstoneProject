@@ -10,14 +10,12 @@ public class Plant : MonoBehaviour
     public Canvas plantMenu;
     [SerializeField]
     public Text pText;
-    //[SerializeField]
-    //public NourishmentSystem nourSystem;
 
-    // Set associated flowchart to plant
     public Flowchart flowchart;
+
     private string story;
     private Vector3 location;
-    private bool plantTrigger; // plantTrigger is true if the player is touching the plant
+    private bool plantTrigger;
     private int tempTimeSegment;
     private TimeSystem tSystem;
     private NourishmentSystem nSystem;
@@ -27,7 +25,6 @@ public class Plant : MonoBehaviour
         GameObject door = GameObject.FindGameObjectWithTag("Door");
         tSystem = door.GetComponent<TimeSystem>();
         nSystem = gameObject.GetComponent<NourishmentSystem>();
-
         plantMenu = FindObjectOfType<Canvas>();
     }
 
