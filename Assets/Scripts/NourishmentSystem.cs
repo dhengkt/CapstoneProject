@@ -26,6 +26,7 @@ public class NourishmentSystem : MonoBehaviour
     public int needWater, needFertilizer;
     public int plantNumber;
     public int stageNum;
+    public float lifetime;
     private State currState;
     private TimeSystem tSystem;
     private Plant pScript;

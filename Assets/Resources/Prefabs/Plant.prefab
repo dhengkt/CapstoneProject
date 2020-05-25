@@ -115,7 +115,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plantMenu: {fileID: 8430081412351131967}
   pText: {fileID: 3605748058051312721}
-  nourSystem: {fileID: 4156057937336300748}
   flowchart: {fileID: 0}
 --- !u!114 &4156057937336300748
 MonoBehaviour:
@@ -139,6 +138,8 @@ MonoBehaviour:
   needFertilizer: 0
   plantNumber: 0
   stageNum: 0
+  effect: {fileID: 1500378020736912, guid: 2547a66872ebe45408ace228820a79e1, type: 3}
+  lifetime: 0
 --- !u!1001 &9215509266503298996
 PrefabInstance:
   m_ObjectHideFlags: 0

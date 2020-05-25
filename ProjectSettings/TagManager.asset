@@ -19,6 +19,7 @@ TagManager:
   - Story 6
   - Cutscene
   - PlantInfo
+  - Particle
   layers:
   - Default
   - TransparentFX

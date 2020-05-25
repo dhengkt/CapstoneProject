@@ -10,8 +10,8 @@ public class Plant : MonoBehaviour
     public Canvas plantMenu;
     [SerializeField]
     public Text pText;
-    [SerializeField]
-    public NourishmentSystem nourSystem;
+    //[SerializeField]
+    //public NourishmentSystem nourSystem;
 
     // Set associated flowchart to plant
     public Flowchart flowchart;
@@ -43,16 +43,16 @@ public class Plant : MonoBehaviour
             }
             if (Input.GetKeyDown(KeyCode.E))
             {
-                if (nourSystem.needWater != 0)
+                if (nSystem.needWater != 0)
                 {
-                    nourSystem.AddWater();
+                    nSystem.AddWater();
                 }
             }
             if (Input.GetKeyDown(KeyCode.F))
             {
-                if (nourSystem.needFertilizer != 0)
+                if (nSystem.needFertilizer != 0)
                 {
-                    nourSystem.AddFertilizer();
+                    nSystem.AddFertilizer();
                 }
             }
         }
@@ -159,7 +159,7 @@ public class Plant : MonoBehaviour
 
     private void UpdateText()
     {
-        pText.text = "Stage " + nourSystem.stageNum + "\nNeed " + nourSystem.needWater + " water" + " \nNeed " + nourSystem.needFertilizer  + " fertilizer";
+        pText.text = "Stage " + nSystem.stageNum + "\nNeed " + nSystem.needWater + " water" + " \nNeed " + nSystem.needFertilizer  + " fertilizer";
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
