@@ -138,7 +138,6 @@ MonoBehaviour:
   needFertilizer: 0
   plantNumber: 0
   stageNum: 0
-  effect: {fileID: 1500378020736912, guid: 2547a66872ebe45408ace228820a79e1, type: 3}
   lifetime: 0
 --- !u!1001 &9215509266503298996
 PrefabInstance:
