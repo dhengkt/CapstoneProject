@@ -29,20 +29,15 @@ public class GameManager : MonoBehaviour
     /*****Create plant should be called when the player reaches a certain time segment and goes outside*****/
     void Update()
     {
-        //if (Input.GetKeyDown(KeyCode.C))
-        //{
-        //    CreatePlant();
-        //    numberOfPlants++;
-        //}
-        if (tSystem.tSegment == 1 && numberOfPlants == 0)
+        if (tSystem.tSegment == 1 && numberOfPlants != 1)
         {
             CreatePlant();
         }
-        if (tSystem.tSegment == 3 && numberOfPlants == 1)
+        if (tSystem.tSegment == 3 && numberOfPlants != 2)
         {
             CreatePlant();
         }
-        if (tSystem.tSegment == 5 && numberOfPlants == 2)
+        if (tSystem.tSegment == 5 && numberOfPlants != 3)
         {
             CreatePlant();
         }

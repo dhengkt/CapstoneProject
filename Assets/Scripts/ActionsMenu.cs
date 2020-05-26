@@ -32,8 +32,8 @@ public class ActionsMenu : MonoBehaviour
         // random give player certain amount of water/fertilizer
         if (player.wAmount < 10 || player.fAmount < 10)
         {
-            int temp = Random.Range(0, 10);
-            int temp2 = Random.Range(0, 10);
+            int temp = Random.Range(0, 6);
+            int temp2 = Random.Range(0, 6);
 
             if (player.fAmount + temp > 10 || player.wAmount + temp2 > 10)
             {

@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
@@ -7,7 +8,7 @@ using UnityEngine.UI;
 public class OptionsMenu : MonoBehaviour
 {
     public AudioMixer audioMixer;
-    public Dropdown resoluDropdown;
+    public TMP_Dropdown resoluDropdown;
     Resolution[] resolutions;
 
     void Start()
@@ -41,13 +42,12 @@ public class OptionsMenu : MonoBehaviour
         Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
     }
 
+    public void SetFullscreen(bool isFullscreen)
+    {
+        Screen.fullScreen = isFullscreen;
+    }
     public void SetVolume(float volume)
     {
         audioMixer.SetFloat("volume", volume);
-    }
-
-    public void SetFullscreen(bool isFullscrren)
-    {
-        Screen.fullScreen = isFullscrren;
     }
 }
