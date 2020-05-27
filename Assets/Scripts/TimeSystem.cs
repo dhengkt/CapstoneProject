@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using Fungus;
@@ -29,7 +30,6 @@ public class TimeSystem : MonoBehaviour
     private void Awake()
     {
         bgPicture = GameObject.FindGameObjectWithTag("Background");
-        tText = FindObjectOfType<Text>();
         player = FindObjectOfType<Player>();
     }
 
@@ -86,7 +86,6 @@ public class TimeSystem : MonoBehaviour
         if (isTutorial)
         {
             tText.text = "Welcome to the tutorial!\nUse WASD to move Neirus. \nPress X to interact with the plant. \nUse space to read next text.";
-
         }
         else
         {
@@ -124,5 +123,4 @@ public class TimeSystem : MonoBehaviour
             }
         }
     }
-
 }
