@@ -5024,6 +5024,8 @@ GameObject:
   - component: {fileID: 1680803804}
   - component: {fileID: 1680803805}
   - component: {fileID: 1680803803}
+  - component: {fileID: 1680803809}
+  - component: {fileID: 1680803810}
   m_Layer: 0
   m_Name: Tutorial
   m_TagString: Tutorial
@@ -5719,7 +5721,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1680803787}
   selectedCommands:
-  - {fileID: 1680803764}
+  - {fileID: 1680803810}
   variables:
   - {fileID: 1680803780}
   - {fileID: 1680803779}
@@ -5760,7 +5762,9 @@ MonoBehaviour:
   commandList:
   - {fileID: 1680803795}
   - {fileID: 1680803792}
+  - {fileID: 1680803809}
   - {fileID: 1680803791}
+  - {fileID: 1680803810}
   - {fileID: 1680803790}
   - {fileID: 1680803789}
   - {fileID: 1680803788}
@@ -5835,8 +5839,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 32
   indentLevel: 0
-  storyText: '{color=#34eb3a} The plant will show you the amount of water or fertilizer
-    before they move to the next stage.'
+  storyText: '{color=#34eb3a} The plant will show you its current stage.'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -5891,8 +5894,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 30
   indentLevel: 0
-  storyText: '{color=#34eb3a}You can go to the bottom left of greenhouse to gather
-    resources or explore outside.'
+  storyText: '{color=#34eb3a}You can go to the bottom left of greenhouse to explore
+    {b}River or Forest.{/b}'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -6276,6 +6279,62 @@ MonoBehaviour:
   commandList:
   - {fileID: 1680803806}
   suppressAllAutoSelections: 0
+--- !u!114 &1680803809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1680803761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 48
+  indentLevel: 0
+  storyText: '{color=#34eb3a}You can find {b}water when you choose River{/b}. You
+    can find {b}fertilizer when you choose Forest{/b}.'
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1680803810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1680803761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 49
+  indentLevel: 0
+  storyText: '{color=#34eb3a} Be sure to use {b}X{/b} to check if new note available
+    every time before you go out.'
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1 &1683977867
 GameObject:
   m_ObjectHideFlags: 0
