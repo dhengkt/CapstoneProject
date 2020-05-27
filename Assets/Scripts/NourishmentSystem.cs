@@ -23,7 +23,6 @@ public class NourishmentSystem : MonoBehaviour
     private Sprite stage4;
 
     public int water, fertilizer = 0;
-    public int needWater, needFertilizer;
     public int plantNumber;
     public int stageNum;
     public float lifetime;
@@ -34,6 +33,8 @@ public class NourishmentSystem : MonoBehaviour
     private Flowchart pFlowchart;
     private Canvas plMenu;
     private Player player;
+    private int passedTime;
+    private int createdTime;
 
     void Awake()
     {
@@ -54,12 +55,22 @@ public class NourishmentSystem : MonoBehaviour
         // Sync water and fertilizer variables (0) with plant flowchart
         pScript.SyncWaterAndFertilizer(water, fertilizer);
         currState = State.Stage1;
-        needWater = 1;
-        needFertilizer = 1;
         stageNum = 0;
+        createdTime = tSystem.tSegment;
+        Debug.Log(createdTime);
+        passedTime = tSystem.tSegment - createdTime;
+        Debug.Log(passedTime);
     }
 
     void Update()
+    {
+        int curTime = tSystem.tSegment;
+        passedTime = curTime - createdTime;
+        ChangeStage();
+        Debug.Log(passedTime);
+    }
+
+    private void ChangeStage()
     {
         SpriteRenderer rend = gameObject.GetComponent<SpriteRenderer>();
 
@@ -68,67 +79,32 @@ public class NourishmentSystem : MonoBehaviour
             default:
             case State.Stage1:
                 rend.sprite = stage1;
-                if (water == 1 && fertilizer == 1 && currState == State.Stage1)
+                if (passedTime == 1)
                 {
                     currState = State.Stage2;
                     stageNum = 1;
-                    needWater = 2;
-                    needFertilizer = 2;
-                    water = 0;
-                    fertilizer = 0;
                 }
                 break;
             case State.Stage2:
                 rend.sprite = stage2;
-                // need to reset the condition
-                if (water  == 2 && fertilizer == 2 && currState == State.Stage2)
+                if (passedTime == 2)
                 {
                     currState = State.Stage3;
                     stageNum = 2;
-                    needWater = 4;
-                    needFertilizer = 3;
-                    water = 0;
-                    fertilizer = 0;
                 }
                 break;
             case State.Stage3:
                 rend.sprite = stage3;
-                if (water  == 4 && fertilizer == 3 && currState == State.Stage3)
+                if (passedTime == 3)
                 {
                     currState = State.Stage4;
                     stageNum = 3;
-                    needWater = 6;
-                    needFertilizer = 4;
-                    water = 0;
-                    fertilizer = 0; 
                 }
                 break;
             case State.Stage4:
                 rend.sprite = stage4;
-                if (water == 6 &&  fertilizer == 4&& currState == State.Stage4)
+                if (passedTime == 4)
                 {
-                    ////move the plant to backtable
-                    //if (plantNumber > 3)
-                    //{
-                    //    // don't move position
-                    //}
-                    //else
-                    //{
-                    //    if (plantNumber == 1)
-                    //    {
-                    //        gameObject.transform.position = new Vector3(5.49f, 7.64f, -5f);
-                    //    }
-                    //    if (plantNumber == 2)
-                    //    {
-                    //        gameObject.transform.position = new Vector3(9.12f, 7.64f, -5f);
-                    //    }
-                    //    if (plantNumber == 3)
-                    //    {
-                    //        gameObject.transform.position = new Vector3(12.75f, 7.64f, -5f);
-                    //    }
-                    //}
-                    //disable the plant info of plant here
-                    plMenu.gameObject.SetActive(false);
                 }
                 break;
         }
@@ -138,25 +114,19 @@ public class NourishmentSystem : MonoBehaviour
 
     public void AddWater()
     {
-        // check if player has enough water before adding
-        if (player.wAmount > 0 && needWater > 0)
+        if (player.wAmount > 0)
         {
             water++;
-            needWater--;
             player.wAmount--;
-            Debug.Log(water);
         }
     }
 
     public void AddFertilizer()
     {
-        // check if player has enough fertilizer before adding
-        if (player.fAmount > 0 && needFertilizer > 0)
+        if (player.fAmount > 0)
         {
             fertilizer++;
-            needFertilizer--;
             player.fAmount--;
-            Debug.Log(fertilizer);
         }
     }
 }
