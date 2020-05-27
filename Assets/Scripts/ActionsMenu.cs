@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class ActionsMenu : MonoBehaviour
 {
+    public static bool goRiver = false;
+    public static bool goForest = false;
 
     [SerializeField]
     private Canvas actionMenu;
@@ -20,43 +22,49 @@ public class ActionsMenu : MonoBehaviour
     void Awake()
     {
         player = FindObjectOfType<Player>();
-   }
+    }
 
     public void SetMenu(bool trigger)
     {
         actionMenu.gameObject.SetActive(trigger);
     }
 
-    public void GatherResources()
+    public void GoToRiver()
     {
-        // random give player certain amount of water/fertilizer
-        if (player.wAmount < 10 || player.fAmount < 10)
-        {
-            int temp = Random.Range(0, 6);
-            int temp2 = Random.Range(0, 6);
+        int temp = Random.Range(0, 6);
 
-            if (player.fAmount + temp > 10 || player.wAmount + temp2 > 10)
+        // randomly give player water
+        if (player.wAmount < 10)
+        {
+            // limit player's water amount to 10
+            if (player.wAmount + temp > 10)
             {
-                player.fAmount = 10;
                 player.wAmount = 10;
             }
             else
             {
-                player.fAmount += temp;
-                player.wAmount += temp2;
+                player.wAmount += temp;
             }
         }
-
-    }
-
-    public void GoToRiver()
-    {
-
     }
 
     public void GoToForest()
     {
+        int temp = Random.Range(0, 6);
 
+        // randomly give player fertilizer
+        if (player.fAmount < 10)
+        {
+            // limit player's fertilizer amount to 10
+            if (player.fAmount + temp > 10)
+            {
+                player.fAmount = 10;
+            }
+            else
+            {
+                player.fAmount += temp;
+            }
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
