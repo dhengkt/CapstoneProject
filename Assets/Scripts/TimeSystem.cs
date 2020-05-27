@@ -86,11 +86,7 @@ public class TimeSystem : MonoBehaviour
         if (isTutorial)
         {
             tText.text = "Welcome to the tutorial!\nUse WASD to move Neirus. \nPress X to interact with the plant. \nUse space to read next text.";
-            if (tSegment == 3)
-            {
-                tText.text = "Day: " + dayNum.ToString() + "\nTime: " + currTime.ToString() +
-                    "\nWater: " + pWater + " Fertilizer: " + pFertilizer;
-            }
+
         }
         else
         {
