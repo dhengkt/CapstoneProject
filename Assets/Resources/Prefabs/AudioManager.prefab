@@ -47,28 +47,28 @@ MonoBehaviour:
   - name: ButtonClick
     clip: {fileID: 8300000, guid: c18ae2c530c264a6880266d5e0a71337, type: 3}
     volume: 1
-    pitch: 3
+    pitch: 1
     loop: 0
     group: {fileID: 24300002, guid: 2909d4534c0e746499fd989f04709d0f, type: 2}
     source: {fileID: 0}
   - name: Theme
     clip: {fileID: 8300000, guid: 8e66078f97861ed4aba38ac24def9096, type: 3}
     volume: 1
-    pitch: 3
+    pitch: 1
     loop: 1
     group: {fileID: 24300002, guid: 2909d4534c0e746499fd989f04709d0f, type: 2}
     source: {fileID: 0}
   - name: AddWater
     clip: {fileID: 8300000, guid: dac245293cc6b4943b10fac39bbcf3eb, type: 3}
     volume: 1
-    pitch: 3
+    pitch: 1
     loop: 0
     group: {fileID: 24300002, guid: 2909d4534c0e746499fd989f04709d0f, type: 2}
     source: {fileID: 0}
   - name: AddFertilizer
     clip: {fileID: 8300000, guid: b1771ae7e582b4e4e94e67f21c22b291, type: 3}
     volume: 1
-    pitch: 3
+    pitch: 1
     loop: 0
     group: {fileID: 24300002, guid: 2909d4534c0e746499fd989f04709d0f, type: 2}
     source: {fileID: 0}
