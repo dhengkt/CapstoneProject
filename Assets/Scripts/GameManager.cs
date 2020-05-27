@@ -33,11 +33,11 @@ public class GameManager : MonoBehaviour
         {
             CreatePlant();
         }
-        if (tSystem.tSegment == 3 && numberOfPlants != 2)
+        if (tSystem.tSegment == 4 && numberOfPlants != 2)
         {
             CreatePlant();
         }
-        if (tSystem.tSegment == 5 && numberOfPlants != 3)
+        if (tSystem.tSegment == 8 && numberOfPlants != 3)
         {
             CreatePlant();
         }
