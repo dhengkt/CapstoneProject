@@ -17,7 +17,6 @@ public class ActionsMenu : MonoBehaviour
 
     private bool atDoor = false;
     private Player player;
-    private int water, fertilizer;
 
     void Awake()
     {
@@ -31,6 +30,7 @@ public class ActionsMenu : MonoBehaviour
 
     public void GoToRiver()
     {
+        goRiver = true;
         int temp = Random.Range(0, 6);
 
         // randomly give player water
@@ -46,10 +46,12 @@ public class ActionsMenu : MonoBehaviour
                 player.wAmount += temp;
             }
         }
+        goRiver = false;
     }
 
     public void GoToForest()
     {
+        goForest = true;
         int temp = Random.Range(0, 6);
 
         // randomly give player fertilizer
@@ -65,6 +67,7 @@ public class ActionsMenu : MonoBehaviour
                 player.fAmount += temp;
             }
         }
+        goForest = false;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
