@@ -13,12 +13,15 @@ public class TimeSystem : MonoBehaviour
     [SerializeField]
     private Sprite morningBG = null;
     [SerializeField]
-    private GameObject bgPicture = null;
+    private GameObject bgPic = null;
     [SerializeField]
     private Text tText;
 
+    [HideInInspector]
     public int tSegment;
+    [HideInInspector]
     public bool isTutorial = false;
+
     private int[] tSegmentList = new int[21];
     private int dayNum = 0;
     private int segIndex = 1;
@@ -29,7 +32,7 @@ public class TimeSystem : MonoBehaviour
 
     private void Awake()
     {
-        bgPicture = GameObject.FindGameObjectWithTag("Background");
+        bgPic = GameObject.FindGameObjectWithTag("Background");
         player = FindObjectOfType<Player>();
     }
 
@@ -54,8 +57,7 @@ public class TimeSystem : MonoBehaviour
 
     private void ChangeBackground()
     {
-        SpriteRenderer rend = bgPicture.GetComponent<SpriteRenderer>();
-
+        SpriteRenderer rend = bgPic.GetComponent<SpriteRenderer>();
         if (currTime == timeOfDay[0])
         {
             rend.sprite = morningBG;
@@ -102,7 +104,7 @@ public class TimeSystem : MonoBehaviour
     }
 
     /*
-     * This function will link with button to change background when player click on explore button.
+     * This function will link with buttons to change background.
      */
     public void ChangeTime()
     {

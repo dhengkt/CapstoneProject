@@ -9,7 +9,10 @@ public class Player : MonoBehaviour
 
     public Rigidbody2D rb;
     public Animator animator;
-    public int wAmount = 2;
+
+    [HideInInspector]
+    public int wAmount = 3;
+    [HideInInspector]
     public int fAmount = 2;
 
     private Vector2 targetPoint;

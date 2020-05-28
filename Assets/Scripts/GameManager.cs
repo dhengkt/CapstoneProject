@@ -7,10 +7,15 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {   
-    private List<int> unusedStories = new List<int>() { 0, 1, 2, 3, 4}; // Full list of unused story IDs
-    private List<int> usedStories = new List<int>(); // List of currently assigned story IDs
-    private int[] plantLocations = new int[6] { 0, 0, 0, 0, 0, 0 }; // 0: Vacant; 1: Occupied
-    private Plant[] currentPlants = new Plant[6]; // Keeps track of all plants currently in the game
+    private List<int> unusedStories = new List<int>() { 0, 1, 2, 3, 4};
+    private List<int> usedStories = new List<int>();
+
+    // 0: Vacant; 1: Occupied
+    private int[] plantLocations = new int[6] { 0, 0, 0, 0, 0, 0 };
+
+    // Keeps track of all plants currently in the game
+    private Plant[] currentPlants = new Plant[6];
+
     private int numberOfPlants = 0;
     private TimeSystem tSystem;
     private ActionsMenu pActions;
@@ -19,7 +24,6 @@ public class GameManager : MonoBehaviour
     {
         GameObject door = GameObject.FindGameObjectWithTag("Door");
         door.transform.position = new Vector3(-.23f, -7.99f, 0f);
-        //CreateFirstPlant();
 
         // get access to Time System and Player Action script
         tSystem = door.GetComponent<TimeSystem>();
@@ -40,11 +44,6 @@ public class GameManager : MonoBehaviour
         if (tSystem.tSegment == 8 && numberOfPlants != 3)
         {
             CreatePlant();
-        }
-        // Disable the door when game's over
-        if (tSystem.tSegment == 21)
-        {
-            pActions.SetMenu(false);
         }
     }
 
@@ -119,5 +118,4 @@ public class GameManager : MonoBehaviour
                 return (0f, 0f);
         }
     }
-
 }

@@ -56,7 +56,6 @@ public class NourishmentSystem : MonoBehaviour
 
      void Start()
     {
-        // Sync water and fertilizer variables (0) with plant flowchart
         pScript.SyncWaterAndFertilizer(water, fertilizer);
         currState = State.Stage1;
         stageNum = 0;

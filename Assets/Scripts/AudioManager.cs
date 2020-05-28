@@ -41,6 +41,7 @@ public class AudioManager : MonoBehaviour
 
     public void Play(string name)
     {
+        // get the string from other script and call it from the list
         Sound s = Array.Find(sounds, sound => sound.name == name);
         if(s == null)
         {

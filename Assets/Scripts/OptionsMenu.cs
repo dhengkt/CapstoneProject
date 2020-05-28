@@ -14,10 +14,12 @@ public class OptionsMenu : MonoBehaviour
     void Start()
     {
         resolutions = Screen.resolutions;
-        resoluDropdown.ClearOptions(); //clear the options in dropdown menu
+        //clear the options in dropdown menu
+        resoluDropdown.ClearOptions();
 
         List<string> options = new List<string>();
 
+        // loop through possible resolution options
         int curResoluIndex = 0;
         for (int i = 0; i < resolutions.Length; i++)
         {

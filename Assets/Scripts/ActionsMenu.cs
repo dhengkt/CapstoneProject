@@ -54,10 +54,8 @@ public class ActionsMenu : MonoBehaviour
         goForest = true;
         int temp = Random.Range(0, 6);
 
-        // randomly give player fertilizer
         if (player.fAmount < 10)
         {
-            // limit player's fertilizer amount to 10
             if (player.fAmount + temp > 10)
             {
                 player.fAmount = 10;

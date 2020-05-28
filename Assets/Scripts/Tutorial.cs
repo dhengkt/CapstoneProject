@@ -5,6 +5,9 @@ using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
 
+/*
+ *  This script is for managing the tutorial part of the game.
+ */
 public class Tutorial : MonoBehaviour
 {
     private TimeSystem tSystem;
@@ -14,14 +17,6 @@ public class Tutorial : MonoBehaviour
     private Plant plant;
     private NourishmentSystem nSystem;
 
-    /*
-     * Tutorial Scene:
-     * When game starts up, tutorial plant will spawn and tutorial dialogue will appear
-     * Player talks to the tutorial plant and gives it water
-     * Player finishes the reading the rest of the tutorial plant
-     * Player leaves greenhouse and finds a new plant that replaces the tutorial plant
-     */
-
     void Awake()
     {
         GameObject door = GameObject.FindGameObjectWithTag("Door");
@@ -30,7 +25,6 @@ public class Tutorial : MonoBehaviour
         pActions = door.GetComponent<ActionsMenu>();
         tuFlowchart = FindObjectOfType<Flowchart>();
         tuFlowchart.SetBooleanVariable("isDone", false);
-
         player = GameObject.FindObjectOfType<Player>();
     }
 
@@ -56,7 +50,6 @@ public class Tutorial : MonoBehaviour
         {
             tSystem.isTutorial = false;
         }
-
         if (Input.GetKeyDown(KeyCode.Q))
         {
             Application.Quit();
