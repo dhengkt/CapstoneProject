@@ -40,17 +40,13 @@ public class Plant : MonoBehaviour
             }
             if (Input.GetKeyDown(KeyCode.E))
             {
-                if (nSystem.needWater != 0)
-                {
-                    nSystem.AddWater();
-                }
+                FindObjectOfType<AudioManager>().Play("AddWater");
+                nSystem.AddWater();
             }
             if (Input.GetKeyDown(KeyCode.F))
             {
-                if (nSystem.needFertilizer != 0)
-                {
-                    nSystem.AddFertilizer();
-                }
+                FindObjectOfType<AudioManager>().Play("AddFertilizer");
+                nSystem.AddFertilizer();
             }
         }
     }
@@ -156,7 +152,7 @@ public class Plant : MonoBehaviour
 
     private void UpdateText()
     {
-        pText.text = "Stage " + nSystem.stageNum + "\nNeed " + nSystem.needWater + " water" + " \nNeed " + nSystem.needFertilizer  + " fertilizer";
+        pText.text = "In Stage " + nSystem.stageNum;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

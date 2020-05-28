@@ -13,7 +13,6 @@ public class Tutorial : MonoBehaviour
     private Player player;
     private Plant plant;
     private NourishmentSystem nSystem;
-    private bool isDone = false;
 
     /*
      * Tutorial Scene:
