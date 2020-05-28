@@ -827,7 +827,7 @@ Transform:
   m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &378508355
 GameObject:
@@ -1112,7 +1112,7 @@ PrefabInstance:
     - target: {fileID: 4252060258267150950, guid: ffe139d2f0a013b4bb24c5bf9220c5a6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4252060258267150950, guid: ffe139d2f0a013b4bb24c5bf9220c5a6,
         type: 3}
@@ -1405,7 +1405,7 @@ PrefabInstance:
     - target: {fileID: 7471142196389264424, guid: 003d01819fb303a4dab18127622bb752,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 7471142196389264424, guid: 003d01819fb303a4dab18127622bb752,
         type: 3}
@@ -1507,7 +1507,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &595519153
 GameObject:
@@ -2294,7 +2294,7 @@ RectTransform:
   m_Children:
   - {fileID: 686055315}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2878,7 +2878,7 @@ Transform:
   m_Children:
   - {fileID: 1680803762}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1085067058
 GameObject:
@@ -3035,7 +3035,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1134929562
 GameObject:
@@ -3880,7 +3880,7 @@ RectTransform:
   m_Children:
   - {fileID: 117424918}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -4089,7 +4089,7 @@ PrefabInstance:
     - target: {fileID: 6618056600232126933, guid: cab1a23ddb7d1ea47ba7115b8b00165e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6618056600232126933, guid: cab1a23ddb7d1ea47ba7115b8b00165e,
         type: 3}
@@ -5721,9 +5721,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1680803775}
+  - {fileID: 1680803787}
   selectedCommands:
-  - {fileID: 1680803811}
+  - {fileID: 1680803788}
   variables:
   - {fileID: 1680803780}
   - {fileID: 1680803779}
@@ -5763,11 +5763,11 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1680803795}
+  - {fileID: 1680803790}
   - {fileID: 1680803792}
   - {fileID: 1680803809}
   - {fileID: 1680803791}
   - {fileID: 1680803810}
-  - {fileID: 1680803790}
   - {fileID: 1680803789}
   - {fileID: 1680803788}
   - {fileID: 1680803764}
@@ -5841,7 +5841,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 32
   indentLevel: 0
-  storyText: '{color=#34eb3a} The plant will show you its current stage.'
+  storyText: '{color=#34eb3a} The plant will show you its current stage on the left.'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -6295,8 +6295,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 48
   indentLevel: 0
-  storyText: '{color=#34eb3a}You can find {b}water when you choose River{/b}. You
-    can find {b}fertilizer when you choose Forest{/b}.'
+  storyText: '{color=#34eb3a}You can find {b}water when you choose River{/b}, {b}fertilizer
+    when you choose Forest{/b}.'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -6339,7 +6339,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1680803811
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -7053,7 +7053,7 @@ RectTransform:
   - {fileID: 1185584656}
   - {fileID: 107996320}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -7475,7 +7475,7 @@ PrefabInstance:
     - target: {fileID: 1907331059764228957, guid: 2b9d7f17b901a784e98f2b34bee372c6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1907331059764228957, guid: 2b9d7f17b901a784e98f2b34bee372c6,
         type: 3}
@@ -7645,7 +7645,7 @@ PrefabInstance:
     - target: {fileID: 1698935207332378277, guid: 64f3517455b695046a9e07a300085b82,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1698935207332378277, guid: 64f3517455b695046a9e07a300085b82,
         type: 3}
@@ -7719,7 +7719,7 @@ PrefabInstance:
     - target: {fileID: 8455651949333433004, guid: f9bb483f6ba086c4aab394f1ac5ec42f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 8455651949333433004, guid: f9bb483f6ba086c4aab394f1ac5ec42f,
         type: 3}
@@ -7788,7 +7788,7 @@ PrefabInstance:
     - target: {fileID: 8532169181304601615, guid: 0a04f385e59b58945941bfe800f6c2bc,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 8532169181304601615, guid: 0a04f385e59b58945941bfe800f6c2bc,
         type: 3}
