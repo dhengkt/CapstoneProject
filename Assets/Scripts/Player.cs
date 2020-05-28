@@ -41,7 +41,7 @@ public class Player : MonoBehaviour
         animator.SetFloat("Speed", targetPoint.sqrMagnitude);
         if (plant.plantTrigger)
         {
-            if (Input.GetKeyDown(KeyCode.X)) //fert
+            if (Input.GetKeyDown(KeyCode.F)) //fert
             {
                 sRenderer.sprite = alienFertilize;
                 Debug.Log("FERTILIZE SPRITE");
@@ -56,6 +56,10 @@ public class Player : MonoBehaviour
                 sRenderer.sprite = alienDefault;
             }
         }
+    }
+    public void PlaySprite()
+    {
+
     }
     void FixedUpdate()
     {
