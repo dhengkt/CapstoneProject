@@ -9588,6 +9588,10 @@ GameObject:
   - component: {fileID: 664104360}
   - component: {fileID: 664104359}
   - component: {fileID: 664104358}
+  - component: {fileID: 664104532}
+  - component: {fileID: 664104533}
+  - component: {fileID: 664104534}
+  - component: {fileID: 664104535}
   m_Layer: 0
   m_Name: 'Story 3: Farming/Moving'
   m_TagString: Story 3
@@ -15156,6 +15160,7 @@ MonoBehaviour:
   - {fileID: 664104502}
   - {fileID: 664104500}
   - {fileID: 664104504}
+  - {fileID: 664104532}
   - {fileID: 664104528}
   - {fileID: 664104526}
   - {fileID: 664104516}
@@ -15164,6 +15169,7 @@ MonoBehaviour:
   - {fileID: 664104484}
   - {fileID: 664104483}
   - {fileID: 664104411}
+  - {fileID: 664104533}
   - {fileID: 664104358}
   - {fileID: 664104517}
   - {fileID: 664104479}
@@ -15180,6 +15186,7 @@ MonoBehaviour:
   - {fileID: 664104467}
   - {fileID: 664104466}
   - {fileID: 664104410}
+  - {fileID: 664104534}
   - {fileID: 664104465}
   - {fileID: 664104464}
   - {fileID: 664104463}
@@ -15198,6 +15205,7 @@ MonoBehaviour:
   - {fileID: 664104443}
   - {fileID: 664104442}
   - {fileID: 664104409}
+  - {fileID: 664104535}
   - {fileID: 664104441}
   - {fileID: 664104440}
   - {fileID: 664104439}
@@ -15236,8 +15244,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 664104498}
+  selectedCommands:
+  - {fileID: 664104408}
   variables:
   - {fileID: 664104525}
   - {fileID: 664104521}
@@ -15266,6 +15276,74 @@ MonoBehaviour:
   hideCommands: []
   luaEnvironment: {fileID: 0}
   luaBindingName: flowchart
+--- !u!114 &664104532
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664104356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 209
+  indentLevel: 1
+  soundClip: {fileID: 8300000, guid: c167e88e44606844595103252b8ea615, type: 3}
+  volume: 1
+  waitUntilFinished: 1
+--- !u!114 &664104533
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664104356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 210
+  indentLevel: 2
+  soundClip: {fileID: 8300000, guid: c167e88e44606844595103252b8ea615, type: 3}
+  volume: 1
+  waitUntilFinished: 1
+--- !u!114 &664104534
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664104356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 211
+  indentLevel: 2
+  soundClip: {fileID: 8300000, guid: c167e88e44606844595103252b8ea615, type: 3}
+  volume: 1
+  waitUntilFinished: 1
+--- !u!114 &664104535
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664104356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 212
+  indentLevel: 2
+  soundClip: {fileID: 8300000, guid: c167e88e44606844595103252b8ea615, type: 3}
+  volume: 1
+  waitUntilFinished: 1
 --- !u!1 &693888311
 GameObject:
   m_ObjectHideFlags: 0
@@ -15557,6 +15635,10 @@ GameObject:
   - component: {fileID: 717517274}
   - component: {fileID: 717517273}
   - component: {fileID: 717517272}
+  - component: {fileID: 717517438}
+  - component: {fileID: 717517437}
+  - component: {fileID: 717517439}
+  - component: {fileID: 717517440}
   m_Layer: 0
   m_Name: 'Story 2: Pollution'
   m_TagString: Story 2
@@ -20874,6 +20956,7 @@ MonoBehaviour:
   - {fileID: 717517407}
   - {fileID: 717517405}
   - {fileID: 717517409}
+  - {fileID: 717517437}
   - {fileID: 717517433}
   - {fileID: 717517431}
   - {fileID: 717517421}
@@ -20882,6 +20965,7 @@ MonoBehaviour:
   - {fileID: 717517389}
   - {fileID: 717517388}
   - {fileID: 717517316}
+  - {fileID: 717517438}
   - {fileID: 717517422}
   - {fileID: 717517384}
   - {fileID: 717517419}
@@ -20897,6 +20981,7 @@ MonoBehaviour:
   - {fileID: 717517372}
   - {fileID: 717517371}
   - {fileID: 717517315}
+  - {fileID: 717517439}
   - {fileID: 717517370}
   - {fileID: 717517369}
   - {fileID: 717517368}
@@ -20915,6 +21000,7 @@ MonoBehaviour:
   - {fileID: 717517348}
   - {fileID: 717517347}
   - {fileID: 717517314}
+  - {fileID: 717517440}
   - {fileID: 717517346}
   - {fileID: 717517345}
   - {fileID: 717517344}
@@ -20954,8 +21040,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 717517429}
-  selectedCommands: []
+  - {fileID: 717517435}
+  selectedCommands:
+  - {fileID: 717517440}
   variables:
   - {fileID: 717517430}
   - {fileID: 717517426}
@@ -20984,6 +21071,74 @@ MonoBehaviour:
   hideCommands: []
   luaEnvironment: {fileID: 0}
   luaBindingName: flowchart
+--- !u!114 &717517437
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 717517270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 198
+  indentLevel: 1
+  soundClip: {fileID: 8300000, guid: c167e88e44606844595103252b8ea615, type: 3}
+  volume: 1
+  waitUntilFinished: 1
+--- !u!114 &717517438
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 717517270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 197
+  indentLevel: 2
+  soundClip: {fileID: 8300000, guid: c167e88e44606844595103252b8ea615, type: 3}
+  volume: 1
+  waitUntilFinished: 1
+--- !u!114 &717517439
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 717517270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 199
+  indentLevel: 2
+  soundClip: {fileID: 8300000, guid: c167e88e44606844595103252b8ea615, type: 3}
+  volume: 1
+  waitUntilFinished: 1
+--- !u!114 &717517440
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 717517270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 200
+  indentLevel: 2
+  soundClip: {fileID: 8300000, guid: c167e88e44606844595103252b8ea615, type: 3}
+  volume: 1
+  waitUntilFinished: 1
 --- !u!1 &718095148
 GameObject:
   m_ObjectHideFlags: 1
@@ -21013,7 +21168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1118597748}
+  selectedFlowchart: {fileID: 1007090670}
 --- !u!4 &718095150
 Transform:
   m_ObjectHideFlags: 1
@@ -21606,6 +21761,9 @@ GameObject:
   - component: {fileID: 935006144}
   - component: {fileID: 935006143}
   - component: {fileID: 935006142}
+  - component: {fileID: 935006304}
+  - component: {fileID: 935006303}
+  - component: {fileID: 935006305}
   m_Layer: 0
   m_Name: 'Story 0: Rations'
   m_TagString: Story 0
@@ -26814,6 +26972,7 @@ MonoBehaviour:
   - {fileID: 935006248}
   - {fileID: 935006247}
   - {fileID: 935006154}
+  - {fileID: 935006303}
   - {fileID: 935006283}
   - {fileID: 935006243}
   - {fileID: 935006280}
@@ -26829,6 +26988,7 @@ MonoBehaviour:
   - {fileID: 935006210}
   - {fileID: 935006209}
   - {fileID: 935006153}
+  - {fileID: 935006304}
   - {fileID: 935006208}
   - {fileID: 935006207}
   - {fileID: 935006206}
@@ -26847,6 +27007,7 @@ MonoBehaviour:
   - {fileID: 935006186}
   - {fileID: 935006185}
   - {fileID: 935006152}
+  - {fileID: 935006305}
   - {fileID: 935006184}
   - {fileID: 935006183}
   - {fileID: 935006182}
@@ -26886,7 +27047,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 935006273}
+  - {fileID: 935006271}
   selectedCommands: []
   variables:
   - {fileID: 935006296}
@@ -26918,6 +27079,57 @@ MonoBehaviour:
   hideCommands: []
   luaEnvironment: {fileID: 0}
   luaBindingName: flowchart
+--- !u!114 &935006303
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935006140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 169
+  indentLevel: 2
+  soundClip: {fileID: 8300000, guid: c167e88e44606844595103252b8ea615, type: 3}
+  volume: 1
+  waitUntilFinished: 1
+--- !u!114 &935006304
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935006140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 168
+  indentLevel: 2
+  soundClip: {fileID: 8300000, guid: c167e88e44606844595103252b8ea615, type: 3}
+  volume: 1
+  waitUntilFinished: 1
+--- !u!114 &935006305
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935006140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 170
+  indentLevel: 2
+  soundClip: {fileID: 8300000, guid: c167e88e44606844595103252b8ea615, type: 3}
+  volume: 1
+  waitUntilFinished: 1
 --- !u!1 &953778737
 GameObject:
   m_ObjectHideFlags: 0
@@ -27276,6 +27488,10 @@ GameObject:
   - component: {fileID: 1007090530}
   - component: {fileID: 1007090529}
   - component: {fileID: 1007090528}
+  - component: {fileID: 1007090671}
+  - component: {fileID: 1007090672}
+  - component: {fileID: 1007090673}
+  - component: {fileID: 1007090674}
   m_Layer: 0
   m_Name: 'Story 4: Rain'
   m_TagString: Story 4
@@ -31824,6 +32040,7 @@ MonoBehaviour:
   - {fileID: 1007090644}
   - {fileID: 1007090642}
   - {fileID: 1007090646}
+  - {fileID: 1007090671}
   - {fileID: 1007090667}
   - {fileID: 1007090665}
   - {fileID: 1007090656}
@@ -31832,6 +32049,7 @@ MonoBehaviour:
   - {fileID: 1007090626}
   - {fileID: 1007090625}
   - {fileID: 1007090568}
+  - {fileID: 1007090672}
   - {fileID: 1007090657}
   - {fileID: 1007090621}
   - {fileID: 1007090654}
@@ -31847,6 +32065,7 @@ MonoBehaviour:
   - {fileID: 1007090611}
   - {fileID: 1007090610}
   - {fileID: 1007090567}
+  - {fileID: 1007090673}
   - {fileID: 1007090609}
   - {fileID: 1007090608}
   - {fileID: 1007090607}
@@ -31862,6 +32081,7 @@ MonoBehaviour:
   - {fileID: 1007090591}
   - {fileID: 1007090590}
   - {fileID: 1007090566}
+  - {fileID: 1007090674}
   - {fileID: 1007090589}
   - {fileID: 1007090588}
   - {fileID: 1007090587}
@@ -31898,7 +32118,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1007090651}
+  - {fileID: 1007090669}
   selectedCommands: []
   variables:
   - {fileID: 1007090664}
@@ -31928,6 +32148,74 @@ MonoBehaviour:
   hideCommands: []
   luaEnvironment: {fileID: 0}
   luaBindingName: flowchart
+--- !u!114 &1007090671
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1007090526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 222
+  indentLevel: 1
+  soundClip: {fileID: 8300000, guid: c167e88e44606844595103252b8ea615, type: 3}
+  volume: 1
+  waitUntilFinished: 1
+--- !u!114 &1007090672
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1007090526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 223
+  indentLevel: 2
+  soundClip: {fileID: 8300000, guid: c167e88e44606844595103252b8ea615, type: 3}
+  volume: 1
+  waitUntilFinished: 1
+--- !u!114 &1007090673
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1007090526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 224
+  indentLevel: 2
+  soundClip: {fileID: 8300000, guid: c167e88e44606844595103252b8ea615, type: 3}
+  volume: 1
+  waitUntilFinished: 1
+--- !u!114 &1007090674
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1007090526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 225
+  indentLevel: 2
+  soundClip: {fileID: 8300000, guid: c167e88e44606844595103252b8ea615, type: 3}
+  volume: 1
+  waitUntilFinished: 1
 --- !u!1 &1009341518
 GameObject:
   m_ObjectHideFlags: 0
@@ -32234,18 +32522,6 @@ MonoBehaviour:
     booleanRef: {fileID: 0}
     booleanVal: 1
   targetGameObjectOLD: {fileID: 0}
---- !u!114 &1118597748 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 718172996, guid: cab1a23ddb7d1ea47ba7115b8b00165e,
-    type: 3}
-  m_PrefabInstance: {fileID: 313890315}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1118597738}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1118597752
 MonoBehaviour:
   m_ObjectHideFlags: 2

@@ -5026,6 +5026,7 @@ GameObject:
   - component: {fileID: 1680803803}
   - component: {fileID: 1680803809}
   - component: {fileID: 1680803810}
+  - component: {fileID: 1680803811}
   m_Layer: 0
   m_Name: Tutorial
   m_TagString: Tutorial
@@ -5427,6 +5428,7 @@ MonoBehaviour:
   - {fileID: 1680803769}
   - {fileID: 1680803798}
   - {fileID: 1680803768}
+  - {fileID: 1680803811}
   - {fileID: 1680803797}
   - {fileID: 1680803772}
   - {fileID: 1680803765}
@@ -5719,9 +5721,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1680803787}
+  - {fileID: 1680803775}
   selectedCommands:
-  - {fileID: 1680803810}
+  - {fileID: 1680803811}
   variables:
   - {fileID: 1680803780}
   - {fileID: 1680803779}
@@ -6268,7 +6270,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 604
     y: 136
-    width: 123
+    width: 124
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6281,7 +6283,7 @@ MonoBehaviour:
   suppressAllAutoSelections: 0
 --- !u!114 &1680803809
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -6309,7 +6311,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1680803810
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -6335,6 +6337,23 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &1680803811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1680803761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 50
+  indentLevel: 2
+  soundClip: {fileID: 8300000, guid: c167e88e44606844595103252b8ea615, type: 3}
+  volume: 1
+  waitUntilFinished: 1
 --- !u!1 &1683977867
 GameObject:
   m_ObjectHideFlags: 0
