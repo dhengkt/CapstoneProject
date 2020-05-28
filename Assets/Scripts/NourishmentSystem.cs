@@ -22,13 +22,16 @@ public class NourishmentSystem : MonoBehaviour
     [SerializeField]
     private Sprite stage4;
 
+    [HideInInspector]
     public int water, fertilizer = 0;
+    [HideInInspector]
     public int plantNumber;
+    [HideInInspector]
     public int stageNum;
-    public float lifetime;
 
     private State currState;
     private TimeSystem tSystem;
+    private StageEffect sEffect;
     private Plant pScript;
     private Flowchart pFlowchart;
     private Canvas plMenu;
@@ -39,6 +42,7 @@ public class NourishmentSystem : MonoBehaviour
     void Awake()
     {
         player = FindObjectOfType<Player>();
+        sEffect = gameObject.GetComponent<StageEffect>();
 
         // Get access to Time System script
         GameObject door = GameObject.FindGameObjectWithTag("Door");
@@ -66,12 +70,6 @@ public class NourishmentSystem : MonoBehaviour
     {
         int curTime = tSystem.tSegment;
         passedTime = curTime - createdTime;
-        ChangeStage();
-        Debug.Log(passedTime);
-    }
-
-    private void ChangeStage()
-    {
         SpriteRenderer rend = gameObject.GetComponent<SpriteRenderer>();
 
         switch (currState)
@@ -82,6 +80,8 @@ public class NourishmentSystem : MonoBehaviour
                 if (passedTime == 1)
                 {
                     currState = State.Stage2;
+                    sEffect.Upgrade();
+                    FindObjectOfType<AudioManager>().Play("StageSwitch");
                     stageNum = 1;
                 }
                 break;
@@ -90,26 +90,33 @@ public class NourishmentSystem : MonoBehaviour
                 if (passedTime == 2)
                 {
                     currState = State.Stage3;
+                    sEffect.Upgrade();
+                    FindObjectOfType<AudioManager>().Play("StageSwitch");
                     stageNum = 2;
                 }
                 break;
             case State.Stage3:
                 rend.sprite = stage3;
-                if (passedTime == 3)
+                if (passedTime == 4)
                 {
                     currState = State.Stage4;
+                    sEffect.Upgrade();
+                    FindObjectOfType<AudioManager>().Play("StageSwitch");
                     stageNum = 3;
                 }
                 break;
             case State.Stage4:
                 rend.sprite = stage4;
-                if (passedTime == 4)
+                if (passedTime == 8)
                 {
+                    sEffect.Upgrade();
+                    FindObjectOfType<AudioManager>().Play("StageSwitch");
                 }
                 break;
         }
         // update plant's water and fertilizer to match flowchart
         pScript.SyncWaterAndFertilizer(water, fertilizer);
+        Debug.Log(passedTime);
     }
 
     public void AddWater()
