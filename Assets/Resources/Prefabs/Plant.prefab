@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4825729437624019679}
   - component: {fileID: 2557259207095973902}
   - component: {fileID: 4156057937336300748}
+  - component: {fileID: 9173119822052318002}
   m_Layer: 0
   m_Name: Plant
   m_TagString: Plant
@@ -134,11 +135,22 @@ MonoBehaviour:
   stage4: {fileID: 21300000, guid: 84551a368bbcd194ea0bcd6676d0687d, type: 3}
   water: 0
   fertilizer: 0
-  needWater: 0
-  needFertilizer: 0
   plantNumber: 0
   stageNum: 0
-  lifetime: 0
+--- !u!114 &9173119822052318002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2557259207095973901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c002cc0ff3f2da2469d0b8d10d911337, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifetime: 0.3
+  effect: {fileID: 2354237609752186623, guid: 8090abbcb3a0c974bb748b6b03970cc9, type: 3}
 --- !u!1001 &9215509266503298996
 PrefabInstance:
   m_ObjectHideFlags: 0
