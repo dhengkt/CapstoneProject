@@ -15,7 +15,7 @@ public class Plant : MonoBehaviour
 
     private string story;
     private Vector3 location;
-    private bool plantTrigger;
+    public bool plantTrigger;
     private int tempTimeSegment;
     private TimeSystem tSystem;
     private NourishmentSystem nSystem;
