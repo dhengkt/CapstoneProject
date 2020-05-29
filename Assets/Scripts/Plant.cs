@@ -123,13 +123,10 @@ public class Plant : MonoBehaviour
 
     private void UpdateTimeSegement()
     {
-        //if update time segment is true, then set temp time segment to current time segment and set update to false
-        Debug.Log("***UPDATE TEMP: " + flowchart.GetBooleanVariable("updateTemp"));
-        Debug.Log("Temp Time Seg: " + this.tempTimeSegment);
-
+        // if update time segment is true, then set temp time segment to current time segment and set update to false
         if (flowchart.GetBooleanVariable("updateTemp") == true)
         {
-            this.tempTimeSegment = tSystem.tSegment; // ERROR
+            this.tempTimeSegment = tSystem.tSegment; 
             flowchart.SetBooleanVariable("updateTemp", false);
             Debug.Log("***Temp FALSE?: " + flowchart.GetBooleanVariable("updateTemp"));
         }
