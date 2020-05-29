@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2354237609752186623}
   - component: {fileID: 2355379330979046953}
   m_Layer: 0
-  m_Name: Star_A 1
+  m_Name: StarA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42,7 +42,7 @@ ParticleSystem:
   serializedVersion: 6
   lengthInSec: 1
   simulationSpeed: 1
-  stopAction: 0
+  stopAction: 2
   cullingMode: 1
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
@@ -1361,8 +1361,8 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 0, g: 1, b: 0.08965516, a: 1}
-        key1: {r: 0, g: 1, b: 0.09019608, a: 0}
+        key0: {r: 1, g: 0.9528848, b: 0.13679248, a: 1}
+        key1: {r: 0.93725497, g: 0.9450981, b: 0.16078432, a: 0}
         key2: {r: 0, g: 0, b: 0, a: 0}
         key3: {r: 0, g: 0, b: 0, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}
