@@ -32543,6 +32543,32 @@ MonoBehaviour:
   fadeColor: {r: 0, g: 0, b: 0, a: 1}
   fadeTexture: {fileID: 0}
   targetCamera: {fileID: 1009341519}
+--- !u!1 &1134722287 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4252060258267150949, guid: ffe139d2f0a013b4bb24c5bf9220c5a6,
+    type: 3}
+  m_PrefabInstance: {fileID: 10156150}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1134722288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1134722287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b5cac07e6b1321448f7d51d94283aca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1134722287}
+  animator: {fileID: 1134722289}
+--- !u!95 &1134722289 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2018973929, guid: ffe139d2f0a013b4bb24c5bf9220c5a6,
+    type: 3}
+  m_PrefabInstance: {fileID: 10156150}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1157639256
 GameObject:
   m_ObjectHideFlags: 0
