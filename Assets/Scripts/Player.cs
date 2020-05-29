@@ -23,14 +23,16 @@ public class Player : MonoBehaviour
         // Player movement
         targetPoint.x = Input.GetAxisRaw("Horizontal");
         targetPoint.y = Input.GetAxisRaw("Vertical");
+
         // Player Sprite Animator
         animator.SetFloat("Horizontal", targetPoint.x);
         animator.SetFloat("Vertical", targetPoint.y);
-        animator.SetFloat("Speed", targetPoint.sqrMagnitude)
+        animator.SetFloat("Speed", targetPoint.sqrMagnitude);
     }
 
     void FixedUpdate()
     {
         rb.MovePosition(rb.position + targetPoint * moveSpeed * Time.fixedDeltaTime);
     }
+   
 }

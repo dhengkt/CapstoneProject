@@ -57,8 +57,7 @@ public class Plant : MonoBehaviour
 
     public void SetStory(int assignedStory)
     {
-        Debug.Log("Setting Story to: "+ assignedStory);
-        // Assign story tag **add more story cases
+        // Assign story tag
         switch (assignedStory)
         {
             case 0:
@@ -79,6 +78,7 @@ public class Plant : MonoBehaviour
             default:
                 break;
         }
+
         // Assign the appropriate flowchart 
         Flowchart[] allFlowcharts = GameObject.FindObjectsOfType<Flowchart>();
         for (int i = 0; i < allFlowcharts.Length; i++)
@@ -89,8 +89,6 @@ public class Plant : MonoBehaviour
                 this.flowchart = allFlowcharts[i];
             }
         }
-        //flowchart.SetIntegerVariable("story", assignedStory); // Update flowchart story variable
-        //Debug.Log("Flowchart story var: " + flowchart.GetIntegerVariable("story"));
     }
 
     public string GetStory()
@@ -122,7 +120,7 @@ public class Plant : MonoBehaviour
         //if update time segment is true, then set temp time segment to current time segment and set update to false
         Debug.Log("***UPDATE TEMP: " + flowchart.GetBooleanVariable("updateTemp"));
         Debug.Log("Temp Time Seg: " + this.tempTimeSegment);
-        //Debug.Log("Current Seg: " + this.tSystem.tSegment); 
+
         if (flowchart.GetBooleanVariable("updateTemp") == true)
         {
             this.tempTimeSegment = tSystem.tSegment; // ERROR
