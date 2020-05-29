@@ -31,7 +31,7 @@ public class ActionsMenu : MonoBehaviour
     public void GoToRiver()
     {
         goRiver = true;
-        int temp = Random.Range(0, 6);
+        int temp = Random.Range(1, 6);
 
         // randomly give player water
         if (player.wAmount < 10)
@@ -52,7 +52,7 @@ public class ActionsMenu : MonoBehaviour
     public void GoToForest()
     {
         goForest = true;
-        int temp = Random.Range(0, 6);
+        int temp = Random.Range(1, 6);
 
         if (player.fAmount < 10)
         {
