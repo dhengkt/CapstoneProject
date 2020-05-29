@@ -7,7 +7,8 @@ using UnityEngine.UI;
 
 public class OptionsMenu : MonoBehaviour
 {
-    public AudioMixer audioMixer;
+    public AudioMixer themeMixer;
+    public AudioMixer seMixer;
     public Dropdown resoluDropdown;
     Resolution[] resolutions;
 
@@ -48,8 +49,13 @@ public class OptionsMenu : MonoBehaviour
     {
         Screen.fullScreen = isFullscreen;
     }
-    public void SetVolume(float volume)
+    public void SetThemeVolume(float volume)
     {
-        audioMixer.SetFloat("volume", volume);
+        themeMixer.SetFloat("volume", volume);
+    }
+
+    public void SetSEVolume(float volume)
+    {
+        seMixer.SetFloat("volume", volume);
     }
 }
