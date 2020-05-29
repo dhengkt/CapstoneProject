@@ -19,6 +19,7 @@ public class Plant : MonoBehaviour
     private int tempTimeSegment;
     private TimeSystem tSystem;
     private NourishmentSystem nSystem;
+    //private GameObject player;
 
     void Start()
     {
@@ -26,6 +27,7 @@ public class Plant : MonoBehaviour
         tSystem = door.GetComponent<TimeSystem>();
         nSystem = gameObject.GetComponent<NourishmentSystem>();
         plantMenu = FindObjectOfType<Canvas>();
+        //player = GameObject.FindGameObjectWithTag("Player");
     }
 
     void Update()
@@ -42,11 +44,13 @@ public class Plant : MonoBehaviour
             {
                 FindObjectOfType<AudioManager>().Play("AddWater");
                 nSystem.AddWater();
+                //initiate a player animation
             }
             if (Input.GetKeyDown(KeyCode.F))
             {
                 FindObjectOfType<AudioManager>().Play("AddFertilizer");
                 nSystem.AddFertilizer();
+                //initiate player anim
             }
         }
     }
