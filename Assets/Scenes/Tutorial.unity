@@ -188,6 +188,30 @@ PrefabInstance:
       propertyPath: sounds.Array.data[1].pitch
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4642916394650980545, guid: 9cbccf7e8623d4c44b79e455d448b145,
+        type: 3}
+      propertyPath: sounds.Array.data[0].group
+      value: 
+      objectReference: {fileID: 24300002, guid: d301628804e6be041917cba0b84df722,
+        type: 2}
+    - target: {fileID: 4642916394650980545, guid: 9cbccf7e8623d4c44b79e455d448b145,
+        type: 3}
+      propertyPath: sounds.Array.data[2].group
+      value: 
+      objectReference: {fileID: 24300002, guid: d301628804e6be041917cba0b84df722,
+        type: 2}
+    - target: {fileID: 4642916394650980545, guid: 9cbccf7e8623d4c44b79e455d448b145,
+        type: 3}
+      propertyPath: sounds.Array.data[3].group
+      value: 
+      objectReference: {fileID: 24300002, guid: d301628804e6be041917cba0b84df722,
+        type: 2}
+    - target: {fileID: 4642916394650980545, guid: 9cbccf7e8623d4c44b79e455d448b145,
+        type: 3}
+      propertyPath: sounds.Array.data[4].group
+      value: 
+      objectReference: {fileID: 24300002, guid: d301628804e6be041917cba0b84df722,
+        type: 2}
     - target: {fileID: 4642916394650980550, guid: 9cbccf7e8623d4c44b79e455d448b145,
         type: 3}
       propertyPath: m_Name
@@ -4764,8 +4788,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -135.67651, y: -318.08044}
-  m_SizeDelta: {x: 89.67, y: 20.4}
+  m_AnchoredPosition: {x: -112.81, y: -318.08044}
+  m_SizeDelta: {x: 114.71, y: 20.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1503307333
 MonoBehaviour:
@@ -4785,7 +4809,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: VOLUME
+  m_text: Background
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8aefd03666aa4104fb092620d2c8d18e, type: 2}
   m_sharedMaterial: {fileID: 6031872956106415495, guid: 8aefd03666aa4104fb092620d2c8d18e,
@@ -4855,7 +4879,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1503307333}
-    characterCount: 6
+    characterCount: 10
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
