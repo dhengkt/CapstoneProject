@@ -13355,7 +13355,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 896993946, guid: ffe139d2f0a013b4bb24c5bf9220c5a6, type: 3}
+    - {fileID: 1813976159, guid: ffe139d2f0a013b4bb24c5bf9220c5a6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ffe139d2f0a013b4bb24c5bf9220c5a6, type: 3}
 --- !u!1 &896993944 stripped
 GameObject:
@@ -13381,7 +13383,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b5cac07e6b1321448f7d51d94283aca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 896993944}
+  player: {fileID: 0}
   animator: {fileID: 896993945}
 --- !u!1 &933023401
 GameObject:
@@ -13498,7 +13500,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4729a140af7af48b68decb3fb30c04e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioMixer: {fileID: 24100000, guid: 2909d4534c0e746499fd989f04709d0f, type: 2}
+  themeMixer: {fileID: 0}
+  seMixer: {fileID: 0}
   resoluDropdown: {fileID: 1515919010}
 --- !u!114 &933023407
 MonoBehaviour:

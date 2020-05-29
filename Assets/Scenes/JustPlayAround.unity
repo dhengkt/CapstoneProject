@@ -268,6 +268,7 @@ MonoBehaviour:
   - {fileID: 339728018}
   - {fileID: 339728017}
   - {fileID: 339728009}
+  suppressAllAutoSelections: 0
 --- !u!114 &339727990
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -281,6 +282,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 339727989}
+  suppressBlockAutoSelect: 0
   tagFilter: []
   FireOn: 1
 --- !u!114 &339727991
@@ -389,6 +391,7 @@ MonoBehaviour:
   - {fileID: 339727997}
   - {fileID: 339727996}
   - {fileID: 339727994}
+  suppressAllAutoSelections: 0
 --- !u!114 &339727996
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -747,6 +750,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 339728008}
+  suppressBlockAutoSelect: 0
   keyPressType: 0
   keyCode: 8
 --- !u!114 &339728008
@@ -775,6 +779,7 @@ MonoBehaviour:
   eventHandler: {fileID: 339728007}
   commandList:
   - {fileID: 339728013}
+  suppressAllAutoSelections: 0
 --- !u!114 &339728009
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -910,6 +915,7 @@ MonoBehaviour:
   - {fileID: 339728033}
   - {fileID: 339728032}
   - {fileID: 339728031}
+  suppressAllAutoSelections: 0
 --- !u!114 &339728016
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1366,6 +1372,7 @@ MonoBehaviour:
   commandList:
   - {fileID: 339728026}
   - {fileID: 339728030}
+  suppressAllAutoSelections: 0
 --- !u!114 &339728028
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1379,6 +1386,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 339728027}
+  suppressBlockAutoSelect: 0
   keyPressType: 0
   keyCode: 97
 --- !u!114 &339728029
@@ -1566,6 +1574,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList: []
+  suppressAllAutoSelections: 0
 --- !u!1 &489262355
 GameObject:
   m_ObjectHideFlags: 1
@@ -1966,7 +1975,8 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 896993946, guid: ffe139d2f0a013b4bb24c5bf9220c5a6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ffe139d2f0a013b4bb24c5bf9220c5a6, type: 3}
 --- !u!1001 &7471142195834297053
 PrefabInstance:
