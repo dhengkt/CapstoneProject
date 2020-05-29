@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4825729437624019679}
   - component: {fileID: 2557259207095973902}
   - component: {fileID: 4156057937336300748}
-  - component: {fileID: 9173119822052318002}
+  - component: {fileID: -8178207740072268913}
   m_Layer: 0
   m_Name: Plant
   m_TagString: Plant
@@ -117,6 +117,7 @@ MonoBehaviour:
   plantMenu: {fileID: 8430081412351131967}
   pText: {fileID: 3605748058051312721}
   flowchart: {fileID: 0}
+  plantTrigger: 0
 --- !u!114 &4156057937336300748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -137,7 +138,7 @@ MonoBehaviour:
   fertilizer: 0
   plantNumber: 0
   stageNum: 0
---- !u!114 &9173119822052318002
+--- !u!114 &-8178207740072268913
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -150,7 +151,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 0.3
-  effect: {fileID: 2354237609752186623, guid: 8090abbcb3a0c974bb748b6b03970cc9, type: 3}
 --- !u!1001 &9215509266503298996
 PrefabInstance:
   m_ObjectHideFlags: 0
