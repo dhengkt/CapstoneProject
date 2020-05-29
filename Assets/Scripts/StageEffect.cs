@@ -7,10 +7,11 @@ public class StageEffect : MonoBehaviour
 {
     [SerializeField]
     private float lifetime;
-    public ParticleSystem effect;
+    private ParticleSystem effect;
 
     void Start()
     {
+        effect = Resources.Load<ParticleSystem>("Prefabs/StarA");
         Invoke("Upgrade", lifetime);
     }
 

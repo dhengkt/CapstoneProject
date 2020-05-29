@@ -11,6 +11,7 @@ public class NourishmentSystem : MonoBehaviour
         Stage2,
         Stage3,
         Stage4,
+        stage5,
     }
 
     [SerializeField]
@@ -108,8 +109,7 @@ public class NourishmentSystem : MonoBehaviour
                 rend.sprite = stage4;
                 if (passedTime == 8)
                 {
-                    sEffect.Upgrade();
-                    FindObjectOfType<AudioManager>().Play("StageSwitch");
+                    stageNum = 4;
                 }
                 break;
         }
