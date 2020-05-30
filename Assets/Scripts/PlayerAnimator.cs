@@ -12,10 +12,12 @@ public class PlayerAnimator : MonoBehaviour
     {
         if (Input.GetButtonDown("Water") && player.wAmount > 0)
         {
+            FindObjectOfType<AudioManager>().Play("AddWater");
             player.GetComponent<Animator>().Play("Player_Watering");
         }
         if (Input.GetButtonDown("Fertilize") && player.fAmount > 0)
         {
+            FindObjectOfType<AudioManager>().Play("AddFertilizer");
             player.GetComponent<Animator>().Play("Player_Fertilize");
         }
     }
