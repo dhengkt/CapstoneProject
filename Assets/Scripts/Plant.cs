@@ -128,7 +128,6 @@ public class Plant : MonoBehaviour
         {
             this.tempTimeSegment = tSystem.tSegment; 
             flowchart.SetBooleanVariable("updateTemp", false);
-            Debug.Log("***Temp FALSE?: " + flowchart.GetBooleanVariable("updateTemp"));
         }
         //if current time segment is more than temp time segment, set movetoNext (stage) to true and update time segment to true
         if (tSystem.tSegment > this.tempTimeSegment)
