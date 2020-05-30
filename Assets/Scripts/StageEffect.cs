@@ -6,7 +6,7 @@ using UnityEngine;
 public class StageEffect : MonoBehaviour
 {
     [SerializeField]
-    private float lifetime;
+    private float lifetime = .3f;
     private ParticleSystem effect;
 
     void Start()

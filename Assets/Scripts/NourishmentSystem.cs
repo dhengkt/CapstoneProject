@@ -59,7 +59,7 @@ public class NourishmentSystem : MonoBehaviour
     {
         pScript.SyncWaterAndFertilizer(water, fertilizer);
         currState = State.Stage1;
-        stageNum = 0;
+        stageNum = 1;
         createdTime = tSystem.tSegment;
         Debug.Log(createdTime);
         passedTime = tSystem.tSegment - createdTime;
