@@ -9,7 +9,7 @@ public class ActionsMenu : MonoBehaviour
     public static bool goForest = false;
 
     [SerializeField]
-    private Canvas actionMenu;
+    private Canvas actionMenu = null;
     [SerializeField]
     private Sprite river;
     [SerializeField]

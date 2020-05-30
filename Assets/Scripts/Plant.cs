@@ -44,18 +44,14 @@ public class Plant : MonoBehaviour
             {
                 if (player.wAmount > 0)
                 {
-                    FindObjectOfType<AudioManager>().Play("AddWater");
                     nSystem.AddWater();
-                    //initiate a player animation
                 }
             }
             if (Input.GetKeyDown(KeyCode.F))
             {
                 if (player.fAmount > 0)
                 {
-                    FindObjectOfType<AudioManager>().Play("AddFertilizer");
                     nSystem.AddFertilizer();
-                    //initiate player anim
                 }
             }
         }

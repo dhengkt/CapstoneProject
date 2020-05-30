@@ -61,9 +61,7 @@ public class NourishmentSystem : MonoBehaviour
         currState = State.Stage1;
         stageNum = 1;
         createdTime = tSystem.tSegment;
-        Debug.Log(createdTime);
         passedTime = tSystem.tSegment - createdTime;
-        Debug.Log(passedTime);
     }
 
     void Update()
@@ -109,13 +107,13 @@ public class NourishmentSystem : MonoBehaviour
                 rend.sprite = stage4;
                 if (passedTime == 8)
                 {
+                    FindObjectOfType<AudioManager>().Play("StageSwitch");
                     stageNum = 4;
                 }
                 break;
         }
         // update plant's water and fertilizer to match flowchart
         pScript.SyncWaterAndFertilizer(water, fertilizer);
-        Debug.Log(passedTime);
     }
 
     public void AddWater()

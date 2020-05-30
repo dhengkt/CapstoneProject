@@ -15,7 +15,7 @@ public class TimeSystem : MonoBehaviour
     [SerializeField]
     private GameObject bgPic = null;
     [SerializeField]
-    private Text tText;
+    private Text tText = null;
 
     [HideInInspector]
     public int tSegment;
