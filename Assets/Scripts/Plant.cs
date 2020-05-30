@@ -32,6 +32,7 @@ public class Plant : MonoBehaviour
 
     void Update()
     {
+        // Enable X (display plant story), E (give water), and F (give fertilizer) when player is in front of plant
         SetActionMenu(plantTrigger);
         if (plantTrigger)
         {
@@ -59,7 +60,6 @@ public class Plant : MonoBehaviour
 
     public void SetStory(int assignedStory)
     {
-        // Assign story tag
         switch (assignedStory)
         {
             case 0:
@@ -117,20 +117,18 @@ public class Plant : MonoBehaviour
         flowchart.SetIntegerVariable("fertilizer", nSFertilizer);
     }
 
+    // Manages when the flowchart shows a new story segment (the next time segment after a player gives water/fertilizer)
     private void UpdateTimeSegement()
     {
-        // if update time segment is true, then set temp time segment to current time segment and set update to false
         if (flowchart.GetBooleanVariable("updateTemp") == true)
         {
             this.tempTimeSegment = tSystem.tSegment; 
             flowchart.SetBooleanVariable("updateTemp", false);
         }
-        //if current time segment is more than temp time segment, set movetoNext (stage) to true and update time segment to true
         if (tSystem.tSegment > this.tempTimeSegment)
         {
             flowchart.SetBooleanVariable("moveToNext", true);
         }
-        //if current time segment is less than or equal to temp time segment, set move to next to false
         else
         {
             flowchart.SetBooleanVariable("moveToNext", false);
@@ -166,10 +164,5 @@ public class Plant : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         plantTrigger = false;
-    }
-
-    public override string ToString()
-    {
-        return "Made Plant. Story: " + story + " Loc: " + location;
     }
 }
