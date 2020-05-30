@@ -7,26 +7,26 @@ using UnityEngine.UI;
 public class Plant : MonoBehaviour
 {
     [SerializeField]
-    public Canvas plantMenu;
+    public Canvas pInfo;
     [SerializeField]
     public Text pText;
 
+    public bool plantTrigger;
     public Flowchart flowchart;
 
-    private string story;
-    private Vector3 location;
-    public bool plantTrigger;
     private int tempTimeSegment;
+    private string story;
+    private Player player;
+    private Vector3 location;
     private TimeSystem tSystem;
     private NourishmentSystem nSystem;
-    private Player player;
 
     void Start()
     {
         GameObject door = GameObject.FindGameObjectWithTag("Door");
         tSystem = door.GetComponent<TimeSystem>();
         nSystem = gameObject.GetComponent<NourishmentSystem>();
-        plantMenu = FindObjectOfType<Canvas>();
+        pInfo = FindObjectOfType<Canvas>();
         player = FindObjectOfType<Player>();
     }
 
@@ -144,7 +144,7 @@ public class Plant : MonoBehaviour
 
     private void SetActionMenu(bool isTrigger)
     {
-        plantMenu.gameObject.SetActive(isTrigger);
+        pInfo.gameObject.SetActive(isTrigger);
         UpdateText();
     }
 

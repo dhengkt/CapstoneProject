@@ -1,10 +1,9 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using Fungus;
+using System.Collections;
+using System.Collections.Generic;
 
 public class TimeSystem : MonoBehaviour
 {
@@ -22,21 +21,21 @@ public class TimeSystem : MonoBehaviour
     [HideInInspector]
     public bool isTutorial = false;
 
-    private int[] tSegmentList = new int[21];
     private int dayNum = 0;
     private int segIndex = 1;
     private int pWater, pFertilizer;
+    private int[] tSegmentList = new int[21];
     private string currTime;
     private string[] timeOfDay = { "Morning", "Afternoon" };
     private Player player;
 
-    private void Awake()
+    void Awake()
     {
         bgPic = GameObject.FindGameObjectWithTag("Background");
         player = FindObjectOfType<Player>();
     }
 
-    private void Start()
+    void Start()
     {
         dayNum = 1;
         for (int i = 0; i < tSegmentList.Length; i++)
@@ -49,7 +48,7 @@ public class TimeSystem : MonoBehaviour
         ChangeText();
     }
 
-    private void Update()
+    void Update()
     {
         UpdateResourceAmount();
         ChangeText();
@@ -83,7 +82,8 @@ public class TimeSystem : MonoBehaviour
         pFertilizer = player.fAmount;
     }
 
-    public void ChangeText()
+    // update text for player to check game info
+    private void ChangeText()
     {
         if (isTutorial)
         {
@@ -103,9 +103,7 @@ public class TimeSystem : MonoBehaviour
         }
     }
 
-    /*
-     * This function will link with buttons to change background.
-     */
+    // link with button to change time
     public void ChangeTime()
     {
         if (dayNum <= 10)

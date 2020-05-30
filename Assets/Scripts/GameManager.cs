@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
 
     private int numberOfPlants = 0;
     private TimeSystem tSystem;
-    private ActionsMenu pActions;
+    private ActionsMenu dOptions;
 
     void Awake()
     {
@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
 
         // get access to Time System and Player Action script
         tSystem = door.GetComponent<TimeSystem>();
-        pActions = door.GetComponent<ActionsMenu>();
+        dOptions = door.GetComponent<ActionsMenu>();
     }
 
     // Create plants at set time segments

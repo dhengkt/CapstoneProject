@@ -8,10 +8,11 @@ using UnityEngine;
 /*
  *  This script is for managing the tutorial part of the game.
  */
+
 public class Tutorial : MonoBehaviour
 {
     private TimeSystem tSystem;
-    private ActionsMenu pActions;
+    private ActionsMenu dOptions;
     private Flowchart tuFlowchart;
     private Player player;
     private Plant plant;
@@ -22,7 +23,7 @@ public class Tutorial : MonoBehaviour
         GameObject door = GameObject.FindGameObjectWithTag("Door");
         door.transform.position = new Vector3(-.23f, -7.99f, 0f);
         tSystem = door.GetComponent<TimeSystem>();
-        pActions = door.GetComponent<ActionsMenu>();
+        dOptions = door.GetComponent<ActionsMenu>();
         tuFlowchart = FindObjectOfType<Flowchart>();
         tuFlowchart.SetBooleanVariable("isDone", false);
         player = GameObject.FindObjectOfType<Player>();
@@ -49,10 +50,6 @@ public class Tutorial : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.X))
         {
             tSystem.isTutorial = false;
-        }
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            Application.Quit();
         }
     }
 }

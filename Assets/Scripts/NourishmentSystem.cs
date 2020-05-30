@@ -1,7 +1,6 @@
-﻿using Fungus;
+﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 
 public class NourishmentSystem : MonoBehaviour
 {
@@ -11,7 +10,6 @@ public class NourishmentSystem : MonoBehaviour
         Stage2,
         Stage3,
         Stage4,
-        stage5,
     }
 
     [SerializeField]
@@ -30,15 +28,13 @@ public class NourishmentSystem : MonoBehaviour
     [HideInInspector]
     public int stageNum;
 
+    private int passedTime;
+    private int createdTime;
+    private Plant pScript;
+    private Player player;
     private State currState;
     private TimeSystem tSystem;
     private StageEffect sEffect;
-    private Plant pScript;
-    private Flowchart pFlowchart;
-    private Canvas plMenu;
-    private Player player;
-    private int passedTime;
-    private int createdTime;
 
     void Awake()
     {
@@ -51,8 +47,6 @@ public class NourishmentSystem : MonoBehaviour
 
         // Get access to Plant script
         pScript = gameObject.GetComponent<Plant>();
-        pFlowchart = gameObject.GetComponent<Flowchart>();
-        plMenu = pScript.plantMenu;
     }
 
      void Start()
