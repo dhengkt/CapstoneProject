@@ -33,10 +33,10 @@ public class ActionsMenu : MonoBehaviour
         goRiver = true;
         int temp = Random.Range(1, 6);
 
-        // randomly give player water
+        // Randomly give player water
         if (player.wAmount < 10)
         {
-            // limit player's water amount to 10
+            // Limit player's water amount to 10
             if (player.wAmount + temp > 10)
             {
                 player.wAmount = 10;

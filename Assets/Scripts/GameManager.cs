@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour
         pActions = door.GetComponent<ActionsMenu>();
     }
 
-    /*****Create plant should be called when the player reaches a certain time segment and goes outside*****/
+    // Create plants at set time segments
     void Update()
     {
         if (tSystem.tSegment == 1 && numberOfPlants != 1)
@@ -47,7 +47,6 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    // Create a plant object before placing it in the game
     private void CreatePlant()
     {
         numberOfPlants++;
@@ -69,10 +68,9 @@ public class GameManager : MonoBehaviour
         currentPlants[numberOfPlants] = plant;
         Debug.Log("currentPlants: " + currentPlants[numberOfPlants]);
         Debug.Log("Current # of plants: "+ numberOfPlants);
-        //Debug.Log("Unused Stories (after assign): " + unusedStories);
     }
 
-    // Return a random story from the unusedStories list and transfer it to the usedStories when creating a plant
+    // Return a random story from the unusedStories list and transfer it to the usedStories when creating a plant (no story repeats)
     private int AssignStory()
     {
         int storyIndex = UnityEngine.Random.Range(0, unusedStories.Count);
@@ -83,7 +81,7 @@ public class GameManager : MonoBehaviour
         return tempStory;
     }
 
-    // Get an open location for the plant and spawn it in that location
+    // Returns coordinates of an open location for the plant and spawn it in that location
     private (float, float) AssignOpenLocation()
     {
         int locationIndex = -1;
@@ -99,7 +97,7 @@ public class GameManager : MonoBehaviour
 
     Coordinates:
         Debug.Log("Location index: " + locationIndex);
-        // Figure out coordinates for each location
+        // Coordinates for each location index
         switch (locationIndex)
         {
             case 0:
