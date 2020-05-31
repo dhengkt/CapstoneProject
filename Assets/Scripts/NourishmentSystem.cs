@@ -101,7 +101,6 @@ public class NourishmentSystem : MonoBehaviour
                 rend.sprite = stage4;
                 if (passedTime == 8)
                 {
-                    FindObjectOfType<AudioManager>().Play("StageSwitch");
                     stageNum = 4;
                 }
                 break;
