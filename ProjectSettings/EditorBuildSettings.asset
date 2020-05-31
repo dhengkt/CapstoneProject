@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PolishedGame.unity
     guid: 326a48e1dda114da8844231bf6b14bb7
+  - enabled: 1
+    path: Assets/Scenes/EndCredits.unity
+    guid: 1c2d0ebd11ad68348aeb59e03db2e9d6
   m_configObjects: {}
