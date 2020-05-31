@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class TimeSystem : MonoBehaviour
 {
@@ -98,7 +99,7 @@ public class TimeSystem : MonoBehaviour
             }
             else
             {
-                tText.text = "Time's Up!\nThank you for playing!\nDon't forget to fill out the survey.";
+                SceneManager.LoadScene("End Credtis");
             }
         }
     }
