@@ -97,10 +97,11 @@ public class TimeSystem : MonoBehaviour
                 tText.text = "Day: " + dayNum.ToString() + "\nTime: " + currTime.ToString() +
                     "\nWater: " + pWater + " Fertilizer: " + pFertilizer;
             }
-            else
-            {
-                SceneManager.LoadScene("End Credtis");
-            }
+        }
+
+        if (tSegment == 21)
+        {
+            tText.text = "It's time. \nYou need go back to your team. \nPress X to leave the greenhouse.";
         }
     }
 

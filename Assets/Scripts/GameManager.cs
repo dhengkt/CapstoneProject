@@ -46,7 +46,8 @@ public class GameManager : MonoBehaviour
         {
             CreatePlant();
         }
-        if (tSystem.tSegment == 21)
+
+        if (tSystem.tSegment == 21 && Input.GetKeyDown(KeyCode.X))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
