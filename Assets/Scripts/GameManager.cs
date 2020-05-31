@@ -48,7 +48,7 @@ public class GameManager : MonoBehaviour
         }
         if (tSystem.tSegment == 21)
         {
-            SceneManager.LoadScene("EndCredits");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 
