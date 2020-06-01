@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
 
+//Functions for option menu; linked with button/dropdown/click box on Options Menu
 public class OptionsMenu : MonoBehaviour
 {
     public AudioMixer themeMixer;

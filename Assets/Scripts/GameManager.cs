@@ -6,6 +6,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+/*
+ * Keep track plant's properties like number, story flowcharts and location; also keep track with the creation of plant
+ * Link with Time System and ActionMenu scripts to know game time and whether Door is function or not
+ */
 public class GameManager : MonoBehaviour
 {   
     private List<int> unusedStories = new List<int>() { 0, 1, 2, 3, 4};

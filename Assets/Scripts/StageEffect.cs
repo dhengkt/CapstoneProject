@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System;
 using UnityEngine;
 
+// control/create particle system for plant
 public class StageEffect : MonoBehaviour
 {
     [SerializeField]

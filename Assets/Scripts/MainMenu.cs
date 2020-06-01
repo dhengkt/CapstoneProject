@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+// Functions for Start Menu of the game; they all linked with buttons
 public class MainMenu : MonoBehaviour
 {
     public void PlayGame()

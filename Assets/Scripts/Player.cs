@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Control player's movement, amount of water/fertilizer they have, and animation
 public class Player : MonoBehaviour
 {
     [SerializeField] 

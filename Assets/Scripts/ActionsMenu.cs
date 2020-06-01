@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+// ActionsMenu.cs is for Door's functions. Most functions are linked with buttons.
 public class ActionsMenu : MonoBehaviour
 {
     public static bool goRiver = false;
@@ -23,7 +24,7 @@ public class ActionsMenu : MonoBehaviour
         player = FindObjectOfType<Player>();
     }
 
-    public void SetMenu(bool trigger)
+    private void SetMenu(bool trigger)
     {
         actionMenu.gameObject.SetActive(trigger);
     }

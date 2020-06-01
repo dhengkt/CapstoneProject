@@ -6,6 +6,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 
+/*
+ * keep track with the game time and change the text showing game info
+ * Game Manager, Plant, Nourishment System, and Tutorial have access to this script
+ */
 public class TimeSystem : MonoBehaviour
 {
     [SerializeField]

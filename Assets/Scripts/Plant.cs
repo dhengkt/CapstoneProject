@@ -4,6 +4,10 @@ using UnityEngine;
 using Fungus;
 using UnityEngine.UI;
 
+/*
+ * Control the property of plant such as flowchart, location, stage, and its nourishment system
+ * Link with Player, Time System, Nourishment System and Fungus' scripts to control the properties
+ */
 public class Plant : MonoBehaviour
 {
     [SerializeField]

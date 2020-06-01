@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Functions for pause menu; linked with buttons on pause menu
 public class PauseMenu : MonoBehaviour
 {
     public static bool isPause = false;

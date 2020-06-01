@@ -6,9 +6,8 @@ using UnityEngine.SceneManagement;
 using UnityEngine;
 
 /*
- *  This script is for managing the tutorial part of the game.
+ * This script is for managing the tutorial part of the game
  */
-
 public class Tutorial : MonoBehaviour
 {
     private TimeSystem tSystem;

@@ -2,6 +2,7 @@
 using UnityEngine;
 using System;
 
+// AudioManager for managing all audio used in game
 public class AudioManager : MonoBehaviour
 {
     public Sound[] sounds;
@@ -9,6 +10,7 @@ public class AudioManager : MonoBehaviour
     // to check whether the audio manager is in the scene or not
     public static AudioManager instance;
 
+    // loop through the list created in Unity's inspector and create AudioSource for each of them
     void Awake()
     {
         if (instance == null)

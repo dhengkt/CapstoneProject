@@ -2,6 +2,11 @@
 using System.Collections;
 using System.Collections.Generic;
 
+/*
+ * Nourishment System for plant
+ * Control the stage change, keep track with the amount of water/fertilizer
+ * Link with Plant, Player, Time System, and Stage Effect script to have access to get needed info
+ */
 public class NourishmentSystem : MonoBehaviour
 {
     private enum State
